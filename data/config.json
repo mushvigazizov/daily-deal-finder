@@ -1,0 +1,11 @@
+{
+  "site": {
+    "name": "Daily Deal Finder",
+    "locale": "de-DE",
+    "currency": "EUR",
+    "amazon_domain": "amazon.de"
+  },
+  "affiliate": {
+    "amazon_associate_tag": ""
+  }
+}

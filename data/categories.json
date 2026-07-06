@@ -1,0 +1,10 @@
+[
+  {"slug": "camping", "name": "Camping & Outdoor", "icon": "🏕️"},
+  {"slug": "home", "name": "Home & Garden", "icon": "🏠"},
+  {"slug": "kitchen", "name": "Kitchen & Dining", "icon": "🍳"},
+  {"slug": "fitness", "name": "Fitness & Sports", "icon": "💪"},
+  {"slug": "electronics", "name": "Electronics & Gadgets", "icon": "📱"},
+  {"slug": "pets", "name": "Pet Supplies", "icon": "🐾"},
+  {"slug": "travel", "name": "Travel Gear", "icon": "✈️"},
+  {"slug": "lifestyle", "name": "Lifestyle", "icon": "✨"}
+]
