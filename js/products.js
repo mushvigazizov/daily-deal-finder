@@ -44,10 +44,14 @@ function renderProductGrid(products, containerId) {
     return;
   }
 
-  container.innerHTML = products.map(p => `
+  container.innerHTML = products.map(p => {
+    const imgHtml = p.image 
+      ? `<img src="/${p.image}" alt="${p.title}" loading="lazy">`
+      : `<div class="product-placeholder" aria-label="${p.title}">${p.title}</div>`;
+    return `
     <article class="product-card">
       <a href="/product.html?id=${p.id}">
-        <img src="/${p.image}" alt="${p.title}" loading="lazy" onerror="this.src='/assets/logo.png'">
+        ${imgHtml}
       </a>
       <div class="info">
         <span class="category-tag">${p.category || ''}</span>
@@ -57,7 +61,7 @@ function renderProductGrid(products, containerId) {
         <span class="ad-badge">#Anzeige</span>
       </div>
     </article>
-  `).join('');
+  `}).join('');
 }
 
 async function initHomePage() {
@@ -85,14 +89,14 @@ function renderProductPage(product) {
   // OG update
   document.querySelector('meta[property="og:title"]')?.setAttribute('content', product.pinterest_title || product.title);
   document.querySelector('meta[property="og:description"]')?.setAttribute('content', product.pinterest_description || product.short_description);
-  document.querySelector('meta[property="og:image"]')?.setAttribute('content', `https://dailydealfinder.netlify.app/${product.image}`);
+  document.querySelector('meta[property="og:image"]')?.setAttribute('content', product.image ? `https://dailydealfinder.netlify.app/${product.image}` : 'https://dailydealfinder.netlify.app/assets/logo.png');
   document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://dailydealfinder.netlify.app/product.html?id=${product.id}`);
-  document.querySelector('meta[name="twitter:image"]')?.setAttribute('content', `https://dailydealfinder.netlify.app/${product.image}`);
+  document.querySelector('meta[name="twitter:image"]')?.setAttribute('content', product.image ? `https://dailydealfinder.netlify.app/${product.image}` : 'https://dailydealfinder.netlify.app/assets/logo.png');
 
   // Page render
   document.getElementById('product-page').innerHTML = `
     <div class="product-hero">
-      <img src="/${product.image}" alt="${product.title}" class="product-main-image" onerror="this.src='/assets/logo.png'">
+      ${product.image ? `<img src="/${product.image}" alt="${product.title}" class="product-main-image">` : `<div class="product-placeholder product-placeholder-large">${product.title}</div>`}
       <div class="product-hero-info">
         <span class="category-tag">${product.category || ''}</span>
         <h1>${product.title}</h1>
