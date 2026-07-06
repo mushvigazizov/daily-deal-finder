@@ -27,8 +27,15 @@ async function loadProducts() {
 }
 
 function buildAmazonUrl(asin) {
+  if (!asin) return 'https://www.amazon.de/';
   const tag = CONFIG.affiliate?.amazon_associate_tag || '';
   const domain = CONFIG.site?.amazon_domain || 'amazon.de';
+  // Search URL format: "s?k=..."
+  if (asin.startsWith('s?k=')) {
+    const base = `https://www.${domain}/${asin}`;
+    return tag ? `${base}&tag=${tag}` : base;
+  }
+  // ASIN format: "B0XXXXX"
   const base = `https://www.${domain}/dp/${asin}`;
   return tag ? `${base}?tag=${tag}` : base;
 }
