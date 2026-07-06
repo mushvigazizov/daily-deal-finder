@@ -1,4 +1,4 @@
 /*
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=60
 /assets/*
-  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Cache-Control: public, max-age=60
