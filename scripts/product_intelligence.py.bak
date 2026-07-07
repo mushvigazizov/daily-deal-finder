@@ -1,0 +1,93 @@
+import json
+from pathlib import Path
+
+PRODUCTS_PATH = Path("data/products.json")
+
+def infer_product_type(product):
+    title = product.get("title", "").lower()
+    sub = product.get("subcategory", "").lower()
+
+    if "zelt" in title or sub == "zelte":
+        return "camping tent"
+    if "schlafsack" in title or sub == "schlafsacke":
+        return "sleeping bag"
+    if "lampe" in title or "stirnlampe" in title or sub == "lampen":
+        return "camping light"
+    if "rucksack" in title or sub == "rucksacke":
+        return "hiking backpack"
+    if "stuhl" in title or "tisch" in title or sub == "mobel":
+        return "camping furniture"
+    if "kocher" in title or "küche" in title or sub == "kuche":
+        return "camping cooking gear"
+
+    return "outdoor product"
+
+def infer_target_user(product):
+    text = (product.get("title", "") + " " + product.get("short_description", "")).lower()
+
+    if "familie" in text or "4-personen" in text or "4 personen" in text:
+        return "families and group campers"
+    if "ultraleicht" in text or "trekking" in text:
+        return "hikers and lightweight backpackers"
+    if "2-personen" in text or "2 personen" in text:
+        return "couples and weekend campers"
+
+    return "outdoor and camping users"
+
+def infer_visual_goal(product):
+    features = " ".join(product.get("features") or []).lower()
+    desc = (product.get("short_description", "") + " " + product.get("long_description", "")).lower()
+    text = features + " " + desc
+
+    if "familie" in text or "4-personen" in text:
+        return "show spaciousness, comfort, and reliable family camping use"
+    if "ultraleicht" in text or "leicht" in text:
+        return "show portability, light weight, and easy carrying"
+    if "wasserdicht" in text or "sturmfest" in text:
+        return "show durability, weather resistance, and outdoor reliability"
+    if "komfort" in text:
+        return "show comfort and practical outdoor use"
+
+    return "show the product clearly in a realistic outdoor use case"
+
+def analyze_product(product):
+    product_type = infer_product_type(product)
+
+    return {
+        "id": product.get("id"),
+        "title": product.get("title"),
+        "brand": product.get("brand"),
+        "category": product.get("category"),
+        "subcategory": product.get("subcategory"),
+        "product_type": product_type,
+        "target_user": infer_target_user(product),
+        "primary_use": product.get("category", "outdoor"),
+        "visual_goal": infer_visual_goal(product),
+        "environment": "realistic outdoor camping environment",
+        "style": "photorealistic commercial lifestyle image",
+        "must_show": [
+            product_type,
+            "realistic proportions",
+            "natural outdoor use",
+            "clear product focus"
+        ],
+        "avoid": [
+            "brand logos",
+            "text overlays",
+            "watermarks",
+            "price tags",
+            "misleading size or capacity",
+            "copying Amazon product photos"
+        ],
+        "keywords": product.get("features") or []
+    }
+
+def main():
+    data = json.loads(PRODUCTS_PATH.read_text(encoding="utf-8"))
+
+    for product in data["products"][:3]:
+        print(json.dumps(analyze_product(product), ensure_ascii=False, indent=2))
+        print("-" * 60)
+
+if __name__ == "__main__":
+    main()
