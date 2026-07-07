@@ -1,52 +1,61 @@
+DEFAULT_CONTEXT = "realistic product lifestyle photography"
+
 SUBCATEGORY_CONTEXT = {
-    "zelte": "professional camping tent on clean natural outdoor background",
-    "schlafsacke": "premium sleeping bag laid on wooden cabin floor, soft lighting",
-    "lampen": "LED camping lantern on wooden picnic table at dusk, warm glow",
-    "rucksacke": "hiking backpack against mountain landscape, adventure vibe",
-    "mobel": "folding camping chair on grassy field, sunny day, lifestyle shot",
-    "kuche": "camping stove and cookware set on outdoor table, natural light",
-    "sicherheit": "first aid kit and water filter on camping gear flat lay",
-    "kleidung": "outdoor waterproof jacket on rustic wooden hook, studio quality",
-    "zubehor": "camping multi-tool and paracord on rustic wood surface, detail shot",
+    "zelte": "realistic camping tent in an outdoor campsite setting",
+    "schlafsacke": "realistic sleeping bag in a cozy camping environment",
+    "lampen": "realistic camping light or headlamp used outdoors",
+    "rucksacke": "realistic hiking backpack in a mountain or forest trail setting",
+    "mobel": "realistic camping furniture in an outdoor relaxation setting",
+    "kuche": "realistic camping cooking gear in an outdoor kitchen setting",
+    "sicherheit": "realistic outdoor safety and survival gear setting",
+    "kleidung": "realistic outdoor clothing in a hiking or camping setting",
+    "zubehor": "realistic camping accessory in a practical outdoor scene",
 }
 
-DEFAULT_CONTEXT = "premium camping gear product photo"
+def _features(product: dict, limit: int = 4) -> str:
+    items = product.get("features") or []
+    if not items:
+        return ""
+    return ", ".join(items[:limit])
 
-
-def build_website_prompt(product: dict) -> str:
-    """Website məhsul səhifəsi üçün prompt."""
+def _base_product_prompt(product: dict) -> str:
+    title = product.get("title", "")
+    brand = product.get("brand", "")
     sub = product.get("subcategory", "")
     ctx = SUBCATEGORY_CONTEXT.get(sub, DEFAULT_CONTEXT)
+    short = product.get("short_description", "")
+    features = _features(product)
+
     return (
-        f"{ctx}, "
-        f"{product['title']}, "
-        f"clean natural background, 1024x1024 square, "
-        f"soft studio lighting, professional product photography, "
-        f"Pinterest-friendly, realistic, no text overlays, no brand logos"
+        f"{ctx}. "
+        f"Product title: {title}. "
+        f"Brand reference: {brand}. "
+        f"Key features: {features}. "
+        f"Short product description: {short}. "
+        f"Create a photorealistic commercial lifestyle image that accurately represents the product type, size, function, and intended use. "
+        f"The product must look realistic, useful, and trustworthy. "
+        f"Do not exaggerate capacity, size, material, or features. "
+        f"Do not copy Amazon product photography. "
+        f"No brand logos, no text, no watermark, no price tags."
     )
 
+def build_website_prompt(product: dict) -> str:
+    """Website məhsul kartı üçün prompt."""
+    return (
+        _base_product_prompt(product)
+        + " Horizontal website product card composition, product centered and clearly visible, natural light, clean background, premium outdoor e-commerce style."
+    )
 
 def build_pinterest_prompt(product: dict) -> str:
     """Pinterest Pin üçün prompt."""
-    sub = product.get("subcategory", "")
-    ctx = SUBCATEGORY_CONTEXT.get(sub, DEFAULT_CONTEXT)
     return (
-        f"{ctx}, "
-        f"{product['title']}, "
-        f"vertical 2:3 ratio, lifestyle setting, natural light, "
-        f"warm tones, Pinterest aesthetic, clean composition, "
-        f"copy space on top for text overlay, no brand logos"
+        _base_product_prompt(product)
+        + " Vertical 2:3 Pinterest composition, attractive lifestyle setting, strong visual focus on the product, clean copy space near the top, warm natural light."
     )
 
-
 def build_social_prompt(product: dict) -> str:
-    """Social media (OG / Instagram) üçün prompt."""
-    sub = product.get("subcategory", "")
-    ctx = SUBCATEGORY_CONTEXT.get(sub, DEFAULT_CONTEXT)
+    """Social media / OG üçün prompt."""
     return (
-        f"{ctx}, "
-        f"{product['title']}, "
-        f"wide composition, outdoor lifestyle, vibrant but natural colors, "
-        f"professional photography, suitable for social media sharing, "
-        f"no text overlays, no brand logos"
+        _base_product_prompt(product)
+        + " Wide social media composition, professional outdoor lifestyle photography, vibrant but natural colors, clean and shareable image."
     )
