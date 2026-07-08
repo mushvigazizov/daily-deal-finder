@@ -1,0 +1,47 @@
+/* Daily Deal Finder — Premium Footer */
+
+.footer,
+footer {
+  background: #07162e;
+  color: #ffffff;
+  margin-top: 70px;
+  padding: 52px min(4vw, 42px) 28px;
+}
+
+.footer a,
+footer a {
+  color: #d9e3f5;
+}
+
+.footer p,
+footer p {
+  color: #d9e3f5;
+  line-height: 1.7;
+}
+
+.footgrid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 34px;
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+.footlinks {
+  display: grid;
+  gap: 10px;
+}
+
+.footer .brand img,
+footer .brand img {
+  width: 62px;
+  height: 62px;
+}
+
+.disclosure {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 30px;
+  padding-top: 22px;
+  color: #b9c7dc;
+  font-size: 13px;
+}
