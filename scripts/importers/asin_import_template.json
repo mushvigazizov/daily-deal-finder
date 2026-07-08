@@ -1,9 +1,182 @@
 [
   {
     "id": "camp-001",
+    "title": "Coleman 2-Personen Kuppelzelt — Wasserdicht & Schnellaufbau",
+    "current_amazon_asin": "s?k=Coleman%202-Personen%20Kuppelzelt%20%E2%80%94%20Wasserdicht",
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Replace search fallback with exact Amazon product ASIN."
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-002",
+    "title": "Skandika Familienzelt 4-Personen — Geräumig & Sturmfest",
+    "current_amazon_asin": "s?k=Skandika%20Familienzelt%204-Personen%20%E2%80%94%20Ger%C3%A4umig",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-003",
+    "title": "Quechua Pop-Up Wurfzelt 2-Personen — 2 Sekunden Aufbau",
+    "current_amazon_asin": "s?k=Quechua%20Pop-Up%20Wurfzelt%202-Personen%20%E2%80%94",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-004",
+    "title": "Campingaz 3-Jahreszeiten Schlafsack — Komfort bis -5°C",
+    "current_amazon_asin": "s?k=Campingaz%203-Jahreszeiten%20Schlafsack%20%E2%80%94%20Komfort",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-005",
+    "title": "Aubliss Ultraleicht Schlafsack — Nur 800g, ideal für Trekking",
+    "current_amazon_asin": "s?k=Aubliss%20Ultraleicht%20Schlafsack%20%E2%80%94%20Nur",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-006",
+    "title": "PETZL LED Stirnlampe — 300 Lumen, wiederaufladbar",
+    "current_amazon_asin": "s?k=PETZL%20LED%20Stirnlampe%20%E2%80%94%20300",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-007",
+    "title": "Vango Camping LED Laterne — 360° Ausleuchtung",
+    "current_amazon_asin": "s?k=Vango%20Camping%20LED%20Laterne%20%E2%80%94",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-008",
+    "title": "Berghaus Wanderrucksack 40L — Leicht & Ergonomisch",
+    "current_amazon_asin": "s?k=Berghaus%20Wanderrucksack%2040L%20%E2%80%94%20Leicht",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-009",
+    "title": "Tatonka Trekkingrucksack 65L — Für mehrtägige Touren",
+    "current_amazon_asin": "s?k=Tatonka%20Trekkingrucksack%2065L%20%E2%80%94%20F%C3%BCr",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-010",
+    "title": "Outsunny Camping Klappstuhl — Mit Armlehne & Getränkehalter",
+    "current_amazon_asin": "s?k=Outsunny%20Camping%20Klappstuhl%20%E2%80%94%20Mit",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-011",
+    "title": "Coleman Camping Klapptisch — 4 Personen, Aluminium",
+    "current_amazon_asin": "s?k=Coleman%20Camping%20Klapptisch%20%E2%80%94%204",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-012",
+    "title": "Campingaz Gaskocher 2-flammig — Leistungsstark & Kompakt",
+    "current_amazon_asin": "s?k=Campingaz%20Gaskocher%202-flammig%20%E2%80%94%20Leistungsstark",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-013",
+    "title": "Esbit Camping Kochset 4-Personen — 10-teilig, Aluminium",
+    "current_amazon_asin": "s?k=Esbit%20Camping%20Kochset%204-Personen%20%E2%80%94",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-014",
+    "title": "Mobicool Elektrische Kühlbox 24L — 12V & 230V",
+    "current_amazon_asin": "s?k=Mobicool%20Elektrische%20K%C3%BChlbox%2024L%20%E2%80%94",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-015",
+    "title": "Leina-Werke Erste-Hilfe-Set Outdoor — DIN 13167",
+    "current_amazon_asin": "s?k=Leina-Werke%20Erste-Hilfe-Set%20Outdoor%20%E2%80%94%20DIN",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-016",
+    "title": "LifeStraw Wasserfilter — 4000L sauberes Trinkwasser",
+    "current_amazon_asin": "s?k=LifeStraw%20Wasserfilter%20%E2%80%94%204000L%20sauberes",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-017",
+    "title": "Columbia Regenjacke — Wasserdicht & Atmungsaktiv",
+    "current_amazon_asin": "s?k=Columbia%20Regenjacke%20%E2%80%94%20Wasserdicht%20%26",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-018",
+    "title": "Odlo Thermo Funktionsunterwäsche — Warm & Atmungsaktiv",
+    "current_amazon_asin": "s?k=Odlo%20Thermo%20Funktionsunterw%C3%A4sche%20%E2%80%94%20Warm",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-019",
+    "title": "Victorinox Outdoor Multitool — 15 Funktionen",
+    "current_amazon_asin": "s?k=Victorinox%20Outdoor%20Multitool%20%E2%80%94%2015",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
+  },
+  {
+    "id": "camp-020",
+    "title": "Military Paracord 30m — 250kg Belastbarkeit",
+    "current_amazon_asin": "s?k=Military%20Paracord%2030m%20%E2%80%94%20250kg",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Find exact Amazon.de product page and paste ASIN here."
   }
 ]
