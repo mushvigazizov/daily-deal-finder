@@ -1,0 +1,9 @@
+[
+  {
+    "id": "camp-001",
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Replace search fallback with exact Amazon product ASIN."
+  }
+]
