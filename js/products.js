@@ -103,22 +103,35 @@ function renderProductPage(product) {
   // Page render
   document.getElementById('product-page').innerHTML = `
     <div class="product-hero">
-      ${product.image ? `<img src="/${product.image}" alt="${product.title}" class="product-main-image">` : `<div class="product-placeholder product-placeholder-large">${product.title}</div>`}
-      <div class="product-hero-info">
-        <span class="category-tag">${product.category || ''}</span>
+      <section class="product-media-panel">
+        ${product.image ? `<img src="/${product.image}" alt="${product.title}" class="product-main-image">` : `<div class="product-placeholder product-placeholder-large">${product.title}</div>`}
+      </section>
+
+      <section class="product-info-panel">
+        <span class="product-kicker">${product.category || 'Empfohlenes Produkt'}</span>
         <h1>${product.title}</h1>
-        ${product.brand ? `<p class="brand">Marke: ${product.brand}</p>` : ''}
+        ${product.brand ? `<p class="product-brand">Marke: ${product.brand}</p>` : ''}
+
         <div class="product-description">
-          <p>${product.long_description || product.short_description}</p>
+          <p>${product.long_description || product.short_description || ''}</p>
         </div>
+
         ${product.features?.length ? `
         <ul class="features">
           ${product.features.map(f => `<li>${f}</li>`).join('')}
         </ul>` : ''}
+
+        <div class="product-trust-row">
+          <div class="product-trust-item">Amazon.de</div>
+          <div class="product-trust-item">Camping Auswahl</div>
+          <div class="product-trust-item">Affiliate Hinweis</div>
+        </div>
+
         <a href="${buildAmazonUrl(product.amazon_asin)}" target="_blank" rel="nofollow sponsored noopener" class="button cta">${product.button_text || 'Auf Amazon ansehen'}</a>
-        <p class="price-note">*Preise können variieren. Aktuellen Preis auf Amazon.de prüfen.</p>
+
+        <p class="price-note">*Preise und Verfügbarkeit können sich ändern. Aktuellen Preis bitte direkt auf Amazon.de prüfen.</p>
         <p class="disclosure">Als Amazon Associate verdienen wir an qualifizierten Käufen.</p>
-      </div>
+      </section>
     </div>
   `;
 }
