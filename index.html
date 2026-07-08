@@ -8,12 +8,12 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Daily Deal Finder | Smart Shopping Ideas">
   <meta property="og:description" content="Discover daily deals, smart shopping ideas, product recommendations, and useful finds for everyday life.">
-  <meta property="og:image" content="https://dailydealfinder.netlify.app/assets/logo.png">
+  <meta property="og:image" content="https://daily-deal-finder.com/assets/logo.png">
   <meta property="og:url" content="https://daily-deal-finder.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Daily Deal Finder">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="https://dailydealfinder.netlify.app/assets/logo.png">
+  <meta name="twitter:image" content="https://daily-deal-finder.com/assets/logo.png">
   <link rel="canonical" href="https://daily-deal-finder.com/">
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
   <link rel="apple-touch-icon" href="/assets/logo.svg">
@@ -21,55 +21,122 @@
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="/">
-      <img src="/assets/logo.png" alt="Daily Deal Finder logo">
-      <span>Daily Deal Finder</span>
-    </a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="/">
+        <img src="/assets/logo.png" alt="Daily Deal Finder logo">
+        <span>Daily Deal Finder</span>
+      </a>
+      <nav class="menu">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/impressum.html">Impressum</a>
+        <a href="/affiliate-disclosure.html">Affiliate</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="section" id="products">
-      <h2>🏕️ Camping & Outdoor</h2>
-      <p class="lead">Essentielle Ausrüstung für dein nächstes Abenteuer.</p>
-      <div id="product-grid" class="product-grid">
-        <p>Produkte werden geladen...</p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Daily curated deals • smart shopping • useful finds</div>
+          <h1>Discover better deals every day.</h1>
+          <p class="lead">Daily Deal Finder highlights practical product ideas, seasonal finds, home essentials, tech gadgets, lifestyle picks, and money-saving recommendations in a clean, trustworthy format.</p>
+          <div class="actions"><a class="btn primary" href="#products">Explore Products</a><a class="btn secondary" href="/privacy.html">Privacy Policy</a></div>
+          <div class="trust"><span>Pinterest ready</span><span>Affiliate transparent</span><span>Mobile friendly</span></div>
+        </div>
+        <div class="mockup">
+          <div class="deal-card">
+            <div class="deal-top"><span class="badge">Today's featured find</span><span class="price">-35%</span></div>
+            <h2 style="color:#061b3b;margin:18px 0 8px">Smart shopping ideas, handpicked daily</h2>
+            <p style="color:#667085;line-height:1.6">Organized recommendations across useful categories, designed for fast browsing and Pinterest discovery.</p>
+          </div>
+          <div class="grid-products">
+            <div class="mini">🏡<strong>Home</strong><p>Useful everyday items</p></div>
+            <div class="mini">💻<strong>Tech</strong><p>Simple gadgets and tools</p></div>
+            <div class="mini">🍳<strong>Kitchen</strong><p>Practical cooking finds</p></div>
+            <div class="mini">🎁<strong>Gifts</strong><p>Ideas for every season</p></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <h2>About Daily Deal Finder</h2>
-      <p>Daily Deal Finder is an informational shopping inspiration website. We help visitors discover useful product ideas, buying guides, and affiliate recommendations. Our goal is to make online shopping simpler, clearer, and more practical.</p>
+    <section class="section" id="categories">
+      <div class="container">
+        <h2>Featured categories</h2>
+        <p class="head">A simple place to discover product inspiration without scrolling through endless shops.</p>
+        <div class="cards">
+          <div class="card"><div class="icon">🏕️</div><h3>Camping</h3><p>Outdoor essentials, tents, hiking and adventure gear.</p></div>
+          <div class="card"><div class="icon">🏠</div><h3>Home</h3><p>Functional home essentials, organizers, and everyday helpers.</p></div>
+          <div class="card"><div class="icon">🍳</div><h3>Kitchen</h3><p>Useful kitchen tools, smart accessories, and cooking inspiration.</p></div>
+          <div class="card"><div class="icon">💻</div><h3>Tech</h3><p>Gadgets, accessories, and simple technology for daily life.</p></div>
+          <div class="card"><div class="icon">💄</div><h3>Beauty</h3><p>Beauty finds, self-care ideas, and practical lifestyle products.</p></div>
+          <div class="card"><div class="icon">🌿</div><h3>Outdoor</h3><p>Camping, travel, garden, and outdoor product ideas.</p></div>
+          <div class="card"><div class="icon">🐶</div><h3>Pets</h3><p>Helpful product inspiration for pets and pet owners.</p></div>
+          <div class="card"><div class="icon">🎁</div><h3>Gifts</h3><p>Seasonal gift guides and simple ideas for different occasions.</p></div>
+        </div>
+      </div>
     </section>
 
-    <section class="section cards">
-      <article>
-        <h3>Affiliate Disclosure</h3>
-        <p>Some links may be affiliate links, including Amazon Associates links. We may earn a small commission at no additional cost to you.</p>
-      </article>
-      <article>
-        <h3>Pinterest API Compliance</h3>
-        <p>Any Pinterest integration is used only with explicit user authorization. We do not publish, edit, delete, or modify Pinterest content without user approval.</p>
-      </article>
-      <article>
-        <h3>Privacy First</h3>
-        <p>We collect only the minimum information needed to operate the service and respond to user requests.</p>
-      </article>
+    <section class="section" id="products">
+      <div class="container">
+        <h2>🏕️ Camping & Outdoor</h2>
+        <p class="head">Essentielle Ausrüstung für dein nächstes Abenteuer.</p>
+        <div id="product-grid" class="product-grid">
+          <p class="empty">Produkte werden geladen...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="panel">
+          <div class="eyebrow" style="color:#f5a800">Why trust us</div>
+          <h2 style="color:#fff">Clear recommendations, not noise.</h2>
+          <p>We focus on useful product discovery, transparent affiliate disclosure, and simple content that helps visitors make better shopping decisions.</p>
+          <div class="actions"><a class="btn secondary" href="/about.html">About Daily Deal Finder</a></div>
+        </div>
+        <div class="panel light">
+          <h2>Pinterest & affiliate ready</h2>
+          <p>Daily Deal Finder may use Pinterest services for product discovery and may include Amazon Associates links. Affiliate links can generate a commission at no additional cost to visitors.</p>
+          <p>We do not present ourselves as Pinterest or Amazon. All trademarks belong to their respective owners.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Daily Deal Finder. Independent website. Not affiliated with Pinterest or Amazon.</p>
-    <p><a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a> · <a href="/contact.html">Contact</a></p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footgrid">
+        <div>
+          <a class="brand" href="/"><img src="/assets/logo.png" alt="Daily Deal Finder logo"><span style="color:#fff">Daily Deal Finder</span></a>
+          <p>Daily shopping inspiration, useful finds, buying guides, and transparent affiliate recommendations.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <div class="footlinks">
+            <a href="/about.html">About</a>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Service</a>
+            <a href="/impressum.html">Impressum</a>
+            <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>mushvig.azizov@gmail.com</p>
+        </div>
+      </div>
+      <div class="disclosure">Amazon Associates Disclosure: As an Amazon Associate, this website may earn from qualifying purchases. Pinterest and Amazon are trademarks of their respective owners. Daily Deal Finder is not affiliated with, endorsed by, or sponsored by Pinterest or Amazon. © 2026 Daily Deal Finder. All rights reserved.</div>
+    </div>
   </footer>
-  <script src="/js/products.js?v=2"></script>
+
+  <script src="/js/products.js?v=3"></script>
   <script>initHomePage();</script>
 </body>
 </html>
-
