@@ -91,14 +91,14 @@ function renderProductPage(product) {
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) metaDesc.content = product.seo_description || product.short_description;
   const canonical = document.querySelector('link[rel="canonical"]');
-  if (canonical) canonical.href = `https://daily-deal-finder.com/product.html?id=${product.id}`;
+  if (canonical) canonical.href = `https://dailydealfinder.com/product.html?id=${product.id}`;
 
   // OG update
   document.querySelector('meta[property="og:title"]')?.setAttribute('content', product.pinterest_title || product.title);
   document.querySelector('meta[property="og:description"]')?.setAttribute('content', product.pinterest_description || product.short_description);
-  document.querySelector('meta[property="og:image"]')?.setAttribute('content', product.image ? `https://daily-deal-finder.com/${product.image}` : 'https://daily-deal-finder.com/assets/logo.png');
-  document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://daily-deal-finder.com/product.html?id=${product.id}`);
-  document.querySelector('meta[name="twitter:image"]')?.setAttribute('content', product.image ? `https://daily-deal-finder.com/${product.image}` : 'https://daily-deal-finder.com/assets/logo.png');
+  document.querySelector('meta[property="og:image"]')?.setAttribute('content', product.image ? `https://dailydealfinder.com/${product.image}` : 'https://dailydealfinder.com/assets/logo.png');
+  document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://dailydealfinder.com/product.html?id=${product.id}`);
+  document.querySelector('meta[name="twitter:image"]')?.setAttribute('content', product.image ? `https://dailydealfinder.com/${product.image}` : 'https://dailydealfinder.com/assets/logo.png');
 
   // Page render
   document.getElementById('product-page').innerHTML = `
