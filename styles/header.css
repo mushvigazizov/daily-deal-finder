@@ -1,0 +1,65 @@
+/* Daily Deal Finder — Premium Header */
+
+.site-header,
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 248, 232, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header,
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 14px min(4vw, 42px);
+}
+
+.site-header .brand,
+.nav .brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 950;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+}
+
+.site-header .brand img,
+.nav .brand img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(7, 27, 58, 0.13);
+}
+
+.site-header .brand span,
+.nav .brand span {
+  font-size: 21px;
+}
+
+.site-header nav,
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: 850;
+}
+
+.site-header nav a,
+.menu a {
+  opacity: 0.82;
+  transition: 0.2s ease;
+}
+
+.site-header nav a:hover,
+.menu a:hover {
+  opacity: 1;
+  color: var(--gold);
+}
