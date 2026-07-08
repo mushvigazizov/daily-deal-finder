@@ -39,20 +39,7 @@ function getCategorySlug() {
 }
 
 function productMatchesCategory(product, slug) {
-  const text = [
-    product.category,
-    product.title,
-    product.short_description,
-    product.long_description,
-    product.seo_title,
-    product.seo_description
-  ].join(" ").toLowerCase();
-
-  if (slug === "camping" || slug === "outdoor") {
-    return text.includes("camping") || text.includes("outdoor") || text.includes("zelt") || text.includes("wander");
-  }
-
-  return text.includes(slug);
+  return (product.category || "").toLowerCase() === slug;
 }
 
 async function loadCategoryPage() {
@@ -66,7 +53,7 @@ async function loadCategoryPage() {
   const grid = document.getElementById("product-grid");
 
   try {
-    const response = await fetch("/data/products.json?v=3");
+    const response = await fetch("/data/products.json?v=4");
     const data = await response.json();
     const products = data.products || data;
 
@@ -75,8 +62,8 @@ async function loadCategoryPage() {
     if (!filtered.length) {
       grid.innerHTML = `
         <div class="empty-state">
-          <h2>More ${info.title} ideas are coming soon.</h2>
-          <p>We are expanding this category with carefully selected product inspiration.</p>
+          <h2>${info.title} recommendations are coming soon.</h2>
+          <p>We are preparing carefully selected product ideas for this category. No unrelated products are shown here.</p>
         </div>
       `;
       return;
