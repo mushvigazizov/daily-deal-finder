@@ -3,6 +3,7 @@ import sys
 
 STEPS = [
     ("Duplicate Check", "scripts/importers/check_duplicates.py"),
+    ("AI Content Generator", "scripts/importers/generate_ai_content.py"),
     ("Quality Validator", "scripts/importers/product_quality_validator.py"),
 ]
 
