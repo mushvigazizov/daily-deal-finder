@@ -31,11 +31,13 @@ class ImageValidator:
 
     @classmethod
     def check_corruption(cls, path: str) -> bool:
-        """WebP fayl korlanmayibmi?"""
+        """Faylin PIL ile acilib oxuna bildiyini yoxla."""
         try:
-            with open(path, "rb") as f:
-                header = f.read(4)
-                return header == cls.WEBP_MAGIC
+            from PIL import Image
+            with Image.open(path) as img:
+                img.load()
+                _ = img.size
+            return True
         except Exception:
             return False
 

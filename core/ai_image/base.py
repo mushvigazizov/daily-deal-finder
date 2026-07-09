@@ -27,7 +27,7 @@ class BaseImageGenerator:
                         if line and not line.startswith("#") and "=" in line:
                             k, v = line.split("=", 1)
                             if k.strip() == "OPENAI_IMAGE_API_KEY":
-                                key = v.strip().strip(d).strip(s)
+                                key = v.strip().strip('"').strip("\'")
                                 break
         return key
 
