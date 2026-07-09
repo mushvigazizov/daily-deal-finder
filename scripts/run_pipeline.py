@@ -13,6 +13,7 @@ STEPS = [
     ("Amazon Link Audit", "scripts/reports/amazon_link_audit.py"),
     ("Project Health Check", "scripts/project_health_check.py"),
     ("Generate Premium UI", "scripts/generate_premium_ui.py"),
+    ("SEO File Generator", "scripts/generate_seo_files.py"),
     ("Pinterest Asset Generator", "scripts/pinterest/generate_pinterest_assets.py"),
 ]
 
