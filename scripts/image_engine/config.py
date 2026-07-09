@@ -1,6 +1,6 @@
 SIZES = {
     "website": (1024, 1024),
-    "pinterest": (1000, 1500),
+    "pinterest": (1024, 1536),
     "social_og": (1200, 630),
     "social_square": (1080, 1080),
 }

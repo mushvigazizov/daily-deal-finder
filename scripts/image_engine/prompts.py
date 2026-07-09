@@ -48,10 +48,22 @@ def build_website_prompt(product: dict) -> str:
 
 def build_pinterest_prompt(product: dict) -> str:
     """Pinterest Pin üçün prompt."""
+
     return (
         _base_product_prompt(product)
-        + " Vertical 2:3 Pinterest composition, attractive lifestyle setting, strong visual focus on the product, clean copy space near the top, warm natural light."
+        + "Create a premium photorealistic Pinterest image with a 2:3 vertical composition. "
+        + "The product must be the clear main subject in realistic outdoor use. "
+        + "Use natural lighting, premium lifestyle photography, realistic textures, shallow depth of field and clean composition. "
+        + "Leave subtle negative space suitable for adding text later. "
+        + "Do NOT include any text, letters, words, typography, captions, "
+        + "logos, watermarks, price tags, UI elements, badges or labels "
+        + "anywhere in the image. "
+        + "The image should look like a high-end commercial outdoor advertisement. "
+        + "The image must be visually clean, elegant and suitable for a premium Pinterest brand."
     )
+
+
+
 
 def build_social_prompt(product: dict) -> str:
     """Social media / OG üçün prompt."""
