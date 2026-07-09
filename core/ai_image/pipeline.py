@@ -8,12 +8,12 @@ from typing import Dict, List, Optional
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, ROOT)
 
-from scripts.image_engine.website import WebsiteProductGenerator
-from scripts.image_engine.pinterest import PinterestPinGenerator
-from scripts.image_engine.social import SocialMediaGenerator
-from scripts.image_engine.validator import ImageValidator
-from scripts.image_engine.optimizer import ImageOptimizer
-from scripts.image_engine.config import SIZES, PLATFORM_DIR
+from core.ai_image.website import WebsiteProductGenerator
+from core.ai_image.pinterest import PinterestPinGenerator
+from core.ai_image.social import SocialMediaGenerator
+from core.ai_image.validator import ImageValidator
+from core.ai_image.optimizer import ImageOptimizer
+from core.ai_image.config import SIZES, PLATFORM_DIR
 
 
 GENERATORS = {
