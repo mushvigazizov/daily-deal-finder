@@ -1,16 +1,17 @@
-#!/usr/bin/env python3
 import json
+#!/usr/bin/env python3
+import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
 from datetime import datetime, UTC
+from core.products import load_products
 
 ROOT = Path(__file__).resolve().parents[2]
 PRODUCTS_FILE = ROOT / "data" / "products.json"
 OUT_DIR = ROOT / "reports" / "pinterest"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
-
-def load_products():
-    data = json.loads(PRODUCTS_FILE.read_text(encoding="utf-8"))
-    return data.get("products", data)
 
 def safe(value, fallback=""):
     return str(value or fallback).strip()
