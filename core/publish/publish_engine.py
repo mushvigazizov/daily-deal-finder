@@ -9,6 +9,11 @@ from core.publish.git_layer import (
     git_commit,
     git_push,
 )
+from core.publish.report import (
+    now_iso,
+    make_step,
+    make_publish_report,
+)
 
 def publish_status():
     return {
@@ -20,29 +25,92 @@ def publish_status():
     }
 
 def run_publish(commit_message="Automatic content update"):
-    result = {
-        "started": True,
-        "has_changes": has_changes(),
-        "commit": None,
-        "push": None,
-        "deploy": None,
-    }
+    started_at = now_iso()
+    steps = []
 
-    if not result["has_changes"]:
-        result["message"] = "No changes to publish"
-        return result
+    changes = has_changes()
+
+    if not changes:
+        steps.append(
+            make_step(
+                "changes",
+                "skipped",
+                "No changes to publish",
+            )
+        )
+        return make_publish_report(started_at, steps)
+
+    steps.append(
+        make_step(
+            "changes",
+            "success",
+            "Changes detected",
+        )
+    )
 
     if AUTO_GIT_COMMIT:
-        result["commit"] = git_commit(commit_message)
+        commit_result = git_commit(commit_message)
+        commit_status = "success" if commit_result["returncode"] == 0 else "failed"
+
+        steps.append(
+            make_step(
+                "commit",
+                commit_status,
+                "Git commit completed" if commit_status == "success" else "Git commit failed",
+                commit_result,
+            )
+        )
+
+        if commit_status != "success":
+            return make_publish_report(started_at, steps)
+    else:
+        steps.append(
+            make_step(
+                "commit",
+                "skipped",
+                "Auto commit disabled",
+            )
+        )
 
     if AUTO_GIT_PUSH:
-        result["push"] = git_push()
+        push_result = git_push()
+        push_status = "success" if push_result["returncode"] == 0 else "failed"
+
+        steps.append(
+            make_step(
+                "push",
+                push_status,
+                "Git push completed" if push_status == "success" else "Git push failed",
+                push_result,
+            )
+        )
+
+        if push_status != "success":
+            return make_publish_report(started_at, steps)
+    else:
+        steps.append(
+            make_step(
+                "push",
+                "skipped",
+                "Auto push disabled",
+            )
+        )
 
     if AUTO_DEPLOY:
-        result["deploy"] = {
-            "status": "skipped",
-            "reason": "Deploy layer not implemented yet",
-        }
+        steps.append(
+            make_step(
+                "deploy",
+                "skipped",
+                "Deploy layer not implemented yet",
+            )
+        )
+    else:
+        steps.append(
+            make_step(
+                "deploy",
+                "skipped",
+                "Auto deploy disabled",
+            )
+        )
 
-    result["message"] = "Publish flow completed"
-    return result
+    return make_publish_report(started_at, steps)
