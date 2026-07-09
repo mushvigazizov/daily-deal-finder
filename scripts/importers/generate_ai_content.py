@@ -1,9 +1,7 @@
-import json
-from pathlib import Path
 from datetime import date
+from core.products import load_product_data, save_product_data
 
-path = Path("data/products.json")
-data = json.loads(path.read_text(encoding="utf-8"))
+data = load_product_data()
 products = data.get("products", data)
 
 updated = 0
@@ -18,13 +16,13 @@ def clean_title(title):
 
 def make_buying_angle(product):
     sub = product.get("subcategory", "").lower()
-    title = product.get("title", "")
+    title = product.get("title", "").lower()
 
-    if "zelt" in sub or "zelt" in title.lower():
+    if "zelt" in sub or "zelt" in title:
         return "Ideal für Camper, die ein zuverlässiges Zelt für Wochenenden, Festivals oder Familienausflüge suchen."
-    if "schlaf" in sub or "sleep" in title.lower():
+    if "schlaf" in sub or "sleep" in title:
         return "Ideal für alle, die beim Camping bequem und warm schlafen möchten."
-    if "lampe" in sub or "licht" in title.lower() or "laterne" in title.lower():
+    if "lampe" in sub or "licht" in title or "laterne" in title:
         return "Ideal für bessere Sicht am Abend, im Zelt oder rund um den Campingplatz."
     if "rucksack" in sub:
         return "Ideal für Outdoor-Fans, die Ausrüstung praktisch und bequem transportieren möchten."
@@ -33,8 +31,6 @@ def make_buying_angle(product):
 
 for product in products:
     title = clean_title(product.get("title", "Camping Produkt"))
-    brand = product.get("brand", "").strip()
-    category = product.get("category", "camping").strip()
     features = product.get("features", [])
     first_feature = features[0] if features else "praktisch für Camping und Outdoor"
 
@@ -55,7 +51,7 @@ for product in products:
 
     updated += 1
 
-path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+save_product_data(data)
 
 print(f"Products processed: {updated}")
 print("AI CONTENT GENERATION COMPLETED")

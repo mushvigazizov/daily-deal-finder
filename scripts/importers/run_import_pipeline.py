@@ -2,18 +2,18 @@ import subprocess
 import sys
 
 STEPS = [
-    ("Duplicate Check", "scripts/importers/check_duplicates.py"),
-    ("AI Content Generator", "scripts/importers/generate_ai_content.py"),
-    ("Quality Validator", "scripts/importers/product_quality_validator.py"),
+    ("Duplicate Check", ["scripts/importers/check_duplicates.py"]),
+    ("AI Content Generator", ["-m", "scripts.importers.generate_ai_content"]),
+    ("Quality Validator", ["scripts/importers/product_quality_validator.py"]),
 ]
 
 print("=" * 70)
 print("DAILY DEAL FINDER IMPORT PIPELINE")
 print("=" * 70)
 
-for name, script in STEPS:
+for name, command in STEPS:
     print(f"\n>>> {name}")
-    result = subprocess.run([sys.executable, script])
+    result = subprocess.run([sys.executable, *command])
 
     if result.returncode != 0:
         print(f"\nPipeline stopped: {name} failed.")
