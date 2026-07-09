@@ -31,8 +31,15 @@ def sync_styles():
     for page in PAGES:
         file_path = ROOT / page
         html = file_path.read_text(encoding="utf-8")
-        html = html.replace('  <link rel="stylesheet" href="/styles.css" />', STYLE_BLOCK)
+
+        if 'href="/styles/base.css"' not in html:
+            html = html.replace(
+                '  <link rel="stylesheet" href="/styles.css" />',
+                STYLE_BLOCK
+            )
+
         file_path.write_text(html, encoding="utf-8")
+
     print("Synchronized premium styles")
 
 print("Premium UI Generator Ready")
