@@ -80,7 +80,10 @@ async function loadCategoryPage() {
     grid.innerHTML = filtered.map(product => `
       <article class="product-card">
         <a href="/product.html?id=${encodeURIComponent(product.id)}">
-          <img src="/${product.image || "assets/placeholder.svg"}" alt="${product.title}" loading="lazy">
+          <div class="product-image-wrap">
+            <img src="/${product.image || "assets/placeholder.svg"}" alt="${product.title}" loading="lazy">
+            <span class="ai-visual-badge">AI Visual</span>
+          </div>
           <div class="product-card-body">
             <span class="category-tag">${product.category || ""}</span>
             <h3>${product.title}</h3>

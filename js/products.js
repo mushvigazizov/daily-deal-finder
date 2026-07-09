@@ -58,7 +58,10 @@ function renderProductGrid(products, containerId) {
     return `
     <article class="product-card">
       <a href="/product.html?id=${p.id}">
-        ${imgHtml}
+        <div class="product-image-wrap">
+      ${imgHtml}
+      <span class="ai-visual-badge">AI Visual</span>
+    </div>
       </a>
       <div class="info">
         <span class="category-tag">${p.category || ''}</span>
@@ -104,7 +107,10 @@ function renderProductPage(product) {
   document.getElementById('product-page').innerHTML = `
     <div class="product-hero">
       <section class="product-media-panel">
-        ${product.image ? `<img src="/${product.image}" alt="${product.title}" class="product-main-image">` : `<div class="product-placeholder product-placeholder-large">${product.title}</div>`}
+        <div class="product-main-image-wrap">
+          ${product.image ? `<img src="/${product.image}" alt="${product.title}" class="product-main-image">` : `<div class="product-placeholder product-placeholder-large">${product.title}</div>`}
+          <span class="ai-visual-badge ai-visual-badge-large">AI Visual</span>
+        </div>
       </section>
 
       <section class="product-info-panel">
