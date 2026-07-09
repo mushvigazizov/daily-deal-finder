@@ -1,108 +1,30 @@
-#!/usr/bin/env python3
-
-import subprocess
+import json
 import sys
-import time
-from datetime import datetime
-from reporting.report_engine import write_report
+from pathlib import Path
 
-STEPS = [
-    ("Duplicate Check", "scripts/importers/check_duplicates.py"),
-    ("AI Content Generator", "scripts/importers/generate_ai_content.py"),
-    ("Product Quality Validator", "scripts/importers/product_quality_validator.py"),
-    ("Amazon Link Audit", "scripts/reports/amazon_link_audit.py"),
-    ("Project Health Check", "scripts/project_health_check.py"),
-    ("Generate Premium UI", "scripts/generate_premium_ui.py"),
-    ("SEO File Generator", "scripts/generate_seo_files.py"),
-    ("Pinterest Asset Generator", "scripts/pinterest/generate_pinterest_assets.py"),
-]
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 
-
-def run_step(name, script):
-    print("\n" + "=" * 70)
-    print(f"RUNNING: {name}")
-    print("=" * 70)
-
-    start = time.time()
-    result = subprocess.run([sys.executable, script])
-    duration = round(time.time() - start, 2)
-
-    status = "PASS" if result.returncode == 0 else "FAIL"
-
-    return {
-        "name": name,
-        "script": script,
-        "status": status,
-        "duration": duration,
-        "returncode": result.returncode,
-    }
-
-
-def print_report(results, started_at, finished_at):
-    total_duration = round((finished_at - started_at).total_seconds(), 2)
-    failed = [r for r in results if r["status"] == "FAIL"]
-
-    print("\n" + "=" * 70)
-    print("DAILY DEAL FINDER - PIPELINE REPORT")
-    print("=" * 70)
-    print(f"Started : {started_at.strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"Finished: {finished_at.strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"Duration: {total_duration}s")
-    print("-" * 70)
-
-    for r in results:
-        icon = "✅" if r["status"] == "PASS" else "❌"
-        print(f"{icon} {r['name']:<30} {r['status']:<5} {r['duration']}s")
-
-    print("-" * 70)
-    print(f"Steps   : {len(results)}")
-    print(f"Passed  : {len(results) - len(failed)}")
-    print(f"Failed  : {len(failed)}")
-
-    if failed:
-        print("\nFAILED STEPS")
-        for r in failed:
-            print(f"- {r['name']} ({r['script']})")
-        print("\n❌ PIPELINE FAILED")
-    else:
-        print("\n🎉 PIPELINE FINISHED SUCCESSFULLY")
-
-
-def write_pipeline_report(results, started_at, finished_at):
-    report_data = {
-        "started_at": started_at.isoformat(),
-        "finished_at": finished_at.isoformat(),
-        "duration_seconds": round((finished_at - started_at).total_seconds(), 2),
-        "steps": results,
-        "passed": sum(r["status"] == "PASS" for r in results),
-        "failed": sum(r["status"] == "FAIL" for r in results),
-    }
-
-    write_report("pipeline", report_data)
-
+from core.pipeline.runner import run_pipeline
 
 def main():
-    started_at = datetime.now()
-    results = []
-
     print("=" * 70)
-    print("DAILY DEAL FINDER PRODUCTION PIPELINE")
+    print("DAILY DEAL FINDER PIPELINE")
     print("=" * 70)
 
-    for name, script in STEPS:
-        result = run_step(name, script)
-        results.append(result)
+    report = run_pipeline()
 
-        if result["returncode"] != 0:
-            break
+    for step in report["steps"]:
+        icon = "[OK]" if step["status"] == "success" else "[SKIP]" if step["status"] == "skipped" else "[FAIL]"
+        print(f"{icon} {step['name']} - {step['message']}")
 
-    finished_at = datetime.now()
-    print_report(results, started_at, finished_at)
-    write_pipeline_report(results, started_at, finished_at)
+    print("\n" + "=" * 70)
+    print("PIPELINE COMPLETED" if report["success"] else "PIPELINE FAILED")
+    print("=" * 70)
 
-    if any(r["status"] == "FAIL" for r in results):
-        sys.exit(1)
+    print(json.dumps(report, indent=2))
 
+    return 0 if report["success"] else 1
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
