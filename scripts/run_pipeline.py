@@ -4,6 +4,7 @@ import subprocess
 import sys
 import time
 from datetime import datetime
+from reporting.report_engine import write_report
 
 STEPS = [
     ("Duplicate Check", "scripts/importers/check_duplicates.py"),
@@ -65,6 +66,19 @@ def print_report(results, started_at, finished_at):
         print("\n🎉 PIPELINE FINISHED SUCCESSFULLY")
 
 
+def write_pipeline_report(results, started_at, finished_at):
+    report_data = {
+        "started_at": started_at.isoformat(),
+        "finished_at": finished_at.isoformat(),
+        "duration_seconds": round((finished_at - started_at).total_seconds(), 2),
+        "steps": results,
+        "passed": sum(r["status"] == "PASS" for r in results),
+        "failed": sum(r["status"] == "FAIL" for r in results),
+    }
+
+    write_report("pipeline", report_data)
+
+
 def main():
     started_at = datetime.now()
     results = []
@@ -82,6 +96,7 @@ def main():
 
     finished_at = datetime.now()
     print_report(results, started_at, finished_at)
+    write_pipeline_report(results, started_at, finished_at)
 
     if any(r["status"] == "FAIL" for r in results):
         sys.exit(1)
