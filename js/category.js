@@ -4,32 +4,32 @@ const CATEGORY_INFO = {
     description: "Outdoor essentials, tents, hiking and adventure gear."
   },
   home: {
-    title: "Home",
+    title: "Home & Garden",
     description: "Functional home essentials, organizers, and everyday helpers."
   },
   kitchen: {
-    title: "Kitchen",
+    title: "Kitchen & Dining",
     description: "Useful kitchen tools, smart accessories, and cooking inspiration."
   },
-  tech: {
-    title: "Tech",
-    description: "Gadgets, accessories, and simple technology for daily life."
+  electronics: {
+    title: "Electronics & Gadgets",
+    description: "Electronics, gadgets, accessories, and useful tech finds."
   },
-  beauty: {
-    title: "Beauty",
-    description: "Beauty finds, self-care ideas, and practical lifestyle products."
+  fitness: {
+    title: "Fitness & Sports",
+    description: "Fitness gear, sports accessories, and active lifestyle products."
   },
-  outdoor: {
-    title: "Outdoor",
-    description: "Camping, travel, garden, and outdoor product ideas."
+  travel: {
+    title: "Travel Gear",
+    description: "Travel gear, packing helpers, and practical trip accessories."
   },
   pets: {
-    title: "Pets",
+    title: "Pet Supplies",
     description: "Helpful product inspiration for pets and pet owners."
   },
-  gifts: {
-    title: "Gifts",
-    description: "Seasonal gift guides and simple ideas for different occasions."
+  lifestyle: {
+    title: "Lifestyle",
+    description: "Lifestyle finds, useful everyday ideas, and smart inspiration."
   }
 };
 
@@ -47,17 +47,25 @@ async function loadCategoryPage() {
   const info = CATEGORY_INFO[slug] || CATEGORY_INFO.camping;
 
   document.title = `${info.title} | Daily Deal Finder`;
-  document.getElementById("category-title").textContent = info.title;
-  document.getElementById("category-description").textContent = info.description;
 
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.content = info.description;
+
+  const titleEl = document.getElementById("category-title");
+  const descEl = document.getElementById("category-description");
   const grid = document.getElementById("product-grid");
 
+  if (titleEl) titleEl.textContent = info.title;
+  if (descEl) descEl.textContent = info.description;
+
   try {
-    const response = await fetch("/data/products.json?v=4");
+    const response = await fetch("/data/products.json?v=5");
     const data = await response.json();
     const products = data.products || data;
 
-    const filtered = products.filter(product => productMatchesCategory(product, slug));
+    const filtered = products.filter(product =>
+      product.active !== false && productMatchesCategory(product, slug)
+    );
 
     if (!filtered.length) {
       grid.innerHTML = `
@@ -72,8 +80,9 @@ async function loadCategoryPage() {
     grid.innerHTML = filtered.map(product => `
       <article class="product-card">
         <a href="/product.html?id=${encodeURIComponent(product.id)}">
-          <img src="/${product.image || "assets/placeholder.svg"}" alt="${product.title}">
+          <img src="/${product.image || "assets/placeholder.svg"}" alt="${product.title}" loading="lazy">
           <div class="product-card-body">
+            <span class="category-tag">${product.category || ""}</span>
             <h3>${product.title}</h3>
             <p>${product.short_description || ""}</p>
           </div>
