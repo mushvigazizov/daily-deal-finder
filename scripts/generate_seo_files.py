@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-import json
+import sys
 from pathlib import Path
-from datetime import datetime, UTC
-from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
-PRODUCTS_FILE = ROOT / "data" / "products.json"
+sys.path.insert(0, str(ROOT))
+from datetime import datetime, UTC
+from xml.sax.saxutils import escape
+from core.products import load_products
 
+ROOT = Path(__file__).resolve().parents[1]
 SITE_URL = "https://daily-deal-finder.com"
 
 STATIC_PAGES = [
@@ -18,10 +20,6 @@ STATIC_PAGES = [
     "impressum.html",
     "affiliate-disclosure.html",
 ]
-
-def load_products():
-    data = json.loads(PRODUCTS_FILE.read_text(encoding="utf-8"))
-    return data.get("products", data)
 
 def iso_now():
     return datetime.now(UTC).date().isoformat()
