@@ -23,6 +23,22 @@ def main():
     categories = load_json(CATEGORIES_PATH)
     official_categories = {c["slug"] for c in categories}
 
+    product_keys = [set(p.keys()) for p in products]
+    expected_keys = set(product_keys[0]) if product_keys else set()
+    inconsistent_fields = []
+
+    for product in products:
+        keys = set(product.keys())
+        if keys != expected_keys:
+            inconsistent_fields.append({
+                "id": product.get("id", "UNKNOWN"),
+                "missing": sorted(expected_keys - keys),
+                "extra": sorted(keys - expected_keys),
+            })
+
+    if inconsistent_fields:
+        warnings.append(f"Products with inconsistent fields: {inconsistent_fields}")
+
     ids = [p.get("id") for p in products]
     duplicate_ids = [item for item, count in Counter(ids).items() if count > 1]
 
@@ -80,6 +96,7 @@ def main():
     print("-" * 70)
     print(f"Products checked       : {len(products)}")
     print(f"Official categories    : {len(official_categories)}")
+    print(f"Field consistency      : {'OK' if not inconsistent_fields else 'WARN'}")
     print(f"Duplicate IDs          : {len(duplicate_ids)}")
     print(f"Invalid categories     : {len(invalid_categories)}")
     print(f"Missing image files    : {len(missing_images)}")
