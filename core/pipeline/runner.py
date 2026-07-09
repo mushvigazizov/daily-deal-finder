@@ -11,6 +11,7 @@ from core.pipeline.report import (
 PIPELINE_STEPS = [
     ("duplicate_check", "Duplicate Check", ["scripts/importers/check_duplicates.py"]),
     ("ai_content", "AI Content Generator", ["-m", "scripts.importers.generate_ai_content"]),
+    ("ai_images", "AI Image Generator", ["scripts/importers/generate_ai_images.py"]),
     ("quality_validator", "Quality Validator", ["scripts/importers/product_quality_validator.py"]),
 ]
 
