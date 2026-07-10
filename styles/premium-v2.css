@@ -644,3 +644,43 @@ body {
     font-size: 1rem;
   }
 }
+
+/* ===== Category page readability ===== */
+
+.category-hero h1,
+.page-title,
+.category-title {
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.1;
+}
+
+.category-hero p,
+.category-description,
+.page-description {
+    font-size: 1.22rem;
+    line-height: 1.8;
+    color: #dce6f3;
+}
+
+.category-hero .eyebrow,
+.category-hero .kicker {
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--v2-gold);
+}
+
+.empty-state h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.empty-state p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #dce6f3;
+}
