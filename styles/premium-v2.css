@@ -521,3 +521,126 @@ body {
   }
 
 }
+
+/* ===== Homepage readability upgrade ===== */
+
+/* Logo and brand name */
+.site-header .brand img,
+.nav .brand img {
+  width: 78px;
+  height: 78px;
+  flex: 0 0 78px;
+}
+
+.site-header .brand span,
+.nav .brand span {
+  color: #ffffff;
+  font-size: 2.05rem;
+  font-weight: 950;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+/* Header navigation: Home through Contact */
+.site-header nav,
+.menu {
+  gap: clamp(20px, 2.2vw, 34px);
+}
+
+.site-header nav a,
+.menu a {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 1.16rem;
+  font-weight: 850;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+/* Right-side homepage category tiles */
+.mockup .grid-products {
+  gap: 14px;
+}
+
+.mockup .mini {
+  min-height: 142px;
+  padding: 22px;
+  color: #ffffff;
+}
+
+.mockup .mini {
+  font-size: 1.75rem;
+}
+
+.mockup .mini strong {
+  display: block;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 1.48rem;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.mockup .mini p {
+  margin: 8px 0 0;
+  color: #e5edf8;
+  font-size: 1.04rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Featured category cards below */
+.cards .card h3 {
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.cards .card p {
+  color: #dce6f3;
+  font-size: 1.03rem;
+  line-height: 1.6;
+}
+
+.cards .card .icon {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+}
+
+/* Keep header usable on smaller screens */
+@media (max-width: 980px) {
+  .site-header .brand img,
+  .nav .brand img {
+    width: 64px;
+    height: 64px;
+    flex-basis: 64px;
+  }
+
+  .site-header .brand span,
+  .nav .brand span {
+    font-size: 1.7rem;
+  }
+
+  .site-header nav a,
+  .menu a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .mockup .mini {
+    min-height: 126px;
+    padding: 18px;
+  }
+
+  .mockup .mini strong {
+    font-size: 1.3rem;
+  }
+
+  .mockup .mini p {
+    font-size: 1rem;
+  }
+}
