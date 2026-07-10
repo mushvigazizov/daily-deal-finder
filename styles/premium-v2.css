@@ -684,3 +684,71 @@ body {
     line-height: 1.7;
     color: #dce6f3;
 }
+
+/* ===== Category page exact typography ===== */
+
+main.container > .hero {
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+main.container > .hero .eyebrow {
+  margin-bottom: 14px;
+  color: var(--v2-gold);
+  font-size: 1.08rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+#category-title {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: clamp(3.2rem, 6vw, 5.4rem);
+  font-weight: 950;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+#category-description {
+  max-width: 860px;
+  margin: 0;
+  color: #e1eaf6;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+#product-grid .empty-state {
+  padding: 38px 0 70px;
+}
+
+#product-grid .empty-state h2 {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 900;
+  line-height: 1.18;
+}
+
+#product-grid .empty-state p {
+  max-width: 760px;
+  margin: 0;
+  color: #dce6f3;
+  font-size: 1.18rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 620px) {
+  main.container > .hero {
+    padding-top: 48px;
+  }
+
+  #category-title {
+    font-size: 2.8rem;
+  }
+
+  #category-description {
+    font-size: 1.12rem;
+  }
+}
