@@ -40,10 +40,16 @@ def _base_product_prompt(product: dict) -> str:
     )
 
 def build_website_prompt(product: dict) -> str:
-    """Website məhsul kartı üçün prompt."""
+    """Website məhsul kartı üçün premium editorial prompt."""
     return (
         _base_product_prompt(product)
-        + " Horizontal website product card composition, product centered and clearly visible, natural light, clean background, premium outdoor e-commerce style."
+        + " Create a premium editorial hero image for a modern affiliate shopping website. "
+        + "The image should feel like high-end outdoor magazine photography, not a plain catalog photo. "
+        + "Use cinematic natural light, realistic textures, warm atmosphere, depth of field, and a clean premium composition. "
+        + "Show the product in a believable real-life use scene with environment and context, while keeping the product clearly visible as the main subject. "
+        + "Avoid flat studio backgrounds. Avoid generic stock-photo look. Avoid clutter. "
+        + "No people faces, no text, no logos, no watermark, no price labels. "
+        + "Square 1024x1024 composition suitable for a premium product card."
     )
 
 def build_pinterest_prompt(product: dict) -> str:

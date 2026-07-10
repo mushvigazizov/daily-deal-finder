@@ -27,7 +27,7 @@
       "featured": true,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "zelt",
         "wasserdicht",
@@ -70,7 +70,7 @@
       "featured": true,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "familienzelt",
         "4-personen",
@@ -113,7 +113,7 @@
       "featured": true,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "wurfzelt",
         "pop-up",
@@ -155,7 +155,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "schlafsack",
         "3-jahreszeiten",
@@ -196,7 +196,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "schlafsack",
         "ultraleicht",
@@ -215,22 +215,22 @@
     {
       "id": "camp-006",
       "sku": "DDF-CAMP-006",
-      "title": "PETZL LED Stirnlampe — 300 Lumen, wiederaufladbar",
+      "title": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, wiederaufladbar",
       "brand": "PETZL",
       "category": "camping",
       "subcategory": "lampen",
-      "short_description": "Professionelle Stirnlampe mit 300 Lumen Leuchtkraft. Wiederaufladbar über USB, wasserdicht IPX4 und mit Rotlicht-Modus.",
-      "long_description": "Die PETZL Stirnlampe liefert beeindruckende 300 Lumen und macht die Nacht zum Tag. Sie ist wiederaufladbar per USB-C und bietet mehrere Leuchtmodi inklusive Rotlicht für den Nachtsicht-Erhalt. Mit IPX4 Wasserschutz auch bei Regen einsetzbar. Das leichte Design und das elastische Kopfband sorgen für hohen Tragekomfort.",
+      "short_description": "Kompakte und wiederaufladbare PETZL TIKKA CORE Stirnlampe mit 450 Lumen, Rotlicht und mehreren Leuchtstufen.",
+      "long_description": "Die PETZL TIKKA CORE ist eine kompakte, leichte und wiederaufladbare Stirnlampe mit bis zu 450 Lumen. Der breite, gleichmäßige Lichtkegel eignet sich für Camping, Wandern und Arbeiten im Nahbereich. Drei Weißlichtstufen sowie ein Rotlicht-Modus ermöglichen eine flexible Nutzung bei Nacht.",
       "features": [
-        "300 Lumen Leuchtkraft",
-        "USB-C wiederaufladbar",
-        "Wasserdicht IPX4",
+        "450 Lumen Leuchtkraft",
+        "Wiederaufladbarer CORE-Akku",
+        "Drei Weißlichtstufen",
         "Rotlicht-Modus",
-        "Leicht & komfortabel"
+        "Kompakt & leicht"
       ],
       "image": "assets/products/camp-006.webp",
       "gallery": [],
-      "amazon_asin": "s?k=PETZL%20LED%20Stirnlampe%20%E2%80%94%20300",
+      "amazon_asin": "B0FDLYVN3R",
       "button_text": "Auf Amazon ansehen",
       "availability": null,
       "rating": null,
@@ -238,7 +238,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "stirnlampe",
         "petzl",
@@ -246,14 +246,19 @@
         "wiederaufladbar",
         "outdoor"
       ],
-      "seo_title": "PETZL LED Stirnlampe - 300 Lumen, wiederaufladbar Test 2026 | Camping & Outdoor Empfehlung",
-      "seo_description": "PETZL LED Stirnlampe - 300 Lumen, wiederaufladbar von PETZL im Überblick: 300 Lumen Leuchtkraft, USB-C wiederaufladbar, Wasserdicht IPX4. Eine praktische Option für alle, die passende Ausrüstung für lampen und Outdoor-Aktivitäten suchen.",
-      "pinterest_title": "PETZL LED Stirnlampe - 300 Lumen, wiederaufladbar für Camping 🏕️",
-      "pinterest_description": "PETZL LED Stirnlampe - 300 Lumen, wiederaufladbar von PETZL: eine nützliche Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "amazon_link_type": "search",
-      "buying_angle": "Besonders interessant für Camper, die bei lampen auf praktische Eigenschaften achten: 300 Lumen Leuchtkraft, USB-C wiederaufladbar, Wasserdicht IPX4.",
-      "content_status": "ai_engine_generated",
-      "content_engine": "local_v1"
+      "seo_title": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, wiederaufladbar Test 2026 | Camping & Outdoor Empfehlung",
+      "seo_description": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, wiederaufladbar von PETZL im Überblick: 450 Lumen Leuchtkraft, Wiederaufladbarer CORE-Akku, Drei Weißlichtstufen...",
+      "pinterest_title": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, wiederaufladbar für Camping 🏕️",
+      "pinterest_description": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, wiederaufladbar von PETZL: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "amazon_link_type": "product",
+      "buying_angle": "Interessant für Käufer, die bei lampen besonders auf folgende Eigenschaften achten: 450 Lumen Leuchtkraft, Wiederaufladbarer CORE-Akku, Drei Weißlichtstufen.",
+      "content_status": "verified_product_refreshed",
+      "content_engine": "product_refresh_v1",
+      "verified_amazon_url": "https://www.amazon.de/dp/B0FDLYVN3R",
+      "amazon_url": "https://www.amazon.de/dp/B0FDLYVN3R",
+      "asin_verified": true,
+      "asin_verified_at": "2026-07-10T14:44:28",
+      "content_refreshed_at": "2026-07-10T17:09:54"
     },
     {
       "id": "camp-007",
@@ -281,7 +286,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "laterne",
         "led",
@@ -324,7 +329,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "rucksack",
         "wandern",
@@ -367,7 +372,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "rucksack",
         "trekking",
@@ -410,7 +415,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "klappstuhl",
         "camping",
@@ -453,7 +458,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "klapptisch",
         "camping",
@@ -496,7 +501,7 @@
       "featured": true,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "gaskocher",
         "2-flammig",
@@ -539,7 +544,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "kochset",
         "camping",
@@ -582,7 +587,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "kühlbox",
         "elektrisch",
@@ -625,7 +630,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "erste-hilfe",
         "outdoor",
@@ -668,7 +673,7 @@
       "featured": true,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "wasserfilter",
         "lifestraw",
@@ -711,7 +716,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "regenjacke",
         "wasserdicht",
@@ -754,7 +759,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "unterwäsche",
         "thermo",
@@ -797,7 +802,7 @@
       "featured": true,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "multitool",
         "victorinox",
@@ -840,7 +845,7 @@
       "featured": false,
       "active": true,
       "created_at": "2026-07-06",
-      "updated_at": "2026-07-09",
+      "updated_at": "2026-07-10",
       "tags": [
         "paracord",
         "seil",

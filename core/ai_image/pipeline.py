@@ -62,24 +62,71 @@ class ImagePipeline:
 
         out = self._output_path(product_id)
 
-        # Step 1: Generate
+        generated_req = {
+            "min_size": 1024,
+            "expected_dimensions": self.expected_size,
+        }
+
+        existing_req = {
+            "min_size": 1024,
+        }
+
+        # Step 0: Reuse an existing healthy image.
+        # Existing website assets may be larger than the generator target,
+        # for example 1200x1200 instead of 1024x1024.
+        if os.path.isfile(out):
+            existing_validation = self.validator.validate(
+                out,
+                existing_req,
+            )
+
+            if existing_validation.get("all_ok"):
+                result["steps"]["generate"] = {
+                    "ok": True,
+                    "path": out,
+                    "skipped": True,
+                    "reason": "existing_valid_image",
+                }
+                result["steps"]["validate"] = existing_validation
+                result["steps"]["optimize"] = {
+                    "ok": True,
+                    "path": out,
+                    "skipped": True,
+                }
+                result["steps"]["status"] = "SKIPPED_EXISTING"
+                return result
+
+        # Step 1: Generate only when no healthy image exists.
         prompt = self.generator.build_prompt(product)
         ok = self.generator.generate(prompt, out)
-        result["steps"]["generate"] = {"ok": ok, "path": out if ok else None}
+        result["steps"]["generate"] = {
+            "ok": ok,
+            "path": out if ok else None,
+            "skipped": False,
+        }
+
         if not ok:
+            result["steps"]["status"] = "GENERATION_FAILED"
             return result
 
         # Step 2: Validate
-        req = {"min_size": 1024, "expected_dimensions": self.expected_size}
-        validation = self.validator.validate(out, req)
+        validation = self.validator.validate(
+            out,
+            generated_req,
+        )
         result["steps"]["validate"] = validation
+
         if not validation.get("all_ok"):
             result["steps"]["status"] = "VALIDATION_FAILED"
             return result
 
         # Step 3: Optimize
         optimized = self.optimizer.optimize(out, out, quality=85)
-        result["steps"]["optimize"] = {"ok": optimized is not None, "path": optimized}
+        result["steps"]["optimize"] = {
+            "ok": optimized is not None,
+            "path": optimized,
+            "skipped": False,
+        }
 
         result["steps"]["status"] = "DONE"
         return result
@@ -116,17 +163,55 @@ class ImagePipeline:
     def generate_report(results: List[Dict]) -> Dict:
         """Batch neticelerinden hesabat cixar."""
         total = len(results)
-        generated = sum(1 for r in results if r.get("steps", {}).get("generate", {}).get("ok"))
-        validated = sum(1 for r in results if r.get("steps", {}).get("validate", {}).get("all_ok"))
-        optimized = sum(1 for r in results if r.get("steps", {}).get("optimize", {}).get("ok"))
-        done = sum(1 for r in results if r.get("steps", {}).get("status") == "DONE")
+
+        generated = sum(
+            1
+            for r in results
+            if r.get("steps", {}).get("generate", {}).get("ok")
+            and not r.get("steps", {}).get("generate", {}).get("skipped")
+        )
+
+        skipped_existing = sum(
+            1
+            for r in results
+            if r.get("steps", {}).get("status") == "SKIPPED_EXISTING"
+        )
+
+        validated = sum(
+            1
+            for r in results
+            if r.get("steps", {}).get("validate", {}).get("all_ok")
+        )
+
+        optimized = sum(
+            1
+            for r in results
+            if r.get("steps", {}).get("optimize", {}).get("ok")
+            and not r.get("steps", {}).get("optimize", {}).get("skipped")
+        )
+
+        complete = sum(
+            1
+            for r in results
+            if r.get("steps", {}).get("status")
+            in {"DONE", "SKIPPED_EXISTING"}
+        )
+
+        failed = total - complete
 
         return {
             "total": total,
             "generated": generated,
+            "skipped_existing": skipped_existing,
             "validated": validated,
             "optimized": optimized,
-            "complete": done,
-            "success_rate": round(done / total * 100, 1) if total else 0,
-            "errors": [r for r in results if "error" in r],
+            "complete": complete,
+            "failed": failed,
+            "success_rate": round(complete / total * 100, 1) if total else 0,
+            "errors": [
+                r
+                for r in results
+                if r.get("steps", {}).get("status")
+                not in {"DONE", "SKIPPED_EXISTING"}
+            ],
         }
