@@ -465,3 +465,59 @@ body {
     font-size: 1rem;
   }
 }
+
+/* ===== Premium Header Upgrade ===== */
+
+.site-header,
+.topbar {
+  padding: 18px 42px;
+}
+
+.site-header .brand,
+.nav .brand {
+  gap: 18px;
+}
+
+.site-header .brand img,
+.nav .brand img {
+  width: 72px;
+  height: 72px;
+}
+
+.site-header .brand span,
+.nav .brand span {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.site-header nav,
+.menu {
+  gap: 32px;
+}
+
+.site-header nav a,
+.menu a {
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+@media (max-width:768px){
+
+  .site-header .brand img,
+  .nav .brand img{
+      width:58px;
+      height:58px;
+  }
+
+  .site-header .brand span,
+  .nav .brand span{
+      font-size:1.55rem;
+  }
+
+  .site-header nav,
+  .menu{
+      gap:18px;
+  }
+
+}
