@@ -7,3 +7,6 @@ reports/
 
 .DS_Store
 .env
+
+backups/
+*.test-backup
