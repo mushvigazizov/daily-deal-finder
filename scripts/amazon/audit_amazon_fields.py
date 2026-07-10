@@ -1,11 +1,14 @@
 import json
-import re
 from pathlib import Path
-from urllib.parse import urlparse, parse_qs
+
+from scripts.amazon.asin_utils import (
+    extract_asin_from_url,
+    is_amazon_url,
+    is_valid_asin,
+)
 
 
 PRODUCTS_PATH = Path("data/products.json")
-ASIN_PATTERN = re.compile(r"^[A-Z0-9]{10}$")
 
 
 def load_products():
@@ -16,30 +19,44 @@ def load_products():
 def classify_product(product):
     product_id = product.get("id", "unknown")
     asin = str(product.get("amazon_asin") or "").strip()
-    link_type = str(product.get("amazon_link_type") or "").strip()
+    link_type = str(product.get("amazon_link_type") or "").strip().lower()
     verified_url = str(product.get("verified_amazon_url") or "").strip()
 
     problems = []
 
-    if asin:
-        if asin.startswith("s?") or "s?k=" in asin:
-            problems.append("amazon_asin contains a search query instead of an ASIN")
-        elif not ASIN_PATTERN.fullmatch(asin):
-            problems.append("amazon_asin is not a valid 10-character ASIN")
-    else:
+    if not asin:
         problems.append("amazon_asin is empty")
+    elif not is_valid_asin(asin):
+        if asin.startswith("s?") or "s?k=" in asin:
+            problems.append(
+                "amazon_asin contains a search query instead of an ASIN"
+            )
+        else:
+            problems.append(
+                "amazon_asin is not a valid 10-character ASIN"
+            )
 
     if link_type == "product" and not verified_url:
-        problems.append("product link type has no verified_amazon_url")
+        problems.append(
+            "product link type has no verified_amazon_url"
+        )
 
     if verified_url:
-        parsed = urlparse(verified_url)
+        if not is_amazon_url(verified_url):
+            problems.append(
+                "verified_amazon_url is not an Amazon.de URL"
+            )
+        else:
+            url_asin = extract_asin_from_url(verified_url)
 
-        if "amazon." not in parsed.netloc.lower():
-            problems.append("verified_amazon_url is not an Amazon URL")
-
-        # Affiliate tag ayrıca mərhələdə yoxlanacaq.
-        # Hazırda canonical Amazon product URL etibarlı sayılır.
+            if not url_asin:
+                problems.append(
+                    "verified_amazon_url is not a recognizable product URL"
+                )
+            elif is_valid_asin(asin) and url_asin != asin.upper():
+                problems.append(
+                    "amazon_asin does not match verified_amazon_url"
+                )
 
     return product_id, problems
 
