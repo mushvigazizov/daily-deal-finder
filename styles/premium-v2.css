@@ -805,3 +805,71 @@ main.container > .hero .eyebrow {
     justify-self: stretch;
   }
 }
+
+/* ===== Homepage product card structure fix ===== */
+
+.home-page .product-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.home-page .product-card > a {
+  display: block;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.home-page .product-card .info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 22px 22px 24px;
+  color: #ffffff;
+}
+
+.home-page .product-card .info .category-tag {
+  align-self: flex-start;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(245, 185, 66, 0.14);
+  color: var(--v2-gold-soft);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.home-page .product-card .info h3 {
+  margin: 0 0 12px;
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
+  font-weight: 900;
+  line-height: 1.22;
+  letter-spacing: -0.025em;
+}
+
+.home-page .product-card .info h3 a {
+  color: #ffffff;
+}
+
+.home-page .product-card .info p {
+  margin: 0 0 20px;
+  color: #dce6f3;
+  font-size: 1.03rem;
+  line-height: 1.65;
+}
+
+.home-page .product-card .info .button {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.home-page .product-card .info .ad-badge {
+  display: block;
+  margin-top: 12px;
+  color: var(--v2-muted);
+  font-size: 0.78rem;
+}
