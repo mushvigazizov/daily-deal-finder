@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "impressum": "Impressum",
+    "affiliate": "Affiliate-Hinweis",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "eyebrow": "KI-gestützte Recherche • Redaktionelle Sorgfalt • Besser einkaufen",
+    "title": "Entdecke Produkte, die sich wirklich lohnen.",
+    "description": "Sorgfältig ausgewählte Produktempfehlungen und praktische Ideen, die dir helfen, sicherer und bewusster einzukaufen.",
+    "primary_button": "Heutige Empfehlungen",
+    "secondary_button": "So wählen wir Produkte aus"
+  }
+}

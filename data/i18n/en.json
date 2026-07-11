@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "impressum": "Impressum",
+    "affiliate": "Affiliate",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "AI-assisted research • Editorial care • Smarter shopping",
+    "title": "Discover products worth buying.",
+    "description": "Thoughtful product discovery, carefully organized recommendations, and practical ideas designed to help you shop with more confidence.",
+    "primary_button": "Explore Today’s Picks",
+    "secondary_button": "How We Select Products"
+  }
+}

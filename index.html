@@ -33,13 +33,19 @@
       </a>
       <nav class="menu">
         <a href="/">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms</a>
-        <a href="/impressum.html">Impressum</a>
-        <a href="/affiliate-disclosure.html">Affiliate</a>
-        <a href="/contact.html">Contact</a>
+        <a href="/about.html" data-i18n="nav.about">About</a>
+        <a href="/privacy.html" data-i18n="nav.privacy">Privacy Policy</a>
+        <a href="/terms.html" data-i18n="nav.terms">Terms</a>
+        <a href="/impressum.html" data-i18n="nav.impressum">Impressum</a>
+        <a href="/affiliate-disclosure.html" data-i18n="nav.affiliate">Affiliate</a>
+        <a href="/contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
+        <div class="language-switcher" aria-label="Language selector">
+          <a href="?lang=en" data-language="en">EN</a>
+          <a href="?lang=de" data-language="de">DE</a>
+          <a href="?lang=ru" data-language="ru">RU</a>
+        </div>
+
     </div>
   </header>
 
@@ -48,9 +54,9 @@
       <div class="container hero-grid">
         <div>
           <div class="eyebrow">AI-assisted research • editorial care • smarter shopping</div>
-          <h1>Discover products worth buying.</h1>
+          <h1 data-i18n="hero.title">Discover products worth buying.</h1>
           <p class="lead">Thoughtful product discovery, carefully organized recommendations, and practical ideas designed to help you shop with more confidence.</p>
-          <div class="actions"><a class="btn primary" href="#products">Explore Today’s Picks</a><a class="btn secondary" href="/how-we-select-products.html">How We Select Products</a></div>
+          <div class="actions"><a class="btn primary" href="#products" data-i18n="hero.primary_button">Explore Today’s Picks</a><a class="btn secondary" href="/how-we-select-products.html" data-i18n="hero.secondary_button">How We Select Products</a></div>
           <div class="trust"><span>Curated daily</span><span>Transparent recommendations</span><span>Built for smart shoppers</span></div>
         </div>
         <div class="mockup">
@@ -123,17 +129,17 @@
         </div>
         <nav>
 
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms</a>
+        <a href="/about.html" data-i18n="nav.about">About</a>
+        <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+        <a href="/privacy.html" data-i18n="nav.privacy">Privacy Policy</a>
+        <a href="/terms.html" data-i18n="nav.terms">Terms</a>
         <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
         <a href="/editorial-policy.html">Editorial Policy</a>
         <a href="/how-we-select-products.html">How We Select Products</a>
         <a href="/ai-content-disclosure.html">AI & Content Disclosure</a>
         <a href="/pinterest-integration.html">Pinterest Integration</a>
         <a href="/our-mission.html">Our Mission</a>
-        <a href="/impressum.html">Impressum</a>
+        <a href="/impressum.html" data-i18n="nav.impressum">Impressum</a>
 
         </nav>
       </div>
@@ -144,5 +150,6 @@
 
   <script src="/js/products.js?v=3"></script>
   <script>initHomePage();</script>
+  <script src="/js/i18n.js" defer></script>
 </body>
 </html>
