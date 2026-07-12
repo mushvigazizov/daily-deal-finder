@@ -1,15 +1,19 @@
 {
   "id": "camp-006",
   "language": "ru",
-  "seo_title": "PETZL TIKKA CORE — фонарь на лбу, 450 Лм, перезаряжаемый",
-  "meta_description": "Фонарь на лбу PETZL TIKKA CORE — 450 Лм, перезаряжаемый, с тремя режимами белого света.",
-  "alt_text": "Фонарь на лбу PETZL TIKKA CORE — 450 Лм, перезаряжаемый",
-  "pinterest_title": "PETZL TIKKA CORE — фонарь на лбу, 450 Лм для кемпинга 🏕️",
-  "pinterest_description": "Фонарь на лбу PETZL TIKKA CORE — 450 Лм, перезаряжаемый: отличное решение для кемпинга, активного отдыха и выходных. Запомни эту находку для следующего путешествия!",
+  "seo_title": "PETZL TIKKA CORE Фонарь — 450 Лумен, перезаряжаемый",
+  "meta_description": "Фонарь PETZL TIKKA CORE — 450 Лумен, перезаряжаемый, с тремя режимами белого света.",
+  "alt_text": "Фонарь PETZL TIKKA CORE — 450 Лумен, перезаряжаемый",
+  "pinterest_title": "Фонарь PETZL TIKKA CORE — 450 Лумен, перезаряжаемый для кемпинга 🏕️",
+  "pinterest_description": "Фонарь PETZL TIKKA CORE — 450 Лумен, перезаряжаемый: отличное решение для кемпинга, активного отдыха и выходных. Сохрани этот товар для своей следующей поездки.",
   "hashtags": [
     "#кемпинг",
     "#активныйотдых",
-    "#снаряжениедлякемпинга"
+    "#кемпинговоеоборудование"
   ],
-  "source": "localized_from_de_v1"
+  "source": "localized_from_de_v2",
+  "source_language": "de",
+  "source_hash": "b70e67efef17a88dfaeb59f72712fb468e59f422763b837aace71c93ec29500a",
+  "generated_at": "2026-07-12T11:24:46Z",
+  "content_engine": "openai_localization_v2"
 }

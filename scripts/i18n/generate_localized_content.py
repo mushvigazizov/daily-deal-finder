@@ -1,9 +1,11 @@
 import argparse
 import json
 from pathlib import Path
+from datetime import datetime, timezone
 
 from core.i18n.german_content_builder import build_german_content
 from core.i18n.localization_openai import generate_localized_content
+from core.i18n.content_hash import build_source_hash
 
 
 PRODUCTS_PATH = Path("data/products.json")
@@ -85,6 +87,8 @@ def generate_product(product, write=False, force=False):
         }
 
     targets = existing_language_files(product_id)
+    master_content = build_german_content(product)
+    source_hash = build_source_hash(master_content)
 
     if not force:
         existing = [
@@ -94,27 +98,64 @@ def generate_product(product, write=False, force=False):
         ]
 
         if len(existing) == len(TARGET_LANGUAGES):
+            stored_hashes = {}
+
+            for language, target in targets.items():
+                try:
+                    current_content = json.loads(
+                        target.read_text(encoding="utf-8")
+                    )
+                    stored_hashes[language] = current_content.get(
+                        "source_hash"
+                    )
+                except (OSError, json.JSONDecodeError):
+                    stored_hashes[language] = None
+
+            hashes_current = all(
+                stored_hashes.get(language) == source_hash
+                for language in TARGET_LANGUAGES
+            )
+
+            if hashes_current:
+                print("-" * 76)
+                print(f"PRODUCT {product_id}")
+                print("-" * 76)
+
+                for language in TARGET_LANGUAGES:
+                    print(
+                        f"SKIPPED {product_id}.{language} "
+                        "(source hash unchanged)"
+                    )
+
+                print()
+
+                return {
+                    "product_id": product_id,
+                    "passed": len(TARGET_LANGUAGES),
+                    "failed": 0,
+                    "changed": 0,
+                    "unchanged": 0,
+                    "written": 0,
+                    "skipped": len(TARGET_LANGUAGES),
+                    "errors": [],
+                }
+
             print("-" * 76)
             print(f"PRODUCT {product_id}")
             print("-" * 76)
+            print("STALE LOCALIZATION DETECTED")
+            print(f"Current source hash: {source_hash}")
 
             for language in TARGET_LANGUAGES:
-                print(f"SKIPPED {product_id}.{language} (already exists)")
+                print(
+                    f"{language}: stored hash="
+                    f"{stored_hashes.get(language)!r}"
+                )
 
+            print("Regenerating both localized files.")
             print()
 
-            return {
-                "product_id": product_id,
-                "passed": len(TARGET_LANGUAGES),
-                "failed": 0,
-                "changed": 0,
-                "unchanged": 0,
-                "written": 0,
-                "skipped": len(TARGET_LANGUAGES),
-                "errors": [],
-            }
-
-        if existing:
+        if existing and len(existing) != len(TARGET_LANGUAGES):
             missing = [
                 language
                 for language in TARGET_LANGUAGES
@@ -151,7 +192,9 @@ def generate_product(product, write=False, force=False):
                 ],
             }
 
-    master_content = build_german_content(product)
+    generated_at = datetime.now(timezone.utc).isoformat(
+        timespec="seconds"
+    ).replace("+00:00", "Z")
     generated = {}
     errors = []
 
@@ -165,6 +208,13 @@ def generate_product(product, write=False, force=False):
                 master_content,
                 language,
             )
+
+            content["source"] = "localized_from_de_v2"
+            content["source_language"] = "de"
+            content["source_hash"] = source_hash
+            content["generated_at"] = generated_at
+            content["content_engine"] = "openai_localization_v2"
+
             generated[language] = content
             print(f"PASS {product_id}.{language}")
         except Exception as exc:
