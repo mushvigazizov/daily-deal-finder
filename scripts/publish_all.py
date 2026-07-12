@@ -23,7 +23,8 @@ def main():
     args = parser.parse_args()
 
     run(["python3", "-m", "scripts.publish_product", "--all", "--limit", str(args.limit)])
-    run(["python3", "-m", "scripts.content_engine"])
+    run(["python3", "-m", "scripts.i18n.generate_german_content", "--write"])
+    run(["python3", "-m", "scripts.i18n.validate_german_master"])
     run(["python3", "scripts/quality_validator.py"])
 
     duration = round(time.time() - started, 2)
