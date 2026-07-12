@@ -62,7 +62,14 @@ def write_atomically(path, text):
     temporary.replace(path)
 
 
-def generate_product(product, write=False):
+def existing_language_files(product_id):
+    return {
+        language: CONTENT_DIR / f"{product_id}.{language}.json"
+        for language in TARGET_LANGUAGES
+    }
+
+
+def generate_product(product, write=False, force=False):
     product_id = product.get("id")
 
     if not product_id:
@@ -73,8 +80,76 @@ def generate_product(product, write=False):
             "changed": 0,
             "unchanged": 0,
             "written": 0,
+            "skipped": 0,
             "errors": ["Product is missing id"],
         }
+
+    targets = existing_language_files(product_id)
+
+    if not force:
+        existing = [
+            language
+            for language, path in targets.items()
+            if path.exists()
+        ]
+
+        if len(existing) == len(TARGET_LANGUAGES):
+            print("-" * 76)
+            print(f"PRODUCT {product_id}")
+            print("-" * 76)
+
+            for language in TARGET_LANGUAGES:
+                print(f"SKIPPED {product_id}.{language} (already exists)")
+
+            print()
+
+            return {
+                "product_id": product_id,
+                "passed": len(TARGET_LANGUAGES),
+                "failed": 0,
+                "changed": 0,
+                "unchanged": 0,
+                "written": 0,
+                "skipped": len(TARGET_LANGUAGES),
+                "errors": [],
+            }
+
+        if existing:
+            missing = [
+                language
+                for language in TARGET_LANGUAGES
+                if language not in existing
+            ]
+
+            print("-" * 76)
+            print(f"PRODUCT {product_id}")
+            print("-" * 76)
+            print(
+                "PARTIAL LOCALIZATION DETECTED: "
+                f"existing={', '.join(existing)}, "
+                f"missing={', '.join(missing)}"
+            )
+            print(
+                "Product aborted to preserve atomic "
+                "EN/RU localization behavior."
+            )
+            print(
+                "Use --force to regenerate both language files."
+            )
+            print()
+
+            return {
+                "product_id": product_id,
+                "passed": 0,
+                "failed": len(TARGET_LANGUAGES),
+                "changed": 0,
+                "unchanged": 0,
+                "written": 0,
+                "skipped": 0,
+                "errors": [
+                    "Partial localized file set detected"
+                ],
+            }
 
     master_content = build_german_content(product)
     generated = {}
@@ -111,6 +186,7 @@ def generate_product(product, write=False):
             "changed": 0,
             "unchanged": 0,
             "written": 0,
+            "skipped": 0,
             "errors": errors,
         }
 
@@ -120,7 +196,7 @@ def generate_product(product, write=False):
 
     for language in TARGET_LANGUAGES:
         content = generated[language]
-        target = CONTENT_DIR / f"{product_id}.{language}.json"
+        target = targets[language]
         generated_text = serialize_content(content)
 
         current_text = (
@@ -152,6 +228,7 @@ def generate_product(product, write=False):
         "changed": changed,
         "unchanged": unchanged,
         "written": written,
+        "skipped": 0,
         "errors": [],
     }
 
@@ -189,6 +266,16 @@ def main():
         ),
     )
 
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help=(
+            "Regenerate existing localized files. "
+            "Without this flag, complete existing EN/RU "
+            "file pairs are skipped."
+        ),
+    )
+
     args = parser.parse_args()
 
     products = select_products(
@@ -211,11 +298,16 @@ def main():
     print(f"Scope   : {scope}")
     print(f"Products: {len(products)}")
     print(f"Mode    : {mode}")
+    print(f"Force   : {'YES' if args.force else 'NO'}")
     print(f"Targets : {', '.join(TARGET_LANGUAGES)}")
     print()
 
     results = [
-        generate_product(product, write=args.write)
+        generate_product(
+            product,
+            write=args.write,
+            force=args.force,
+        )
         for product in products
     ]
 
@@ -244,6 +336,10 @@ def main():
         result["written"]
         for result in results
     )
+    skipped = sum(
+        result["skipped"]
+        for result in results
+    )
 
     print("=" * 76)
     print("SUMMARY")
@@ -255,6 +351,7 @@ def main():
     print(f"Languages failed  : {languages_failed}")
     print(f"Changed           : {changed}")
     print(f"Unchanged         : {unchanged}")
+    print(f"Skipped existing  : {skipped}")
     print(f"Written           : {written}")
 
     if not args.write:

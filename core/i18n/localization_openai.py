@@ -2,15 +2,15 @@ import json
 import os
 from pathlib import Path
 
-from core.ai.config import (
-    OPENAI_TEXT_MODEL,
-    OPENAI_TEMPERATURE,
-)
+from core.ai.config import OPENAI_TEXT_MODEL
 from core.i18n.german_content_builder import (
     normalize_text,
     truncate_text,
 )
 from core.i18n.language_guard import validate_language_content
+LOCALIZATION_TEMPERATURE = 0.2
+
+
 from core.i18n.localization_prompt_builder import (
     LANGUAGE_PROFILES,
     OUTPUT_FIELDS,
@@ -117,6 +117,32 @@ def normalize_localized_content(content):
             normalized[field] = truncate_text(
                 value,
                 max_length,
+            )
+
+    if normalized.get("language") == "ru":
+        pinterest_description = normalized.get(
+            "pinterest_description"
+        )
+
+        if isinstance(pinterest_description, str):
+            russian_replacements = {
+                "Сохрани этот находку": "Сохрани эту находку",
+                "Сохраните этот находку": "Сохраните эту находку",
+                "Сохрани этот совет": "Сохрани эту идею",
+                "Запомните этот вариант": "Сохраните эту идею",
+                "Запомни этот вариант": "Сохрани эту идею",
+            }
+
+            for incorrect, corrected in russian_replacements.items():
+                pinterest_description = (
+                    pinterest_description.replace(
+                        incorrect,
+                        corrected,
+                    )
+                )
+
+            normalized["pinterest_description"] = (
+                pinterest_description
             )
 
     hashtags = normalized.get("hashtags")
@@ -313,7 +339,7 @@ def generate_localized_content(
                 "strict": True,
             },
         },
-        temperature=OPENAI_TEMPERATURE,
+        temperature=LOCALIZATION_TEMPERATURE,
     )
 
     text = response.choices[0].message.content
