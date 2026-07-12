@@ -3,11 +3,18 @@ import json
 
 
 TRACKED_FIELDS = (
+    "title",
+    "short_description",
+    "long_description",
+    "features",
+    "button_text",
+    "buying_angle",
     "seo_title",
-    "seo_description",
+    "meta_description",
+    "alt_text",
     "pinterest_title",
     "pinterest_description",
-    "buying_angle",
+    "hashtags",
 )
 
 

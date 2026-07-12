@@ -28,6 +28,28 @@ LOCALIZED_CONTENT_SCHEMA = {
             "type": "string",
             "enum": ["en", "ru"],
         },
+        "title": {
+            "type": "string",
+        },
+        "short_description": {
+            "type": "string",
+        },
+        "long_description": {
+            "type": "string",
+        },
+        "features": {
+            "type": "array",
+            "items": {
+                "type": "string",
+            },
+            "minItems": 1,
+        },
+        "button_text": {
+            "type": "string",
+        },
+        "buying_angle": {
+            "type": "string",
+        },
         "seo_title": {
             "type": "string",
         },
@@ -53,7 +75,7 @@ LOCALIZED_CONTENT_SCHEMA = {
         },
         "source": {
             "type": "string",
-            "enum": ["localized_from_de_v1"],
+            "enum": ["localized_from_de_v2"],
         },
     },
     "required": OUTPUT_FIELDS,
@@ -62,6 +84,11 @@ LOCALIZED_CONTENT_SCHEMA = {
 
 
 FIELD_LIMITS = {
+    "title": 200,
+    "short_description": 500,
+    "long_description": 2000,
+    "button_text": 80,
+    "buying_angle": 1000,
     "seo_title": 70,
     "meta_description": 160,
     "alt_text": 160,
@@ -145,6 +172,23 @@ def normalize_localized_content(content):
                 pinterest_description
             )
 
+    features = normalized.get("features")
+
+    if isinstance(features, list):
+        cleaned_features = []
+
+        for feature in features:
+            if not isinstance(feature, str):
+                cleaned_features.append(feature)
+                continue
+
+            value = normalize_text(feature)
+
+            if value and value not in cleaned_features:
+                cleaned_features.append(value)
+
+        normalized["features"] = cleaned_features
+
     hashtags = normalized.get("hashtags")
 
     if isinstance(hashtags, list):
@@ -210,7 +254,7 @@ def validate_localized_content(
             f"received {content.get('language')!r}"
         )
 
-    if content.get("source") != "localized_from_de_v1":
+    if content.get("source") != "localized_from_de_v2":
         errors.append(
             "Invalid source value"
         )
@@ -234,6 +278,28 @@ def validate_localized_content(
                 f"{field} exceeds {max_length} characters: "
                 f"{len(value)}"
             )
+
+    features = content.get("features")
+
+    if not isinstance(features, list):
+        errors.append("features must be a list")
+    else:
+        if not features:
+            errors.append(
+                "features must contain at least one item"
+            )
+
+        for index, feature in enumerate(features):
+            if not isinstance(feature, str):
+                errors.append(
+                    f"features[{index}] must be a string"
+                )
+                continue
+
+            if not feature.strip():
+                errors.append(
+                    f"features[{index}] must not be empty"
+                )
 
     hashtags = content.get("hashtags")
 

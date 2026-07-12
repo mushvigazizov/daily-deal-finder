@@ -1,15 +1,31 @@
 {
   "id": "camp-002",
   "language": "en",
-  "seo_title": "Skandika 4-Person Family Tent - Spacious & Stormproof",
-  "meta_description": "Discover the Skandika 4-Person Family Tent: spacious, with standing height, and designed to withstand storms.",
-  "alt_text": "Skandika 4-Person Family Tent — Spacious & Stormproof",
-  "pinterest_title": "Skandika 4-Person Family Tent - Spacious & Stormproof for Camping 🏕️",
-  "pinterest_description": "The Skandika 4-Person Family Tent is a great option for camping, outdoor adventures, and weekend getaways. Save this find for your next trip.",
+  "title": "Skandika Family Tent for 4 People — Spacious & Stormproof",
+  "short_description": "Large family tent for 4 people with standing height. Stormproof construction, breathable, and with mosquito net. Perfect for family vacations.",
+  "long_description": "The Skandika Family Tent offers generous space for four people and impresses with its high stability even in windy weather. The breathable materials ensure a pleasant indoor climate, while integrated mosquito nets keep pesky insects at bay. With standing height and a separate sleeping area, it is ideal for longer camping stays.",
+  "features": [
+    "4-person capacity",
+    "Standing height inside",
+    "Stormproof construction",
+    "Integrated mosquito net",
+    "Breathable material"
+  ],
+  "button_text": "View on Amazon",
+  "buying_angle": "Especially appealing for campers who prioritize practical features: 4-person capacity, standing height inside, stormproof construction.",
+  "seo_title": "Skandika Family Tent for 4 People - Spacious & Stormproof Review 2026",
+  "meta_description": "Overview of the Skandika Family Tent for 4 People - Spacious & Stormproof: 4-person capacity, standing height inside, stormproof construction.",
+  "alt_text": "Skandika Family Tent for 4 People — Spacious & Stormproof",
+  "pinterest_title": "Skandika Family Tent for 4 People - Spacious & Stormproof for Camping 🏕️",
+  "pinterest_description": "Skandika Family Tent for 4 People - Spacious & Stormproof: a practical idea for camping, outdoor activities, and weekend trips. Save this find for your next adventure. #camping #outdoor #campinggear",
   "hashtags": [
     "#camping",
     "#outdoor",
     "#campinggear"
   ],
-  "source": "localized_from_de_v1"
+  "source": "localized_from_de_v2",
+  "source_language": "de",
+  "source_hash": "9768393118e5d45c030d918a3697146abadf837d7f8dd6d73c01d23fc58a38f2",
+  "generated_at": "2026-07-12T14:13:34Z",
+  "content_engine": "openai_localization_v2"
 }

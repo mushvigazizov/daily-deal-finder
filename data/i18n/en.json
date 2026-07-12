@@ -14,5 +14,66 @@
     "description": "Thoughtful product discovery, carefully organized recommendations, and practical ideas designed to help you shop with more confidence.",
     "primary_button": "Explore Today’s Picks",
     "secondary_button": "How We Select Products"
+  },
+  "common": {
+    "loading": "Loading...",
+    "products_not_found": "No products found. More are coming soon!",
+    "product_not_found": "Product not found.",
+    "brand": "Brand",
+    "recommended_product": "Recommended product",
+    "ai_visual": "AI Visual",
+    "advertisement": "#Ad",
+    "view_on_amazon": "View on Amazon"
+  },
+  "product": {
+    "loading": "Loading product...",
+    "trust_amazon": "Amazon.de",
+    "trust_selection": "Carefully selected",
+    "trust_affiliate": "Affiliate disclosure",
+    "price_note": "*Prices and availability may change. Please check the current price directly on Amazon.de.",
+    "affiliate_disclosure": "As an Amazon Associate, we earn from qualifying purchases."
+  },
+  "category": {
+    "eyebrow": "Product inspiration",
+    "default_title": "Category",
+    "default_description": "Explore practical product ideas selected for everyday use.",
+    "coming_soon_title": "Recommendations for this category are coming soon.",
+    "coming_soon_description": "We are preparing carefully selected product ideas for this category. No unrelated products are shown here.",
+    "load_error_title": "Products could not be loaded.",
+    "load_error_description": "Please try again later."
+  },
+  "categories": {
+    "camping": {
+      "title": "Camping & Outdoor",
+      "description": "Outdoor essentials, tents, hiking and adventure gear."
+    },
+    "home": {
+      "title": "Home & Garden",
+      "description": "Functional home essentials, organizers, and everyday helpers."
+    },
+    "kitchen": {
+      "title": "Kitchen & Dining",
+      "description": "Useful kitchen tools, smart accessories, and cooking inspiration."
+    },
+    "electronics": {
+      "title": "Electronics & Gadgets",
+      "description": "Electronics, gadgets, accessories, and useful tech finds."
+    },
+    "fitness": {
+      "title": "Fitness & Sports",
+      "description": "Fitness gear, sports accessories, and active lifestyle products."
+    },
+    "travel": {
+      "title": "Travel Gear",
+      "description": "Travel gear, packing helpers, and practical trip accessories."
+    },
+    "pets": {
+      "title": "Pet Supplies",
+      "description": "Helpful product inspiration for pets and pet owners."
+    },
+    "lifestyle": {
+      "title": "Lifestyle",
+      "description": "Lifestyle finds, useful everyday ideas, and smart inspiration."
+    }
   }
 }

@@ -1,15 +1,31 @@
 {
   "id": "camp-007",
   "language": "en",
-  "seo_title": "Vango Camping LED Lantern - 360° Illumination Overview 2026",
-  "meta_description": "Explore the Vango Camping LED Lantern featuring 360° illumination, dimmable settings, and a convenient hanging hook. Perfect for your camping needs.",
+  "title": "Vango Camping LED Lantern — 360° Illumination",
+  "short_description": "Atmospheric LED camping lantern with 360° light. Dimmable, hangable, and long battery life. Perfect for cozy evenings.",
+  "long_description": "The Vango LED camping lantern provides ambient light throughout the campsite. The 360° illumination brightens the entire table, and the dimming mode adjusts the brightness perfectly. With a hanging hook, it can be placed flexibly—inside the tent, on a tree, or under a sunshade. The long battery life lasts for several evenings.",
+  "features": [
+    "360° illumination",
+    "Dimmable",
+    "Hanging hook",
+    "Long battery life",
+    "Ambient light"
+  ],
+  "button_text": "View on Amazon",
+  "buying_angle": "Especially appealing for campers who value practical features in lamps: 360° illumination, dimmable, hanging hook.",
+  "seo_title": "Vango Camping LED Lantern - 360° Illumination Review 2026 | Camping &",
+  "meta_description": "Vango Camping LED Lantern - Overview of 360° illumination, dimmable, hanging hook. A practical option for those who need suitable lighting.",
   "alt_text": "Vango Camping LED Lantern — 360° Illumination",
   "pinterest_title": "Vango Camping LED Lantern - 360° Illumination for Camping 🏕️",
-  "pinterest_description": "Discover the Vango Camping LED Lantern with 360° illumination: an essential tool for camping, outdoor adventures, and weekend trips. Save this find for your next outdoor excursion! #camping #outdoor #campinggear",
+  "pinterest_description": "Vango Camping LED Lantern - 360° illumination from Vango: a useful idea for camping, outdoor activities, and weekend trips. Save this find for your next adventure. #camping #outdoor #campinggear",
   "hashtags": [
     "#camping",
     "#outdoor",
     "#campinggear"
   ],
-  "source": "localized_from_de_v1"
+  "source": "localized_from_de_v2",
+  "source_language": "de",
+  "source_hash": "9ab280f9913a581a6466fb7980cc733fb5ac5407d5edff615daf67b0b03b0ad0",
+  "generated_at": "2026-07-12T14:14:41Z",
+  "content_engine": "openai_localization_v2"
 }

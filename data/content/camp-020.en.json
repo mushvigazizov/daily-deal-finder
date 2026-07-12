@@ -1,15 +1,31 @@
 {
   "id": "camp-020",
   "language": "en",
-  "seo_title": "Military Paracord 30m - 250kg Load Capacity | Camping Gear",
-  "meta_description": "Discover the Military Paracord 30m with a 250kg load capacity. Ideal for camping, outdoor activities, and weekend trips.",
-  "alt_text": "Military Paracord 30m — 250kg Load Capacity",
-  "pinterest_title": "Military Paracord 30m - 250kg Load Capacity for Camping 🏕️",
-  "pinterest_description": "The Military Paracord 30m offers a 250kg load capacity, making it an essential tool for camping and outdoor adventures. Keep this in mind for your next trip!",
+  "title": "Military Paracord 30m — 550lbs Strength",
+  "short_description": "Durable paracord rope with a length of 30m and a breaking strength of 550lbs. Versatile for tent guy lines, clotheslines, and emergency repairs.",
+  "long_description": "The Military Paracord is a true multitasker for outdoor activities. With a length of 30 meters and an impressive breaking strength of 550 lbs, it is suitable for countless applications: tent guy lines, clotheslines, backpack repairs, shoelace replacements, or as an emergency rope. The 7 inner strands can be used individually if needed.",
+  "features": [
+    "30m length",
+    "550lbs breaking strength",
+    "7 inner strands",
+    "UV resistant",
+    "Versatile use"
+  ],
+  "button_text": "View on Amazon",
+  "buying_angle": "Especially appealing for campers who value practical features in gear: 30m length, 550lbs breaking strength, 7 inner strands.",
+  "seo_title": "Military Paracord 30m - 550lbs Strength Review 2026 | Camping &",
+  "meta_description": "Military Paracord 30m - 550lbs strength overview: 30m length, 550lbs breaking strength, 7 inner strands. A practical option for all outdoor enthusiasts.",
+  "alt_text": "Military Paracord 30m — 550lbs Strength",
+  "pinterest_title": "Military Paracord 30m - 550lbs Strength for Camping 🏕️",
+  "pinterest_description": "Military Paracord 30m - 550lbs strength: a useful idea for camping, outdoor adventures, and weekend trips. Save this find for your next outing. #camping #outdoor #campinggear",
   "hashtags": [
     "#camping",
     "#outdoor",
     "#campinggear"
   ],
-  "source": "localized_from_de_v1"
+  "source": "localized_from_de_v2",
+  "source_language": "de",
+  "source_hash": "9332257fdc71d324b5dfc28339d654b7107159c65cb8da89dbf321e327d7cf6d",
+  "generated_at": "2026-07-12T14:17:48Z",
+  "content_engine": "openai_localization_v2"
 }

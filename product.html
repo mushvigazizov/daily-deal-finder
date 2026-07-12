@@ -29,15 +29,21 @@
       <span>Daily Deal Finder</span>
     </a>
     <nav>
-      <a href="/">Startseite</a>
-      <a href="/privacy.html">Datenschutz</a>
-      <a href="/terms.html">AGB</a>
-      <a href="/contact.html">Kontakt</a>
+      <a href="/" data-i18n="nav.home">Startseite</a>
+      <a href="/privacy.html" data-i18n="nav.privacy">Datenschutz</a>
+      <a href="/terms.html" data-i18n="nav.terms">AGB</a>
+      <a href="/contact.html" data-i18n="nav.contact">Kontakt</a>
     </nav>
+      <div class="language-switcher" aria-label="Language selector">
+        <a href="?lang=en" data-language="en">EN</a>
+        <a href="?lang=de" data-language="de">DE</a>
+        <a href="?lang=ru" data-language="ru">RU</a>
+      </div>
+
   </header>
 
   <main id="product-page" class="product-page-container">
-    <p>Produkt wird geladen...</p>
+    <p data-i18n="product.loading">Produkt wird geladen...</p>
   </main>
 
   
@@ -71,5 +77,6 @@
 
   <script src="/js/products.js?v=3"></script>
   <script>initProductPage();</script>
+  <script src="/js/i18n.js" defer></script>
 </body>
 </html>

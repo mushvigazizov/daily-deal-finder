@@ -10,6 +10,22 @@ def valid_content(language):
         return {
             "id": "camp-001",
             "language": "en",
+            "title": "Coleman 2-Person Dome Tent",
+            "short_description": (
+                "A waterproof tent for two people."
+            ),
+            "long_description": (
+                "A practical waterproof tent for "
+                "weekend camping trips."
+            ),
+            "features": [
+                "Two-person capacity",
+                "Waterproof construction",
+            ],
+            "button_text": "View on Amazon",
+            "buying_angle": (
+                "A practical choice for weekend campers."
+            ),
             "seo_title": "Coleman 2-Person Dome Tent",
             "meta_description": "A waterproof two-person tent for camping trips.",
             "alt_text": "Coleman two-person dome tent",
@@ -21,12 +37,28 @@ def valid_content(language):
                 "#camping",
                 "#outdoor",
             ],
-            "source": "localized_from_de_v1",
+            "source": "localized_from_de_v2",
         }
 
     return {
         "id": "camp-001",
         "language": "ru",
+        "title": "Двухместная палатка Coleman",
+        "short_description": (
+            "Водонепроницаемая палатка на двух человек."
+        ),
+        "long_description": (
+            "Практичная водонепроницаемая палатка "
+            "для поездок на выходные."
+        ),
+        "features": [
+            "Вместимость на двух человек",
+            "Водонепроницаемая конструкция",
+        ],
+        "button_text": "Посмотреть на Amazon",
+        "buying_angle": (
+            "Практичный вариант для отдыха на природе."
+        ),
         "seo_title": "Палатка Coleman на двух человек",
         "meta_description": (
             "Водонепроницаемая палатка Coleman для отдыха на природе."
@@ -40,7 +72,7 @@ def valid_content(language):
             "#кемпинг",
             "#туризм",
         ],
-        "source": "localized_from_de_v1",
+        "source": "localized_from_de_v2",
     }
 
 

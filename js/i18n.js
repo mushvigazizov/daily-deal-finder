@@ -66,11 +66,22 @@ function applyTranslations(translations) {
 function updateLanguageLinks(language) {
   document.querySelectorAll("[data-language]").forEach((link) => {
     const linkLanguage = link.dataset.language;
+    const url = new URL(window.location.href);
+
+    url.searchParams.set("lang", linkLanguage);
+
+    link.href = `${url.pathname}${url.search}${url.hash}`;
 
     link.classList.toggle(
       "active",
       linkLanguage === language
     );
+
+    if (linkLanguage === language) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
   });
 }
 

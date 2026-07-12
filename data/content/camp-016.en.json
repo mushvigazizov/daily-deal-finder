@@ -1,15 +1,31 @@
 {
   "id": "camp-016",
   "language": "en",
-  "seo_title": "LifeStraw Water Filter - 4000L Clean Drinking Water",
-  "meta_description": "Discover the LifeStraw Water Filter with 4000L capacity and removes 99.9% of bacteria without chemicals.",
+  "title": "LifeStraw Water Filter — 4000L Clean Drinking Water",
+  "short_description": "Portable water filter for up to 4000 liters. Removes 99.9% of bacteria and parasites. Perfect for trekking and emergencies.",
+  "long_description": "The LifeStraw water filter is a lifesaving tool for outdoor enthusiasts. It filters up to 4000 liters of contaminated water, removing 99.9% of bacteria, parasites, and microplastics. No pumping, no chemicals — just drink through the straw. Weighing only 57g, it fits in any bag.",
+  "features": [
+    "4000L filter capacity",
+    "99.9% bacteria removal",
+    "No chemicals",
+    "Weighs only 57g",
+    "No pumping required"
+  ],
+  "button_text": "View on Amazon",
+  "buying_angle": "Especially appealing for campers who prioritize practical features: 4000L filter capacity, 99.9% bacteria removal, no chemicals.",
+  "seo_title": "LifeStraw Water Filter - 4000L Clean Drinking Water Review 2026 |",
+  "meta_description": "LifeStraw water filter - 4000L clean drinking water overview: 4000L filter capacity, 99.9% bacteria removal, no chemicals.",
   "alt_text": "LifeStraw Water Filter — 4000L Clean Drinking Water",
   "pinterest_title": "LifeStraw Water Filter - 4000L Clean Drinking Water for Camping 🏕️",
-  "pinterest_description": "The LifeStraw Water Filter offers 4000L of clean drinking water, ideal for camping, outdoor activities, and weekend trips. Save this find for your next adventure!",
+  "pinterest_description": "LifeStraw water filter - 4000L clean drinking water: a useful idea for camping, outdoor activities, and weekend trips. Save this find for your next adventure. #camping #outdoor #campinggear",
   "hashtags": [
     "#camping",
     "#outdoor",
     "#campinggear"
   ],
-  "source": "localized_from_de_v1"
+  "source": "localized_from_de_v2",
+  "source_language": "de",
+  "source_hash": "fbf2302faf54c896b390cd81dc34e9c0696bd50d821d5d7e71069586ce26c3e7",
+  "generated_at": "2026-07-12T14:16:53Z",
+  "content_engine": "openai_localization_v2"
 }

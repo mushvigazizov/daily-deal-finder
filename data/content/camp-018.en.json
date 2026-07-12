@@ -1,15 +1,31 @@
 {
   "id": "camp-018",
   "language": "en",
-  "seo_title": "Odlo Thermal Base Layer - Warm & Breathable for Camping",
-  "meta_description": "Discover Odlo's Thermal Base Layer: Optimal warmth, moisture-wicking, and quick-drying. Perfect for outdoor adventures.",
-  "alt_text": "Odlo Thermal Base Layer — Warm & Breathable",
+  "title": "Odlo Thermal Base Layer - Warm & Breathable",
+  "short_description": "High-quality base layer for cold days. Provides reliable warmth, wicks moisture away, and dries quickly.",
+  "long_description": "The Odlo thermal base layer is the perfect foundation for outdoor activities in cold weather. The innovative material keeps your body warm while effectively wicking sweat away. Even after intense climbs, the base layer dries in no time. Flat seams prevent chafing and irritation.",
+  "features": [
+    "Optimal thermal insulation",
+    "Moisture wicking",
+    "Quick-drying",
+    "Flat seams",
+    "Odor neutral"
+  ],
+  "button_text": "View on Amazon",
+  "buying_angle": "Especially appealing for campers who prioritize practical features in clothing: optimal thermal insulation, moisture wicking, quick-drying.",
+  "seo_title": "Odlo Thermal Base Layer - Warm & Breathable Review 2026 |",
+  "meta_description": "Odlo Thermal Base Layer - Warm & Breathable overview: optimal thermal insulation, moisture wicking, quick-drying. A practical choice for outdoor activities.",
+  "alt_text": "Odlo Thermal Base Layer - Warm & Breathable",
   "pinterest_title": "Odlo Thermal Base Layer - Warm & Breathable for Camping 🏕️",
-  "pinterest_description": "Odlo's Thermal Base Layer is an essential for camping and outdoor trips. Keep warm and dry on your next adventure. Save this find for your next outing!",
+  "pinterest_description": "Odlo Thermal Base Layer - Warm & Breathable: a useful idea for camping, outdoor adventures, and weekend trips. Save this find for your next outing. #camping #outdoor #campinggear",
   "hashtags": [
     "#camping",
     "#outdoor",
     "#campinggear"
   ],
-  "source": "localized_from_de_v1"
+  "source": "localized_from_de_v2",
+  "source_language": "de",
+  "source_hash": "8580adedcabe1abbbeb33c2b2b7130a840294f735223a8da3c95e17bacfc1015",
+  "generated_at": "2026-07-12T14:17:24Z",
+  "content_engine": "openai_localization_v2"
 }
