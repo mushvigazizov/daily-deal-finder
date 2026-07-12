@@ -6,22 +6,211 @@
 let CONFIG = {};
 let PRODUCTS = [];
 
+const SUPPORTED_PRODUCT_LANGUAGES = ["de", "en", "ru"];
+const DEFAULT_PRODUCT_LANGUAGE = "de";
+
+let UI_TRANSLATIONS = {};
+
+
+async function loadUiTranslations() {
+  const language = getProductLanguage();
+
+  try {
+    const response = await fetch(
+      `/data/i18n/${language}.json`
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        `UI translation request failed: ${response.status}`
+      );
+    }
+
+    UI_TRANSLATIONS = await response.json();
+  } catch (error) {
+    console.warn("UI translations load failed", error);
+    UI_TRANSLATIONS = {};
+  }
+
+  return UI_TRANSLATIONS;
+}
+
+
+function translateUi(key, fallback = "") {
+  const value = key.split(".").reduce(
+    (current, part) => {
+      if (
+        current &&
+        Object.prototype.hasOwnProperty.call(current, part)
+      ) {
+        return current[part];
+      }
+
+      return null;
+    },
+    UI_TRANSLATIONS
+  );
+
+  return typeof value === "string" ? value : fallback;
+}
+
+
+function getProductLanguage() {
+  const params = new URLSearchParams(window.location.search);
+  const urlLanguage = params.get("lang");
+
+  if (SUPPORTED_PRODUCT_LANGUAGES.includes(urlLanguage)) {
+    return urlLanguage;
+  }
+
+  const savedLanguage = localStorage.getItem("ddf_language");
+
+  if (SUPPORTED_PRODUCT_LANGUAGES.includes(savedLanguage)) {
+    return savedLanguage;
+  }
+
+  return DEFAULT_PRODUCT_LANGUAGE;
+}
+
+
+function buildLocalizedUrl(path, extraParams = {}) {
+  const url = new URL(path, window.location.origin);
+  const language = getProductLanguage();
+
+  url.searchParams.set("lang", language);
+
+  Object.entries(extraParams).forEach(([key, value]) => {
+    if (value !== undefined && value !== null && value !== "") {
+      url.searchParams.set(key, value);
+    }
+  });
+
+  return `${url.pathname}${url.search}`;
+}
+
+
+function buildProductUrl(productId) {
+  return buildLocalizedUrl("/product.html", {
+    id: productId,
+  });
+}
+
+
 async function loadConfig() {
   try {
-    CONFIG = await fetch('/data/config.json').then(r => r.json());
-    document.documentElement.lang = CONFIG.site?.locale || 'de-DE';
-  } catch (e) {
-    console.warn('Config load failed', e);
+    CONFIG = await fetch("/data/config.json").then(response => {
+      if (!response.ok) {
+        throw new Error(`Config request failed: ${response.status}`);
+      }
+
+      return response.json();
+    });
+
+    document.documentElement.lang = getProductLanguage();
+  } catch (error) {
+    console.warn("Config load failed", error);
+    document.documentElement.lang = getProductLanguage();
   }
 }
 
+
+async function fetchLocalizedProductContent(productId, language) {
+  const response = await fetch(
+    `/data/content/${encodeURIComponent(productId)}.${language}.json`
+  );
+
+  if (!response.ok) {
+    throw new Error(
+      `Localized content request failed: ${productId}.${language}`
+    );
+  }
+
+  return response.json();
+}
+
+
+function mergeProductContent(product, localizedContent) {
+  if (!localizedContent || typeof localizedContent !== "object") {
+    return product;
+  }
+
+  return {
+    ...product,
+    ...localizedContent,
+    id: product.id,
+    language: localizedContent.language || getProductLanguage(),
+    seo_description:
+      localizedContent.meta_description ||
+      product.seo_description ||
+      product.short_description ||
+      "",
+  };
+}
+
+
+async function localizeProduct(product, language) {
+  const fallbackLanguages = [
+    language,
+    DEFAULT_PRODUCT_LANGUAGE,
+  ].filter(
+    (item, index, values) =>
+      SUPPORTED_PRODUCT_LANGUAGES.includes(item) &&
+      values.indexOf(item) === index
+  );
+
+  for (const fallbackLanguage of fallbackLanguages) {
+    try {
+      const localizedContent =
+        await fetchLocalizedProductContent(
+          product.id,
+          fallbackLanguage
+        );
+
+      return mergeProductContent(
+        product,
+        localizedContent
+      );
+    } catch (error) {
+      console.warn(
+        `Content fallback failed for ${product.id}.${fallbackLanguage}`,
+        error
+      );
+    }
+  }
+
+  return {
+    ...product,
+    language: DEFAULT_PRODUCT_LANGUAGE,
+  };
+}
+
+
 async function loadProducts() {
   try {
-    const data = await fetch('/data/products.json').then(r => r.json());
-    PRODUCTS = data.products || [];
+    const response = await fetch("/data/products.json");
+
+    if (!response.ok) {
+      throw new Error(
+        `Products request failed: ${response.status}`
+      );
+    }
+
+    const data = await response.json();
+    const baseProducts = data.products || [];
+    const language = getProductLanguage();
+
+    PRODUCTS = await Promise.all(
+      baseProducts.map(product =>
+        localizeProduct(product, language)
+      )
+    );
+
+    localStorage.setItem("ddf_language", language);
+    document.documentElement.lang = language;
+
     return PRODUCTS;
-  } catch (e) {
-    console.warn('Products load failed', e);
+  } catch (error) {
+    console.warn("Products load failed", error);
     return [];
   }
 }
@@ -47,17 +236,21 @@ function renderProductGrid(products, containerId) {
   if (!container) return;
 
   if (!products.length) {
-    container.innerHTML = '<p class="empty">Keine Produkte gefunden. Bald verfügbar!</p>';
+    container.innerHTML =
+      `<p class="empty">${translateUi(
+        "common.products_not_found",
+        "Keine Produkte gefunden. Bald verfügbar!"
+      )}</p>`;
     return;
   }
 
   container.innerHTML = products.map(p => {
     const imgHtml = p.image 
-      ? `<img src="/${p.image}" alt="${p.title}" loading="lazy">`
+      ? `<img src="/${p.image}" alt="${p.alt_text || p.title}" loading="lazy">`
       : `<div class="product-placeholder" aria-label="${p.title}">${p.title}</div>`;
     return `
     <article class="product-card">
-      <a href="/product.html?id=${p.id}">
+      <a href="${buildProductUrl(p.id)}">
         <div class="product-image-wrap">
       ${imgHtml}
       <span class="ai-visual-badge">AI Visual</span>
@@ -65,7 +258,7 @@ function renderProductGrid(products, containerId) {
       </a>
       <div class="info">
         <span class="category-tag">${p.category || ''}</span>
-        <h3><a href="/product.html?id=${p.id}">${p.title}</a></h3>
+        <h3><a href="${buildProductUrl(p.id)}">${p.title}</a></h3>
         <p>${p.short_description || ''}</p>
         <a href="${buildAmazonUrl(p.amazon_asin)}" target="_blank" rel="nofollow sponsored noopener" class="button">${p.button_text || 'Auf Amazon ansehen'}</a>
         <span class="ad-badge">#Anzeige</span>
@@ -75,7 +268,11 @@ function renderProductGrid(products, containerId) {
 }
 
 async function initHomePage() {
-  await loadConfig();
+  await Promise.all([
+    loadConfig(),
+    loadUiTranslations(),
+  ]);
+
   const products = await loadProducts();
   const active = products.filter(p => p.active !== false && p.featured);
   renderProductGrid(active, 'product-grid');
@@ -94,13 +291,19 @@ function renderProductPage(product) {
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) metaDesc.content = product.seo_description || product.short_description;
   const canonical = document.querySelector('link[rel="canonical"]');
-  if (canonical) canonical.href = `https://daily-deal-finder.com/product.html?id=${product.id}`;
+  if (canonical) {
+    canonical.href =
+      `https://daily-deal-finder.com${buildProductUrl(product.id)}`;
+  }
 
   // OG update
   document.querySelector('meta[property="og:title"]')?.setAttribute('content', product.pinterest_title || product.title);
   document.querySelector('meta[property="og:description"]')?.setAttribute('content', product.pinterest_description || product.short_description);
   document.querySelector('meta[property="og:image"]')?.setAttribute('content', product.image ? `https://daily-deal-finder.com/${product.image}` : 'https://daily-deal-finder.com/assets/logo.png');
-  document.querySelector('meta[property="og:url"]')?.setAttribute('content', `https://daily-deal-finder.com/product.html?id=${product.id}`);
+  document.querySelector('meta[property="og:url"]')?.setAttribute(
+    'content',
+    `https://daily-deal-finder.com${buildProductUrl(product.id)}`
+  );
   document.querySelector('meta[name="twitter:image"]')?.setAttribute('content', product.image ? `https://daily-deal-finder.com/${product.image}` : 'https://daily-deal-finder.com/assets/logo.png');
 
   // Page render
@@ -108,7 +311,7 @@ function renderProductPage(product) {
     <div class="product-hero">
       <section class="product-media-panel">
         <div class="product-main-image-wrap">
-          ${product.image ? `<img src="/${product.image}" alt="${product.title}" class="product-main-image">` : `<div class="product-placeholder product-placeholder-large">${product.title}</div>`}
+          ${product.image ? `<img src="/${product.image}" alt="${product.alt_text || product.title}" class="product-main-image">` : `<div class="product-placeholder product-placeholder-large">${product.title}</div>`}
           <span class="ai-visual-badge ai-visual-badge-large">AI Visual</span>
         </div>
       </section>
@@ -143,7 +346,11 @@ function renderProductPage(product) {
 }
 
 async function initProductPage() {
-  await loadConfig();
+  await Promise.all([
+    loadConfig(),
+    loadUiTranslations(),
+  ]);
+
   const products = await loadProducts();
   const id = new URLSearchParams(window.location.search).get('id');
   const product = products.find(p => p.id === id);

@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "impressum": "Impressum",
+    "affiliate": "Affiliate-Hinweis",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "eyebrow": "KI-gestützte Recherche • Redaktionelle Sorgfalt • Besser einkaufen",
+    "title": "Entdecke Produkte, die sich wirklich lohnen.",
+    "description": "Sorgfältig ausgewählte Produktempfehlungen und praktische Ideen, die dir helfen, sicherer und bewusster einzukaufen.",
+    "primary_button": "Heutige Empfehlungen",
+    "secondary_button": "So wählen wir Produkte aus"
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "products_not_found": "Keine Produkte gefunden. Bald verfügbar!",
+    "product_not_found": "Produkt nicht gefunden.",
+    "brand": "Marke",
+    "recommended_product": "Empfohlenes Produkt",
+    "ai_visual": "KI-Visualisierung",
+    "advertisement": "#Anzeige",
+    "view_on_amazon": "Auf Amazon ansehen"
+  },
+  "product": {
+    "loading": "Produkt wird geladen...",
+    "trust_amazon": "Amazon.de",
+    "trust_selection": "Sorgfältige Auswahl",
+    "trust_affiliate": "Affiliate-Hinweis",
+    "price_note": "*Preise und Verfügbarkeit können sich ändern. Den aktuellen Preis bitte direkt auf Amazon.de prüfen.",
+    "affiliate_disclosure": "Als Amazon-Partner verdienen wir an qualifizierten Verkäufen."
+  },
+  "category": {
+    "eyebrow": "Produktinspiration",
+    "default_title": "Kategorie",
+    "default_description": "Entdecke praktische Produktideen für den Alltag.",
+    "coming_soon_title": "Empfehlungen für diese Kategorie folgen bald.",
+    "coming_soon_description": "Wir bereiten sorgfältig ausgewählte Produktideen für diese Kategorie vor. Unpassende Produkte werden hier nicht angezeigt.",
+    "load_error_title": "Produkte konnten nicht geladen werden.",
+    "load_error_description": "Bitte versuche es später erneut."
+  },
+  "categories": {
+    "camping": {
+      "title": "Camping & Outdoor",
+      "description": "Outdoor-Ausrüstung, Zelte, Wandern und Abenteuer."
+    },
+    "home": {
+      "title": "Haus & Garten",
+      "description": "Praktische Haushaltsprodukte, Organizer und tägliche Helfer."
+    },
+    "kitchen": {
+      "title": "Küche & Essen",
+      "description": "Nützliche Küchenhelfer, Zubehör und Inspiration zum Kochen."
+    },
+    "electronics": {
+      "title": "Elektronik & Gadgets",
+      "description": "Elektronik, Zubehör und nützliche technische Produkte."
+    },
+    "fitness": {
+      "title": "Fitness & Sport",
+      "description": "Fitnessgeräte, Sportzubehör und Produkte für einen aktiven Alltag."
+    },
+    "travel": {
+      "title": "Reiseausrüstung",
+      "description": "Reisezubehör, Packhilfen und praktische Produkte für unterwegs."
+    },
+    "pets": {
+      "title": "Tierbedarf",
+      "description": "Nützliche Produktideen für Haustiere und ihre Besitzer."
+    },
+    "lifestyle": {
+      "title": "Lifestyle",
+      "description": "Praktische Ideen und Inspiration für den Alltag."
+    }
+  }
+}
