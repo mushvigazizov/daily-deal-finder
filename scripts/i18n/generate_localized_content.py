@@ -12,25 +12,39 @@ DEFAULT_PRODUCT_ID = "camp-001"
 TARGET_LANGUAGES = ("en", "ru")
 
 
-def load_product(product_id):
+def load_products():
     data = json.loads(
         PRODUCTS_PATH.read_text(encoding="utf-8")
     )
     products = data.get("products", data)
 
+    if not isinstance(products, list):
+        raise ValueError("Products data must be a list")
+
+    return products
+
+
+def select_products(product_id=None, all_products=False):
+    products = load_products()
+
+    if all_products:
+        return products
+
+    selected_id = product_id or DEFAULT_PRODUCT_ID
+
     product = next(
         (
             item
             for item in products
-            if item.get("id") == product_id
+            if item.get("id") == selected_id
         ),
         None,
     )
 
     if not product:
-        raise ValueError(f"Product not found: {product_id}")
+        raise ValueError(f"Product not found: {selected_id}")
 
-    return product
+    return [product]
 
 
 def serialize_content(content):
@@ -48,42 +62,27 @@ def write_atomically(path, text):
     temporary.replace(path)
 
 
-def main():
-    parser = argparse.ArgumentParser(
-        description=(
-            "Generate validated English and Russian "
-            "localized product content."
-        )
-    )
-    parser.add_argument(
-        "--product-id",
-        default=DEFAULT_PRODUCT_ID,
-    )
-    parser.add_argument(
-        "--write",
-        action="store_true",
-        help=(
-            "Write both localized files only after "
-            "both languages pass validation."
-        ),
-    )
-    args = parser.parse_args()
+def generate_product(product, write=False):
+    product_id = product.get("id")
 
-    product = load_product(args.product_id)
+    if not product_id:
+        return {
+            "product_id": None,
+            "passed": 0,
+            "failed": len(TARGET_LANGUAGES),
+            "changed": 0,
+            "unchanged": 0,
+            "written": 0,
+            "errors": ["Product is missing id"],
+        }
+
     master_content = build_german_content(product)
-
-    CONTENT_DIR.mkdir(parents=True, exist_ok=True)
-
     generated = {}
-    failures = []
+    errors = []
 
-    print("=" * 76)
-    print("LOCALIZED CONTENT GENERATOR")
-    print("=" * 76)
-    print(f"Product : {args.product_id}")
-    print(f"Mode    : {'WRITE' if args.write else 'DRY RUN'}")
-    print(f"Targets : {', '.join(TARGET_LANGUAGES)}")
-    print()
+    print("-" * 76)
+    print(f"PRODUCT {product_id}")
+    print("-" * 76)
 
     for language in TARGET_LANGUAGES:
         try:
@@ -92,36 +91,36 @@ def main():
                 language,
             )
             generated[language] = content
-            print(f"PASS {args.product_id}.{language}")
+            print(f"PASS {product_id}.{language}")
         except Exception as exc:
-            failures.append((language, str(exc)))
-            print(f"FAIL {args.product_id}.{language}")
+            errors.append(f"{language}: {exc}")
+            print(f"FAIL {product_id}.{language}")
             print(f"  - {exc}")
 
-    print()
-
-    if failures:
-        print("BATCH ABORTED")
+    if errors:
         print(
-            "No localized files were written because "
-            "at least one language failed."
+            "PRODUCT ABORTED: no localized files were "
+            "written for this product."
         )
         print()
-        print("=" * 76)
-        print("SUMMARY")
-        print("=" * 76)
-        print(f"Languages checked : {len(TARGET_LANGUAGES)}")
-        print(f"Passed            : {len(generated)}")
-        print(f"Failed            : {len(failures)}")
-        print("Written           : 0")
-        return 1
+
+        return {
+            "product_id": product_id,
+            "passed": len(generated),
+            "failed": len(errors),
+            "changed": 0,
+            "unchanged": 0,
+            "written": 0,
+            "errors": errors,
+        }
 
     changed = 0
     unchanged = 0
+    written = 0
 
     for language in TARGET_LANGUAGES:
         content = generated[language]
-        target = CONTENT_DIR / f"{args.product_id}.{language}.json"
+        target = CONTENT_DIR / f"{product_id}.{language}.json"
         generated_text = serialize_content(content)
 
         current_text = (
@@ -132,39 +131,140 @@ def main():
 
         if current_text == generated_text:
             unchanged += 1
-            print(f"UNCHANGED {args.product_id}.{language}")
+            print(f"UNCHANGED {product_id}.{language}")
             continue
 
         changed += 1
 
-        if args.write:
+        if write:
             write_atomically(target, generated_text)
-            print(f"WRITTEN {args.product_id}.{language}")
+            written += 1
+            print(f"WRITTEN {product_id}.{language}")
         else:
-            print(f"WOULD WRITE {args.product_id}.{language}")
+            print(f"WOULD WRITE {product_id}.{language}")
 
-        print(
-            json.dumps(
-                content,
-                ensure_ascii=False,
-                indent=2,
-            )
+    print()
+
+    return {
+        "product_id": product_id,
+        "passed": len(generated),
+        "failed": 0,
+        "changed": changed,
+        "unchanged": unchanged,
+        "written": written,
+        "errors": [],
+    }
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description=(
+            "Generate validated English and Russian "
+            "localized product content."
         )
-        print()
+    )
+
+    selection = parser.add_mutually_exclusive_group()
+
+    selection.add_argument(
+        "--product-id",
+        help=(
+            "Generate localization for one product. "
+            f"Defaults to {DEFAULT_PRODUCT_ID}."
+        ),
+    )
+
+    selection.add_argument(
+        "--all-products",
+        action="store_true",
+        help="Generate localization for every product.",
+    )
+
+    parser.add_argument(
+        "--write",
+        action="store_true",
+        help=(
+            "Write both localized files for a product only "
+            "after both languages pass validation."
+        ),
+    )
+
+    args = parser.parse_args()
+
+    products = select_products(
+        product_id=args.product_id,
+        all_products=args.all_products,
+    )
+
+    CONTENT_DIR.mkdir(parents=True, exist_ok=True)
+
+    mode = "WRITE" if args.write else "DRY RUN"
+    scope = (
+        "ALL PRODUCTS"
+        if args.all_products
+        else (args.product_id or DEFAULT_PRODUCT_ID)
+    )
+
+    print("=" * 76)
+    print("LOCALIZED CONTENT GENERATOR")
+    print("=" * 76)
+    print(f"Scope   : {scope}")
+    print(f"Products: {len(products)}")
+    print(f"Mode    : {mode}")
+    print(f"Targets : {', '.join(TARGET_LANGUAGES)}")
+    print()
+
+    results = [
+        generate_product(product, write=args.write)
+        for product in products
+    ]
+
+    products_passed = sum(
+        result["failed"] == 0
+        for result in results
+    )
+    products_failed = len(results) - products_passed
+    languages_passed = sum(
+        result["passed"]
+        for result in results
+    )
+    languages_failed = sum(
+        result["failed"]
+        for result in results
+    )
+    changed = sum(
+        result["changed"]
+        for result in results
+    )
+    unchanged = sum(
+        result["unchanged"]
+        for result in results
+    )
+    written = sum(
+        result["written"]
+        for result in results
+    )
 
     print("=" * 76)
     print("SUMMARY")
     print("=" * 76)
-    print(f"Languages checked : {len(TARGET_LANGUAGES)}")
-    print(f"Passed            : {len(generated)}")
-    print("Failed            : 0")
+    print(f"Products checked  : {len(results)}")
+    print(f"Products passed   : {products_passed}")
+    print(f"Products failed   : {products_failed}")
+    print(f"Languages passed  : {languages_passed}")
+    print(f"Languages failed  : {languages_failed}")
     print(f"Changed           : {changed}")
     print(f"Unchanged         : {unchanged}")
-    print(f"Written           : {changed if args.write else 0}")
+    print(f"Written           : {written}")
 
     if not args.write:
         print()
         print("Dry run only. No content files were changed.")
+
+    if products_failed:
+        print()
+        print("LOCALIZATION GENERATION FAILED")
+        return 1
 
     return 0
 
