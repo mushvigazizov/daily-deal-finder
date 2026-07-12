@@ -6,6 +6,10 @@ from core.ai.config import (
     OPENAI_TEXT_MODEL,
     OPENAI_TEMPERATURE,
 )
+from core.i18n.german_content_builder import (
+    normalize_text,
+    truncate_text,
+)
 from core.i18n.language_guard import validate_language_content
 from core.i18n.localization_prompt_builder import (
     LANGUAGE_PROFILES,
@@ -98,6 +102,44 @@ def get_api_key():
                 return value
 
     return None
+
+
+def normalize_localized_content(content):
+    if not isinstance(content, dict):
+        return content
+
+    normalized = dict(content)
+
+    for field, max_length in FIELD_LIMITS.items():
+        value = normalized.get(field)
+
+        if isinstance(value, str):
+            normalized[field] = truncate_text(
+                value,
+                max_length,
+            )
+
+    hashtags = normalized.get("hashtags")
+
+    if isinstance(hashtags, list):
+        cleaned = []
+
+        for hashtag in hashtags:
+            if not isinstance(hashtag, str):
+                cleaned.append(hashtag)
+                continue
+
+            value = normalize_text(hashtag)
+
+            if not value:
+                continue
+
+            if value not in cleaned:
+                cleaned.append(value)
+
+        normalized["hashtags"] = cleaned[:5]
+
+    return normalized
 
 
 def validate_localized_content(
@@ -287,6 +329,8 @@ def generate_localized_content(
         raise RuntimeError(
             "OpenAI returned invalid JSON"
         ) from exc
+
+    content = normalize_localized_content(content)
 
     errors = validate_localized_content(
         content,
