@@ -145,5 +145,21 @@
     "purpose": "Our content is created to help visitors discover useful products, compare options, and make more informed shopping decisions.",
     "affiliate": "Some pages may include affiliate links. If a visitor clicks an affiliate link and makes a purchase, we may earn a commission at no additional cost.",
     "independence": "We aim to keep our recommendations useful, transparent, and clearly separated from official Pinterest or Amazon services."
+  },
+  "about": {
+    "title": "About Daily Deal Finder",
+    "hero_title": "About Daily Deal Finder",
+    "hero_intro": "Smart shopping inspiration, useful product discovery, and transparent affiliate recommendations.",
+    "mission_title": "Our Mission",
+    "mission_body": "Daily Deal Finder helps visitors discover carefully selected products, daily deals, and shopping inspiration in a clean, trustworthy format. We focus on useful product ideas, transparent affiliate disclosure, and simple content that helps people make better shopping decisions.",
+    "what_we_do_title": "What We Do",
+    "item_1": "Curate practical product ideas across useful categories",
+    "item_2": "Provide transparent affiliate recommendations",
+    "item_3": "Offer Pinterest-friendly shopping inspiration",
+    "item_4": "Keep our content simple, honest, and mobile-friendly",
+    "affiliate_title": "Affiliate Transparency",
+    "affiliate_body": "Some links on this website may be affiliate links, including Amazon Associates links. This means we may earn a small commission at no additional cost to you when you purchase through these links. We only recommend products we believe are genuinely useful.",
+    "contact_title": "Contact",
+    "contact_prefix": "Have questions or suggestions? Reach out at"
   }
 }
