@@ -205,5 +205,19 @@
     "section_5_p1": "Daily Deal Finder wird ohne Gewährleistung in der jeweils verfügbaren Form bereitgestellt. Wir garantieren nicht die Richtigkeit, Vollständigkeit oder Verfügbarkeit der auf dieser Website dargestellten Produktinformationen, Preise oder Links.",
     "section_6_title": "6. Haftungsbeschränkung",
     "section_6_p1": "Daily Deal Finder und seine Betreiber haften nicht für Schäden, die aus der Nutzung dieser Website oder aus Käufen über Links zu Drittanbietern entstehen."
+  },
+  "impressum": {
+    "page_title": "Impressum",
+    "subtitle": "Angaben gemäß § 5 DDG",
+    "provider_title": "Angaben gemäß § 5 DDG",
+    "email_label": "E-Mail:",
+    "disclaimer_title": "Haftungsausschluss",
+    "disclaimer_text": "Die Inhalte dieser Website werden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.",
+    "links_title": "Haftung für Links",
+    "links_text": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.",
+    "copyright_title": "Urheberrecht",
+    "copyright_text": "Die durch den Betreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem Urheberrecht. Die Vervielfältigung, Bearbeitung und Verbreitung bedürfen der schriftlichen Zustimmung des Betreibers.",
+    "amazon_title": "Amazon-Partnerprogramm",
+    "amazon_text": "Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Amazon und das Amazon-Logo sind Marken von Amazon.com, Inc. oder verbundenen Unternehmen."
   }
 }

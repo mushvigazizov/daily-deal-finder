@@ -205,5 +205,19 @@
     "section_5_p1": "Daily Deal Finder is provided \"as is\" without warranties of any kind. We do not guarantee the accuracy, completeness, or availability of product information, prices, or links displayed on this website.",
     "section_6_title": "6. Limitation of Liability",
     "section_6_p1": "Daily Deal Finder and its operators shall not be liable for any damages arising from the use of this website or from purchases made through third-party links."
+  },
+  "impressum": {
+    "page_title": "Legal Notice",
+    "subtitle": "Information pursuant to Section 5 DDG",
+    "provider_title": "Information pursuant to Section 5 DDG",
+    "email_label": "Email:",
+    "disclaimer_title": "Disclaimer",
+    "disclaimer_text": "The content of this website is prepared with the greatest possible care. However, no guarantee can be given for the accuracy, completeness, or currentness of the information.",
+    "links_title": "Liability for Links",
+    "links_text": "This website contains links to external third-party websites over whose content we have no control. The respective provider or operator is always responsible for the content of linked pages.",
+    "copyright_title": "Copyright",
+    "copyright_text": "Content and works created by the operator of this website are subject to copyright law. Reproduction, editing, or distribution requires the operator's written permission.",
+    "amazon_title": "Amazon Associates",
+    "amazon_text": "As an Amazon Associate, we earn from qualifying purchases. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates."
   }
 }
