@@ -6,7 +6,13 @@
     "terms": "Terms",
     "impressum": "Impressum",
     "affiliate": "Affiliate",
-    "contact": "Contact"
+    "contact": "Contact",
+    "affiliate_disclosure": "Affiliate Disclosure",
+    "editorial_policy": "Editorial Policy",
+    "how_we_select_products": "How We Select Products",
+    "ai_content_disclosure": "AI & Content Disclosure",
+    "pinterest_integration": "Pinterest Integration",
+    "our_mission": "Our Mission"
   },
   "hero": {
     "eyebrow": "AI-assisted research • Editorial care • Smarter shopping",
@@ -183,5 +189,21 @@
     "section_4_body": "Affiliate links are identified with the #Ad label on product cards.",
     "section_5_title": "No Additional Cost",
     "section_5_body": "The price you pay remains the same whether you purchase through our affiliate link or directly from Amazon."
+  },
+  "terms": {
+    "page_title": "Terms of Service",
+    "updated": "Last updated: July 2026",
+    "section_1_title": "1. Acceptance of Terms",
+    "section_1_p1": "By accessing and using Daily Deal Finder, you agree to comply with these Terms of Service.",
+    "section_2_title": "2. Informational Purpose",
+    "section_2_p1": "Daily Deal Finder is an informational shopping inspiration website. We do not sell products directly. We provide product ideas, recommendations, and links to third-party retailers including Amazon.de.",
+    "section_3_title": "3. Affiliate Links",
+    "section_3_p1": "Some links on this website are affiliate links. We may earn a commission when you purchase through these links at no additional cost to you. Affiliate links are clearly marked with",
+    "section_4_title": "4. Pinterest Integration",
+    "section_4_p1": "Daily Deal Finder may integrate with Pinterest services. Any Pinterest integration is used only with explicit user authorization. We do not publish, edit, delete, or modify Pinterest content without user approval. We are not affiliated with, endorsed by, or sponsored by Pinterest.",
+    "section_5_title": "5. No Warranty",
+    "section_5_p1": "Daily Deal Finder is provided \"as is\" without warranties of any kind. We do not guarantee the accuracy, completeness, or availability of product information, prices, or links displayed on this website.",
+    "section_6_title": "6. Limitation of Liability",
+    "section_6_p1": "Daily Deal Finder and its operators shall not be liable for any damages arising from the use of this website or from purchases made through third-party links."
   }
 }

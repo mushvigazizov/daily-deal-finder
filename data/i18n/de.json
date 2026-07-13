@@ -6,7 +6,13 @@
     "terms": "Nutzungsbedingungen",
     "impressum": "Impressum",
     "affiliate": "Affiliate-Hinweis",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "affiliate_disclosure": "Affiliate-Hinweis",
+    "editorial_policy": "Redaktionelle Richtlinien",
+    "how_we_select_products": "So wählen wir Produkte aus",
+    "ai_content_disclosure": "KI- und Inhaltshinweis",
+    "pinterest_integration": "Pinterest-Integration",
+    "our_mission": "Unsere Mission"
   },
   "hero": {
     "eyebrow": "KI-gestützte Recherche • Redaktionelle Sorgfalt • Besser einkaufen",
@@ -183,5 +189,21 @@
     "section_4_body": "Affiliate-Links werden auf Produktkarten mit dem Hinweis #Anzeige gekennzeichnet.",
     "section_5_title": "Keine zusätzlichen Kosten",
     "section_5_body": "Für dich bleibt der Preis unverändert – unabhängig davon, ob du über unseren Affiliate-Link oder direkt bei Amazon kaufst."
+  },
+  "terms": {
+    "page_title": "Nutzungsbedingungen",
+    "updated": "Zuletzt aktualisiert: Juli 2026",
+    "section_1_title": "1. Annahme der Bedingungen",
+    "section_1_p1": "Mit dem Zugriff auf Daily Deal Finder und der Nutzung dieser Website erklären Sie sich mit diesen Nutzungsbedingungen einverstanden.",
+    "section_2_title": "2. Informationszweck",
+    "section_2_p1": "Daily Deal Finder ist eine Informations- und Inspirationswebsite rund um das Einkaufen. Wir verkaufen keine Produkte direkt. Wir bieten Produktideen, Empfehlungen und Links zu Drittanbietern wie Amazon.de.",
+    "section_3_title": "3. Affiliate-Links",
+    "section_3_p1": "Einige Links auf dieser Website sind Affiliate-Links. Wenn Sie über diese Links einkaufen, können wir eine Provision erhalten, ohne dass für Sie zusätzliche Kosten entstehen. Affiliate-Links werden deutlich gekennzeichnet mit",
+    "section_4_title": "4. Pinterest-Integration",
+    "section_4_p1": "Daily Deal Finder kann Dienste von Pinterest integrieren. Eine Pinterest-Integration wird ausschließlich mit der ausdrücklichen Zustimmung des Nutzers verwendet. Ohne Zustimmung veröffentlichen, bearbeiten, löschen oder verändern wir keine Pinterest-Inhalte. Daily Deal Finder ist weder mit Pinterest verbunden noch von Pinterest unterstützt oder gesponsert.",
+    "section_5_title": "5. Keine Gewährleistung",
+    "section_5_p1": "Daily Deal Finder wird ohne Gewährleistung in der jeweils verfügbaren Form bereitgestellt. Wir garantieren nicht die Richtigkeit, Vollständigkeit oder Verfügbarkeit der auf dieser Website dargestellten Produktinformationen, Preise oder Links.",
+    "section_6_title": "6. Haftungsbeschränkung",
+    "section_6_p1": "Daily Deal Finder und seine Betreiber haften nicht für Schäden, die aus der Nutzung dieser Website oder aus Käufen über Links zu Drittanbietern entstehen."
   }
 }
