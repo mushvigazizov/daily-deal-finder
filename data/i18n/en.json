@@ -161,5 +161,12 @@
     "affiliate_body": "Some links on this website may be affiliate links, including Amazon Associates links. This means we may earn a small commission at no additional cost to you when you purchase through these links. We only recommend products we believe are genuinely useful.",
     "contact_title": "Contact",
     "contact_prefix": "Have questions or suggestions? Reach out at"
+  },
+  "contact": {
+    "title": "Contact",
+    "hero_intro": "Have questions or suggestions? We'd love to hear from you.",
+    "get_in_touch": "Get in Touch",
+    "email_label": "Email:",
+    "response_time": "We aim to respond within 24–48 hours."
   }
 }

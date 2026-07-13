@@ -161,5 +161,12 @@
     "affiliate_body": "Einige Links auf dieser Website können Affiliate-Links sein, darunter Links des Amazon-Partnerprogramms. Wenn du über einen solchen Link einkaufst, können wir eine kleine Provision erhalten, ohne dass dir zusätzliche Kosten entstehen. Wir empfehlen nur Produkte, die wir für wirklich nützlich halten.",
     "contact_title": "Kontakt",
     "contact_prefix": "Du hast Fragen oder Anregungen? Schreib uns an"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "hero_intro": "Du hast Fragen oder Anregungen? Wir freuen uns auf deine Nachricht.",
+    "get_in_touch": "Kontakt aufnehmen",
+    "email_label": "E-Mail:",
+    "response_time": "Wir antworten in der Regel innerhalb von 24–48 Stunden."
   }
 }
