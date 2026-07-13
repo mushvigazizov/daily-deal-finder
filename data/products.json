@@ -19,7 +19,7 @@
       ],
       "image": "assets/products/camp-001.webp",
       "gallery": [],
-      "amazon_asin": "s?k=Coleman%202-Personen%20Kuppelzelt%20%E2%80%94%20Wasserdicht",
+      "amazon_asin": "B00BM7A3R0",
       "button_text": "Auf Amazon ansehen",
       "availability": null,
       "rating": null,
@@ -39,10 +39,12 @@
       "seo_description": "Coleman 2-Personen Kuppelzelt - Wasserdicht & Schnellaufbau von Coleman im Überblick: 2-Personen Kapazität, Wasserdicht 3000 mm, Schnellaufbau-System. Eine praktische Option für alle, die passende Ausrüstung für zelte und Outdoor-Aktivitäten suchen.",
       "pinterest_title": "Coleman 2-Personen Kuppelzelt - Wasserdicht & Schnellaufbau für Camping 🏕️",
       "pinterest_description": "Coleman 2-Personen Kuppelzelt - Wasserdicht & Schnellaufbau von Coleman: eine nützliche Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "amazon_link_type": "search",
+      "amazon_link_type": "product",
       "buying_angle": "Besonders interessant für Camper, die bei zelte auf praktische Eigenschaften achten: 2-Personen Kapazität, Wasserdicht 3000 mm, Schnellaufbau-System.",
       "content_status": "ai_engine_generated",
-      "content_engine": "local_v1"
+      "content_engine": "local_v1",
+      "asin_verified": true,
+      "verified_amazon_url": "https://www.amazon.de/dp/B00BM7A3R0"
     },
     {
       "id": "camp-002",
@@ -105,7 +107,7 @@
       ],
       "image": "assets/products/camp-003.webp",
       "gallery": [],
-      "amazon_asin": "s?k=Quechua%20Pop-Up%20Wurfzelt%202-Personen%20%E2%80%94",
+      "amazon_asin": "B013UM88CQ",
       "button_text": "Auf Amazon ansehen",
       "availability": null,
       "rating": null,
@@ -125,10 +127,12 @@
       "seo_description": "Quechua Pop-Up Wurfzelt 2-Personen - 2 Sekunden Aufbau von Quechua im Überblick: 2-Sekunden Selbstaufbau, Ultraleicht: 2 kg, Kompakt verstaubar. Eine praktische Option für alle, die passende Ausrüstung für zelte und Outdoor-Aktivitäten suchen.",
       "pinterest_title": "Quechua Pop-Up Wurfzelt 2-Personen - 2 Sekunden Aufbau für Camping 🏕️",
       "pinterest_description": "Quechua Pop-Up Wurfzelt 2-Personen - 2 Sekunden Aufbau von Quechua: eine nützliche Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "amazon_link_type": "search",
+      "amazon_link_type": "product",
       "buying_angle": "Besonders interessant für Camper, die bei zelte auf praktische Eigenschaften achten: 2-Sekunden Selbstaufbau, Ultraleicht: 2 kg, Kompakt verstaubar.",
       "content_status": "ai_engine_generated",
-      "content_engine": "local_v1"
+      "content_engine": "local_v1",
+      "asin_verified": true,
+      "verified_amazon_url": "https://www.amazon.de/dp/B013UM88CQ"
     },
     {
       "id": "camp-004",
