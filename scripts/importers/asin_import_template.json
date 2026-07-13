@@ -6,7 +6,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Previous ASIN rejected because the Amazon product did not exactly match the website product identity.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-002",
@@ -15,7 +20,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-003",
@@ -24,7 +34,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Previous ASIN rejected because the Amazon product did not exactly match the website product identity.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-004",
@@ -33,7 +48,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-005",
@@ -42,16 +62,26 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-006",
     "title": "PETZL LED Stirnlampe — 300 Lumen, wiederaufladbar",
     "current_amazon_asin": "s?k=PETZL%20LED%20Stirnlampe%20%E2%80%94%20300",
-    "verified_asin": "B0FDLYVN3R",
-    "verified_amazon_url": "https://www.amazon.de/dp/B0FDLYVN3R",
-    "status": "verified",
-    "notes": "ASIN validated and applied automatically."
+    "verified_asin": "",
+    "verified_amazon_url": "",
+    "status": "needs_verification",
+    "notes": "Previous ASIN rejected because the Amazon product did not exactly match the website product identity.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-007",
@@ -60,7 +90,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-008",
@@ -69,7 +104,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-009",
@@ -78,7 +118,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-010",
@@ -87,7 +132,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-011",
@@ -96,7 +146,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-012",
@@ -105,7 +160,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-013",
@@ -114,7 +174,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-014",
@@ -123,7 +188,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-015",
@@ -132,7 +202,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-016",
@@ -141,7 +216,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-017",
@@ -150,7 +230,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-018",
@@ -159,7 +244,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-019",
@@ -168,7 +258,12 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   },
   {
     "id": "camp-020",
@@ -177,6 +272,11 @@
     "verified_asin": "",
     "verified_amazon_url": "",
     "status": "needs_verification",
-    "notes": "Find exact Amazon.de product page and paste ASIN here."
+    "notes": "Find exact Amazon.de product page and paste ASIN here.",
+    "amazon_product_title": "",
+    "amazon_brand": "",
+    "amazon_model": "",
+    "verification_status": "needs_verification",
+    "verification_source": ""
   }
 ]
