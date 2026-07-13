@@ -138,5 +138,12 @@
     "goal": "We want visitors to find practical product ideas without feeling lost in endless search results.",
     "transparency": "Our mission is to combine useful content, transparent affiliate disclosure, and responsible publishing practices.",
     "future": "As the project grows, we aim to improve our product guides, shopping categories, and visual discovery experience."
+  },
+  "editorial": {
+    "title": "Editorial Policy",
+    "intro": "Daily Deal Finder publishes product inspiration, buying guides, and helpful shopping recommendations for everyday users.",
+    "purpose": "Our content is created to help visitors discover useful products, compare options, and make more informed shopping decisions.",
+    "affiliate": "Some pages may include affiliate links. If a visitor clicks an affiliate link and makes a purchase, we may earn a commission at no additional cost.",
+    "independence": "We aim to keep our recommendations useful, transparent, and clearly separated from official Pinterest or Amazon services."
   }
 }
