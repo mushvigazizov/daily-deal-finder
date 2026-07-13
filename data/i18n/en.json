@@ -131,5 +131,12 @@
     "section_7_p1": "If you are in the European Economic Area, you have the right to access, correct, delete, or restrict processing of your personal data. You may also object to processing and have the right to data portability. Contact us at mushvig.azizov@gmail.com to exercise any of these rights.",
     "section_8_title": "8. Contact",
     "contact_prefix": "For privacy-related questions, contact:"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "intro": "Daily Deal Finder was created to make online shopping discovery simpler, clearer, and more helpful.",
+    "goal": "We want visitors to find practical product ideas without feeling lost in endless search results.",
+    "transparency": "Our mission is to combine useful content, transparent affiliate disclosure, and responsible publishing practices.",
+    "future": "As the project grows, we aim to improve our product guides, shopping categories, and visual discovery experience."
   }
 }
