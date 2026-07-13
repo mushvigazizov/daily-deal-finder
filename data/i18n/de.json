@@ -168,5 +168,20 @@
     "get_in_touch": "Kontakt aufnehmen",
     "email_label": "E-Mail:",
     "response_time": "Wir antworten in der Regel innerhalb von 24–48 Stunden."
+  },
+  "affiliate": {
+    "title": "Affiliate-Hinweis",
+    "hero_intro": "Transparente Informationen über Affiliate-Links und Provisionen.",
+    "section_1_title": "Was sind Affiliate-Links?",
+    "section_1_body": "Einige Links auf dieser Website sind Affiliate-Links. Wenn du auf einen Affiliate-Link klickst und einen Kauf tätigst, erhalten wir möglicherweise eine kleine Provision, ohne dass dir zusätzliche Kosten entstehen.",
+    "section_2_title": "Amazon-Partnerprogramm",
+    "section_2_body1": "Daily Deal Finder nimmt am Amazon EU-Partnerprogramm teil. Dieses Affiliate-Programm ermöglicht es Websites, durch Werbung und Verlinkung auf Amazon.de Werbevergütungen zu verdienen.",
+    "section_2_body2": "Als Amazon-Partner verdienen wir an qualifizierten Käufen. Amazon und das Amazon-Logo sind Marken von Amazon.com, Inc. oder verbundenen Unternehmen.",
+    "section_3_title": "Produktinformationen",
+    "section_3_body": "Produktpreise und Verfügbarkeit können sich jederzeit ändern. Bitte überprüfe Preis und Verfügbarkeit direkt auf Amazon.de, bevor du einen Kauf tätigst.",
+    "section_4_title": "Kennzeichnung",
+    "section_4_body": "Affiliate-Links werden auf Produktkarten mit dem Hinweis #Anzeige gekennzeichnet.",
+    "section_5_title": "Keine zusätzlichen Kosten",
+    "section_5_body": "Für dich bleibt der Preis unverändert – unabhängig davon, ob du über unseren Affiliate-Link oder direkt bei Amazon kaufst."
   }
 }

@@ -25,13 +25,13 @@
   <div class="container nav">
     <a class="brand" href="/"><img src="/assets/logo.png" alt="Daily Deal Finder logo"><span>Daily Deal Finder</span></a>
     <nav class="menu">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/privacy.html">Privacy Policy</a>
-      <a href="/terms.html">Terms</a>
-      <a href="/impressum.html">Impressum</a>
-      <a href="/affiliate-disclosure.html">Affiliate</a>
-      <a href="/contact.html">Contact</a>
+      <a href="/" data-i18n="nav.home">Home</a>
+      <a href="/about.html" data-i18n="nav.about">About</a>
+      <a href="/privacy.html" data-i18n="nav.privacy">Privacy Policy</a>
+      <a href="/terms.html" data-i18n="nav.terms">Terms</a>
+      <a href="/impressum.html" data-i18n="nav.impressum">Impressum</a>
+      <a href="/affiliate-disclosure.html" data-i18n="nav.affiliate">Affiliate</a>
+      <a href="/contact.html" data-i18n="nav.contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -39,29 +39,29 @@
 <main>
   <section class="page-hero">
     <div class="container">
-      <h1>Affiliate Disclosure</h1>
-      <p>Transparent information about affiliate links and commissions.</p>
+      <h1 data-i18n="affiliate.title">Affiliate Disclosure</h1>
+      <p data-i18n="affiliate.hero_intro">Transparent information about affiliate links and commissions.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="legal">
-        <h2>What are affiliate links?</h2>
-        <p>Some links on this website are affiliate links. If you click on an affiliate link and make a purchase, we may receive a small commission at no additional cost to you.</p>
+        <h2 data-i18n="affiliate.section_1_title">What are affiliate links?</h2>
+        <p data-i18n="affiliate.section_1_body">Some links on this website are affiliate links. If you click on an affiliate link and make a purchase, we may receive a small commission at no additional cost to you.</p>
 
-        <h2>Amazon Associates Program</h2>
-        <p>Daily Deal Finder is a participant in the Amazon EU Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.de.</p>
-        <p>As an Amazon Associate, we earn from qualifying purchases. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
+        <h2 data-i18n="affiliate.section_2_title">Amazon Associates Program</h2>
+        <p data-i18n="affiliate.section_2_body1">Daily Deal Finder is a participant in the Amazon EU Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.de.</p>
+        <p data-i18n="affiliate.section_2_body2">As an Amazon Associate, we earn from qualifying purchases. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
 
-        <h2>Product Information</h2>
-        <p>Product prices and availability are subject to change at any time. The information displayed on this website is for informational purposes only. Please verify the current price and availability directly on Amazon.de before making a purchase.</p>
+        <h2 data-i18n="affiliate.section_3_title">Product Information</h2>
+        <p data-i18n="affiliate.section_3_body">Product prices and availability are subject to change at any time. The information displayed on this website is for informational purposes only. Please verify the current price and availability directly on Amazon.de before making a purchase.</p>
 
-        <h2>Identification</h2>
-        <p>Affiliate links are marked with the <strong>#Anzeige</strong> label on product cards.</p>
+        <h2 data-i18n="affiliate.section_4_title">Identification</h2>
+        <p data-i18n="affiliate.section_4_body">Affiliate links are marked with the #Anzeige label on product cards.</p>
 
-        <h2>No Additional Cost</h2>
-        <p>The price of the product remains the same for you — whether you purchase through an affiliate link or directly on Amazon.</p>
+        <h2 data-i18n="affiliate.section_5_title">No Additional Cost</h2>
+        <p data-i18n="affiliate.section_5_body">The price of the product remains the same for you — whether you purchase through an affiliate link or directly on Amazon.</p>
       </div>
     </div>
   </section>
@@ -73,27 +73,29 @@
       <div class="footgrid">
         <div>
           <strong>Daily Deal Finder</strong>
-          <p>Smart shopping ideas, useful product inspiration, and transparent affiliate recommendations.</p>
+          <p data-i18n="footer.description">Smart shopping ideas, useful product inspiration, and transparent affiliate recommendations.</p>
         </div>
         <nav>
 
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms</a>
-        <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-        <a href="/editorial-policy.html">Editorial Policy</a>
-        <a href="/how-we-select-products.html">How We Select Products</a>
-        <a href="/ai-content-disclosure.html">AI & Content Disclosure</a>
-        <a href="/pinterest-integration.html">Pinterest Integration</a>
-        <a href="/our-mission.html">Our Mission</a>
-        <a href="/impressum.html">Impressum</a>
+        <a href="/about.html" data-i18n="nav.about">About</a>
+        <a href="/contact.html" data-i18n="nav.contact">Contact</a>
+        <a href="/privacy.html" data-i18n="nav.privacy">Privacy Policy</a>
+        <a href="/terms.html" data-i18n="nav.terms">Terms</a>
+        <a href="/affiliate-disclosure.html" data-i18n="footer.affiliate_disclosure">Affiliate Disclosure</a>
+        <a href="/editorial-policy.html" data-i18n="footer.editorial_policy">Editorial Policy</a>
+        <a href="/how-we-select-products.html" data-i18n="footer.selection_policy">How We Select Products</a>
+        <a href="/ai-content-disclosure.html" data-i18n="footer.ai_disclosure">AI & Content Disclosure</a>
+        <a href="/pinterest-integration.html" data-i18n="footer.pinterest_integration">Pinterest Integration</a>
+        <a href="/our-mission.html" data-i18n="footer.mission">Our Mission</a>
+        <a href="/impressum.html" data-i18n="nav.impressum">Impressum</a>
 
         </nav>
       </div>
-      <div class="disclosure">© 2026 Daily Deal Finder. All rights reserved.</div>
+      <div class="disclosure" data-i18n="footer.copyright">© 2026 Daily Deal Finder. All rights reserved.</div>
     </div>
   </footer>
+
+  <script src="/js/i18n.js" defer></script>
 
 </body>
 </html>

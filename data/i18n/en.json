@@ -168,5 +168,20 @@
     "get_in_touch": "Get in Touch",
     "email_label": "Email:",
     "response_time": "We aim to respond within 24–48 hours."
+  },
+  "affiliate": {
+    "title": "Affiliate Disclosure",
+    "hero_intro": "Transparent information about affiliate links and commissions.",
+    "section_1_title": "What are affiliate links?",
+    "section_1_body": "Some links on this website are affiliate links. If you click an affiliate link and make a purchase, we may receive a small commission at no additional cost to you.",
+    "section_2_title": "Amazon Associates Program",
+    "section_2_body1": "Daily Deal Finder participates in the Amazon EU Associates Program, an affiliate advertising program that allows websites to earn advertising fees by linking to Amazon.de.",
+    "section_2_body2": "As an Amazon Associate, we earn from qualifying purchases. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.",
+    "section_3_title": "Product Information",
+    "section_3_body": "Product prices and availability may change at any time. Please verify the current price and availability directly on Amazon.de before making a purchase.",
+    "section_4_title": "Identification",
+    "section_4_body": "Affiliate links are identified with the #Ad label on product cards.",
+    "section_5_title": "No Additional Cost",
+    "section_5_body": "The price you pay remains the same whether you purchase through our affiliate link or directly from Amazon."
   }
 }
