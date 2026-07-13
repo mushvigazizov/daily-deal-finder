@@ -873,3 +873,8 @@ main.container > .hero .eyebrow {
   color: var(--v2-muted);
   font-size: 0.78rem;
 }
+
+/* Russian hero title adjustment */
+html[lang="ru"] .hero h1 {
+    font-size: clamp(2.9rem, 6vw, 5.5rem);
+}
