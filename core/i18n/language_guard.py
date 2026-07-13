@@ -43,23 +43,6 @@ LANGUAGE_RULES = {
             r"\bfür outdoor\b",
         ],
     },
-    "ru": {
-        "forbidden_phrases": [
-            "entdecke",
-            "ideal für",
-            "mit fokus auf",
-            "perfekt für",
-            "weather protection",
-            "realistic outdoor use",
-            "couples and weekend campers",
-            "camping und outdoor",
-        ],
-        "foreign_word_patterns": [
-            r"\bideal for\b",
-            r"\bperfect for\b",
-            r"\bgeeignet für\b",
-        ],
-    },
 }
 
 

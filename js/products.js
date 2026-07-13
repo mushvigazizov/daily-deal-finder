@@ -6,7 +6,7 @@
 let CONFIG = {};
 let PRODUCTS = [];
 
-const SUPPORTED_PRODUCT_LANGUAGES = ["de", "en", "ru"];
+const SUPPORTED_PRODUCT_LANGUAGES = ["de", "en"];
 const DEFAULT_PRODUCT_LANGUAGE = "de";
 
 let UI_TRANSLATIONS = {};

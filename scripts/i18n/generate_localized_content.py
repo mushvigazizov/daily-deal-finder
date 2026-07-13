@@ -11,7 +11,7 @@ from core.i18n.content_hash import build_source_hash
 PRODUCTS_PATH = Path("data/products.json")
 CONTENT_DIR = Path("data/content")
 DEFAULT_PRODUCT_ID = "camp-001"
-TARGET_LANGUAGES = ("en", "ru")
+TARGET_LANGUAGES = ("en",)
 
 
 def load_products():
@@ -286,7 +286,7 @@ def generate_product(product, write=False, force=False):
 def main():
     parser = argparse.ArgumentParser(
         description=(
-            "Generate validated English and Russian "
+            "Generate validated English "
             "localized product content."
         )
     )

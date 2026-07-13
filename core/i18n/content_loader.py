@@ -41,7 +41,6 @@ def resolve_content_file(product_id, language):
         DEFAULT_LANGUAGE,
         "de",
         "en",
-        "ru",
     ]
 
     checked = set()

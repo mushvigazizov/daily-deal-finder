@@ -1,4 +1,4 @@
-const SUPPORTED_LANGUAGES = ["en", "de", "ru"];
+const SUPPORTED_LANGUAGES = ["de", "en"];
 const DEFAULT_LANGUAGE = "en";
 
 function getLanguageFromUrl() {

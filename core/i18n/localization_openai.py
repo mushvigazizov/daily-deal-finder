@@ -26,7 +26,7 @@ LOCALIZED_CONTENT_SCHEMA = {
         },
         "language": {
             "type": "string",
-            "enum": ["en", "ru"],
+            "enum": ["en"],
         },
         "title": {
             "type": "string",
@@ -144,32 +144,6 @@ def normalize_localized_content(content):
             normalized[field] = truncate_text(
                 value,
                 max_length,
-            )
-
-    if normalized.get("language") == "ru":
-        pinterest_description = normalized.get(
-            "pinterest_description"
-        )
-
-        if isinstance(pinterest_description, str):
-            russian_replacements = {
-                "Сохрани этот находку": "Сохрани эту находку",
-                "Сохраните этот находку": "Сохраните эту находку",
-                "Сохрани этот совет": "Сохрани эту идею",
-                "Запомните этот вариант": "Сохраните эту идею",
-                "Запомни этот вариант": "Сохрани эту идею",
-            }
-
-            for incorrect, corrected in russian_replacements.items():
-                pinterest_description = (
-                    pinterest_description.replace(
-                        incorrect,
-                        corrected,
-                    )
-                )
-
-            normalized["pinterest_description"] = (
-                pinterest_description
             )
 
     features = normalized.get("features")

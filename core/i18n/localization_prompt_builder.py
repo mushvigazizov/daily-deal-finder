@@ -15,19 +15,6 @@ LANGUAGE_PROFILES = {
             "German sentence structure."
         ),
     },
-    "ru": {
-        "name": "Russian",
-        "locale": "ru-RU",
-        "audience": (
-            "Russian-speaking shoppers interested in "
-            "camping and outdoor products"
-        ),
-        "style": (
-            "Natural, professional Russian. Clear and fluent, "
-            "without German or English sentence structure and "
-            "without exaggerated advertising claims."
-        ),
-    },
 }
 
 
@@ -102,7 +89,7 @@ Important rules:
 1. Write every user-visible field entirely in {profile["name"]}.
 2. Translate title, descriptions, features, button text, buying angle,
    SEO content, alt text, Pinterest content, and hashtags.
-3. Do not mix German, English, Russian, or other languages.
+3. Do not mix German, English, or other languages.
 4. Do not translate mechanically word for word.
 5. Preserve the factual meaning of the German source.
 6. Do not invent specifications, prices, ratings, certifications,

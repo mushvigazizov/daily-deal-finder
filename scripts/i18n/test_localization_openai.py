@@ -11,7 +11,7 @@ from core.i18n.localization_openai import (
 
 PRODUCTS_PATH = Path("data/products.json")
 PRODUCT_ID = "camp-001"
-TARGET_LANGUAGES = ("en", "ru")
+TARGET_LANGUAGES = ("en",)
 
 
 def main():

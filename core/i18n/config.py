@@ -1,7 +1,6 @@
 SUPPORTED_LANGUAGES = [
     "de",
     "en",
-    "ru",
 ]
 
 DEFAULT_LANGUAGE = "en"
