@@ -1,31 +1,32 @@
 {
   "id": "camp-014",
   "language": "en",
-  "title": "Mobicool Electric Cooler 24L — 12V & 230V",
-  "short_description": "Practical 24L cooler for car and socket. Cools up to 18°C below ambient temperature. Quiet, lightweight, with carrying handle.",
-  "long_description": "The Mobicool cooler keeps food and drinks reliably fresh — at the campsite via 230V socket, on the go via 12V car adapter. With a volume of 24 liters, it offers enough space for weekend shopping. The quiet cooling system and practical carrying handle make it the perfect companion for any camping trip.",
+  "title": "Mobicool ME24 Electric Cooler — 23L, 12V & 230V",
+  "short_description": "A 23-litre electric cooler for vehicle and mains power. The Mobicool ME24 runs on 12 V DC or 230 V AC and holds up to 33 cans.",
+  "long_description": "The Mobicool ME24 is a thermoelectric cooler with 23 litres of usable capacity. It can run from a vehicle's 12 V socket while travelling and from 230 V mains power at a campsite or at home. The interior holds up to 33 cans or four 1.5-litre bottles laid horizontally. Its carry handle also helps secure or support the lid.",
   "features": [
-    "24L capacity",
-    "12V & 230V operation",
-    "Cools up to 18°C below ambient temperature",
-    "Quiet cooling system",
-    "Practical carrying handle"
+    "23L usable capacity",
+    "12V DC and 230V AC operation",
+    "Space for up to 33 cans",
+    "Thermoelectric cooling system",
+    "Practical carry handle"
   ],
   "button_text": "View on Amazon",
-  "buying_angle": "Especially appealing for campers who value practical features: 24L capacity, 12V & 230V operation, cools up to 18°C below ambient temperature.",
-  "seo_title": "Mobicool Electric Cooler 24L - 12V & 230V Review 2026 | Camping &",
-  "meta_description": "Overview of the Mobicool Electric Cooler 24L - 12V & 230V: 24L capacity, 12V & 230V operation, cools up to 18°C below ambient. A practical option.",
-  "alt_text": "Mobicool Electric Cooler 24L — 12V & 230V",
-  "pinterest_title": "Mobicool Electric Cooler 24L - 12V & 230V for Camping 🏕️",
-  "pinterest_description": "Mobicool Electric Cooler 24L - 12V & 230V: a useful idea for camping, outdoor, and weekend trips. Save this find for your next adventure. #camping #outdoor #campinggear",
+  "buying_angle": "Useful for camping, road trips, and day outings when a compact cooler needs to run both in a vehicle and from a 230 V socket.",
+  "seo_title": "Mobicool ME24 23L Cooler – 12V & 230V | Daily Deal Finder",
+  "meta_description": "Mobicool ME24 electric cooler with 23 litres of usable capacity, 12 V and 230 V operation, and space for up to 33 cans.",
+  "alt_text": "Mobicool ME24 electric cooler with 23L capacity",
+  "pinterest_title": "Mobicool ME24 23L Cooler – 12V & 230V",
+  "pinterest_description": "The Mobicool ME24 offers 23 litres of capacity and runs from 12 V in a vehicle or 230 V mains power. A practical choice for camping and road trips. #camping #cooler #mobicool",
   "hashtags": [
     "#camping",
-    "#outdoor",
-    "#campinggear"
+    "#cooler",
+    "#mobicool"
   ],
-  "source": "localized_from_de_v2",
+  "source": "localized_from_verified_de_v1",
   "source_language": "de",
-  "source_hash": "06f9b5cfc6b1d939dc860522cdf598cecc8ad617be751adaee4433848d9b092d",
-  "generated_at": "2026-07-12T14:16:24Z",
-  "content_engine": "openai_localization_v2"
+  "source_hash": "3e0153f3929b3fa0257e8043e2d21ea6daee38d984b60d64d22238f54baf7544",
+  "identity_hash": "85900bc45c5c3722f772c54b32af4811e2db8b63e4c9c192f4e9b94a7664b756",
+  "generated_at": "2026-07-14T14:59:43Z",
+  "content_engine": "amazon_identity_sync_v1"
 }

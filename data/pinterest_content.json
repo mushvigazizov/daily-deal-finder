@@ -136,13 +136,15 @@
     },
     {
       "product_id": "camp-014",
-      "title": "Mobicool Elektrische Kühlbox 24L - 12V & 230V 🏕️",
-      "description": "Mobicool Elektrische Kühlbox 24L - 12V & 230V für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Mobicool ME24 Kühlbox 23L – 12V & 230V",
+      "description": "Die Mobicool ME24 bietet 23 Liter Nutzinhalt und läuft über 12 V im Auto oder 230 V an der Steckdose. Praktisch für Camping, Ausflüge und Roadtrips. #camping #kühlbox #mobicool",
       "image": "assets/products/camp-014.webp",
       "target_url": "/product.html?id=camp-014",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-07-09",
+      "updated_at": "2026-07-14",
+      "identity_hash": "85900bc45c5c3722f772c54b32af4811e2db8b63e4c9c192f4e9b94a7664b756"
     },
     {
       "product_id": "camp-015",
