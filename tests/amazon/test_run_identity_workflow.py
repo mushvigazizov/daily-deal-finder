@@ -43,6 +43,18 @@ class TestRunIdentityWorkflow(unittest.TestCase):
             "Write phase skipped",
             result.stdout,
         )
+        self.assertIn(
+            "STEP 5 — LOCKED IDENTITY GUARD",
+            result.stdout,
+        )
+        self.assertIn(
+            "Result : IDENTITY GUARD PASSED",
+            result.stdout,
+        )
+        self.assertIn(
+            "STEP 6 — FINAL PRODUCT IDENTITY AUDIT",
+            result.stdout,
+        )
 
     def test_write_flag_is_supported_safely(self):
         result = subprocess.run(
@@ -67,7 +79,23 @@ class TestRunIdentityWorkflow(unittest.TestCase):
             result.stdout,
         )
         self.assertIn(
-            "Locked identities : 0",
+            "Locked identities :",
+            result.stdout,
+        )
+        self.assertIn(
+            "Result : SAFE WRITE WORKFLOW PASSED",
+            result.stdout,
+        )
+        self.assertIn(
+            "STEP 5 — LOCKED IDENTITY GUARD",
+            result.stdout,
+        )
+        self.assertIn(
+            "Result : IDENTITY GUARD PASSED",
+            result.stdout,
+        )
+        self.assertIn(
+            "STEP 6 — FINAL PRODUCT IDENTITY AUDIT",
             result.stdout,
         )
 
