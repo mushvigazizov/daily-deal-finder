@@ -1,0 +1,64 @@
+{
+  "product_id": "camp-002",
+  "candidates": [
+    {
+      "asin": "B071ZS855M",
+      "amazon_url": "https://www.amazon.de/dp/B071ZS855M",
+      "amazon_product_title": "Skandika Tunnelzelt Nordland für 4 Personen mit eingenähtem Zeltboden, wasserdicht, 5000 mm Wassersäule, 2 m Stehhöhe und teilbarer Schlafkabine",
+      "amazon_brand": "Skandika",
+      "amazon_model": "Nordland 4",
+      "amazon_size": "4 Personen",
+      "amazon_color": "",
+      "amazon_key_specs": [
+        "4 Personen",
+        "200 cm Stehhöhe",
+        "5000 mm Wassersäule",
+        "eingenähter Zeltboden",
+        "teilbare Schlafkabine",
+        "Moskitonetz",
+        "atmungsaktives Material"
+      ],
+      "candidate_source": "amazon_de_product_page",
+      "review_status": "unreviewed"
+    },
+    {
+      "asin": "B07RZ7T9RY",
+      "amazon_url": "https://www.amazon.de/dp/B07RZ7T9RY",
+      "amazon_product_title": "Skandika Kambo Tunnelzelt für 4 Personen mit dunkler Schlafkabine, 3000 mm Wassersäule, 3 Eingängen, Sonnendach und Vorzelt",
+      "amazon_brand": "Skandika",
+      "amazon_model": "Kambo 4",
+      "amazon_size": "4 Personen",
+      "amazon_color": "",
+      "amazon_key_specs": [
+        "4 Personen",
+        "3000 mm Wassersäule",
+        "dunkle Schlafkabine",
+        "3 Eingänge",
+        "Sonnendach",
+        "Vorzelt",
+        "Moskitonetz"
+      ],
+      "candidate_source": "amazon_de_product_page",
+      "review_status": "unreviewed"
+    },
+    {
+      "asin": "B09878ZYVK",
+      "amazon_url": "https://www.amazon.de/dp/B09878ZYVK",
+      "amazon_product_title": "Skandika Kuppelzelt Hammerfest Protect für 4 Personen mit eingenähtem Zeltboden, 2 Schlafkabinen, Moskitonetzen und 200 cm Stehhöhe",
+      "amazon_brand": "Skandika",
+      "amazon_model": "Hammerfest 4 Protect",
+      "amazon_size": "4 Personen",
+      "amazon_color": "",
+      "amazon_key_specs": [
+        "4 Personen",
+        "200 cm Stehhöhe",
+        "2 Schlafkabinen",
+        "eingenähter Zeltboden",
+        "Moskitonetz",
+        "wasserdicht"
+      ],
+      "candidate_source": "amazon_de_product_page",
+      "review_status": "unreviewed"
+    }
+  ]
+}
