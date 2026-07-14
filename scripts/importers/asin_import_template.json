@@ -3,15 +3,24 @@
     "id": "camp-001",
     "title": "Coleman 2-Personen Kuppelzelt — Wasserdicht & Schnellaufbau",
     "current_amazon_asin": "s?k=Coleman%202-Personen%20Kuppelzelt%20%E2%80%94%20Wasserdicht",
-    "verified_asin": "",
-    "verified_amazon_url": "",
-    "status": "needs_verification",
-    "notes": "Previous ASIN rejected because the Amazon product did not exactly match the website product identity.",
-    "amazon_product_title": "",
-    "amazon_brand": "",
-    "amazon_model": "",
-    "verification_status": "needs_verification",
-    "verification_source": ""
+    "verified_asin": "B0BS954M37",
+    "verified_amazon_url": "https://www.amazon.de/dp/B0BS954M37",
+    "status": "verified",
+    "notes": "Exact Amazon.de product identity verified as Coleman Bedrock 2, model 2176906.",
+    "amazon_product_title": "Coleman Zelt Bedrock 2, kompaktes 2-Mann-Kuppelzelt, leichtes Camping- & Wanderzelt für 2 Personen, 100% wasserdicht dank 3.000 mm Wassersäule",
+    "amazon_brand": "Coleman",
+    "amazon_model": "Bedrock 2 / 2176906",
+    "verification_status": "verified",
+    "verification_source": "https://www.amazon.de/dp/B0BS954M37",
+    "amazon_key_specs": [
+      "Kapazität: 2 Personen",
+      "Wassersäule: 3000 mm",
+      "Produktabmessungen: ca. 2,6 x 1,3 x 0,9 m",
+      "Artikelgewicht: ca. 2,5 kg",
+      "Modellnummer: 2176906"
+    ],
+    "identity_hash": "caa0f620c3bc496fcc3885498467f65ce5bf94a53cb48afcb2a8117c245b06b8",
+    "identity_locked": true
   },
   {
     "id": "camp-002",
