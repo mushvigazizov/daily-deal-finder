@@ -208,7 +208,6 @@ def apply_identity_to_product(
     product["amazon_url"] = canonical_url
     product["amazon_link_type"] = "product"
     product["asin_verified"] = True
-    product["asin_verified_at"] = applied_at
 
     product["amazon_product_title"] = identity[
         "amazon_product_title"
@@ -226,9 +225,13 @@ def apply_identity_to_product(
     ]
     product["identity_hash"] = record["identity_hash"]
     product["identity_locked"] = True
-    product["identity_applied_at"] = applied_at
 
-    return product != before
+    if product == before:
+        return False
+
+    product["asin_verified_at"] = applied_at
+    product["identity_applied_at"] = applied_at
+    return True
 
 
 def prepare_application(
