@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="/styles/footer.css" />
   <link rel="stylesheet" href="/styles/product.css" />
 </head>
-<body>
+<body class="product-detail-page">
   <header class="site-header">
     <a class="brand" href="/">
       <img src="/assets/logo.png" alt="Daily Deal Finder logo">
@@ -74,8 +74,12 @@
   </footer>
 
 
-  <script src="/js/products.js?v=3"></script>
-  <script>initProductPage();</script>
-  <script src="/js/i18n.js" defer></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/products.js?v=4"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      initProductPage();
+    });
+  </script>
 </body>
 </html>
