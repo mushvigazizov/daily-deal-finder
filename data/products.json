@@ -279,7 +279,7 @@
       "content_status": "verified_product_refreshed",
       "content_engine": "product_refresh_v1",
       "verified_amazon_url": "",
-      "amazon_url": "https://www.amazon.de/dp/B0FDLYVN3R",
+      "amazon_url": null,
       "asin_verified": false,
       "asin_verified_at": "2026-07-10T14:44:28",
       "content_refreshed_at": "2026-07-12T10:35:54"
