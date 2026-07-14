@@ -61,34 +61,34 @@
       "title": "Küche & Essen",
       "description": "Nützliche Küchenhelfer, Zubehör und Inspiration zum Kochen."
     },
-    "electronics": {
-      "title": "Elektronik & Gadgets",
-      "description": "Elektronik, Zubehör und nützliche technische Produkte."
-    },
-    "fitness": {
-      "title": "Fitness & Sport",
-      "description": "Fitnessgeräte, Sportzubehör und Produkte für einen aktiven Alltag."
-    },
-    "travel": {
-      "title": "Reiseausrüstung",
-      "description": "Reisezubehör, Packhilfen und praktische Produkte für unterwegs."
-    },
     "pets": {
       "title": "Tierbedarf",
       "description": "Nützliche Produktideen für Haustiere und ihre Besitzer."
     },
-    "lifestyle": {
-      "title": "Lifestyle",
-      "description": "Praktische Ideen und Inspiration für den Alltag."
+    "tech": {
+      "title": "Technik",
+      "description": "Smarte Geräte, praktisches Zubehör und nützliche Technik."
+    },
+    "outdoor": {
+      "title": "Outdoor",
+      "description": "Praktische Ausrüstung für Wandern, Reisen und Outdoor-Abenteuer."
+    },
+    "beauty": {
+      "title": "Beauty",
+      "description": "Ausgewählte Beauty-Helfer, Körperpflege und praktische Alltagsprodukte."
+    },
+    "gifts": {
+      "title": "Geschenke",
+      "description": "Durchdachte Geschenkideen und nützliche Funde für besondere Anlässe."
     }
   },
   "home": {
     "trust_daily": "Täglich kuratiert",
     "trust_transparent": "Transparente Empfehlungen",
     "trust_shoppers": "Für bewusste Käufer entwickelt",
-    "featured_badge": "Heutiger Produkttipp",
+    "featured_badge": "Redaktionelle Auswahl",
     "featured_title": "Nützliche Produkte. Bessere Entscheidungen.",
-    "featured_description": "Entdecke sorgfältig präsentierte Produktideen aus den Bereichen Camping, Haushalt, Technik, Reisen und Alltag.",
+    "featured_description": "Entdecke übersichtlich aufbereitete Produktideen aus Camping, Haushalt, Küche, Technik und dem täglichen Leben.",
     "mini_home_description": "Nützliche Dinge für den Alltag",
     "mini_electronics_description": "Praktische Geräte und smarte Technik",
     "mini_kitchen_description": "Praktische Küchenideen",
@@ -104,7 +104,11 @@
     "about_button": "Über Daily Deal Finder",
     "confidence_title": "Mit Vertrauen einkaufen",
     "confidence_description": "Wir recherchieren Produktideen sorgfältig, legen Affiliate-Beziehungen offen und bemühen uns um ehrliche und hilfreiche Empfehlungen.",
-    "confidence_disclosure": "Einige Links können uns eine Provision einbringen, ohne dass für dich zusätzliche Kosten entstehen. Wir vertreten weder Amazon noch Pinterest. Alle Marken gehören ihren jeweiligen Eigentümern."
+    "confidence_disclosure": "Einige Links können uns eine Provision einbringen, ohne dass für dich zusätzliche Kosten entstehen. Wir vertreten weder Amazon noch Pinterest. Alle Marken gehören ihren jeweiligen Eigentümern.",
+    "mini_tech_description": "Nützliche Geräte und smarte Technik",
+    "mini_gifts_description": "Praktische Geschenkideen für jeden Anlass",
+    "featured_status": "Geprüfte Empfehlungen",
+    "featured_link": "Ausgewählte Produkte ansehen"
   },
   "footer": {
     "description": "Clevere Einkaufsideen, nützliche Produktinspiration und transparente Affiliate-Empfehlungen.",

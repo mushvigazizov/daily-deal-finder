@@ -61,34 +61,34 @@
       "title": "Kitchen & Dining",
       "description": "Useful kitchen tools, smart accessories, and cooking inspiration."
     },
-    "electronics": {
-      "title": "Electronics & Gadgets",
-      "description": "Electronics, gadgets, accessories, and useful tech finds."
-    },
-    "fitness": {
-      "title": "Fitness & Sports",
-      "description": "Fitness gear, sports accessories, and active lifestyle products."
-    },
-    "travel": {
-      "title": "Travel Gear",
-      "description": "Travel gear, packing helpers, and practical trip accessories."
-    },
     "pets": {
       "title": "Pet Supplies",
       "description": "Helpful product inspiration for pets and pet owners."
     },
-    "lifestyle": {
-      "title": "Lifestyle",
-      "description": "Lifestyle finds, useful everyday ideas, and smart inspiration."
+    "tech": {
+      "title": "Tech",
+      "description": "Smart gadgets, practical accessories, and useful technology."
+    },
+    "outdoor": {
+      "title": "Outdoor",
+      "description": "Practical equipment for hiking, travel, and outdoor adventures."
+    },
+    "beauty": {
+      "title": "Beauty",
+      "description": "Selected beauty tools, personal care, and everyday essentials."
+    },
+    "gifts": {
+      "title": "Gifts",
+      "description": "Thoughtful gift ideas and useful finds for special occasions."
     }
   },
   "home": {
     "trust_daily": "Curated daily",
     "trust_transparent": "Transparent recommendations",
     "trust_shoppers": "Built for smart shoppers",
-    "featured_badge": "Today's featured find",
+    "featured_badge": "Editorial selection",
     "featured_title": "Useful products. Better decisions.",
-    "featured_description": "Explore carefully presented product ideas across camping, home, technology, travel and everyday life.",
+    "featured_description": "Explore carefully presented product ideas across camping, home, kitchen, technology, and everyday life.",
     "mini_home_description": "Useful everyday items",
     "mini_electronics_description": "Useful gadgets and smart devices",
     "mini_kitchen_description": "Practical cooking finds",
@@ -104,7 +104,11 @@
     "about_button": "About Daily Deal Finder",
     "confidence_title": "Shop With Confidence",
     "confidence_description": "We carefully research product ideas, clearly disclose affiliate relationships, and strive to provide honest, useful recommendations.",
-    "confidence_disclosure": "Some links may earn us a commission at no additional cost to you. We never claim to represent Amazon or Pinterest, and all trademarks belong to their respective owners."
+    "confidence_disclosure": "Some links may earn us a commission at no additional cost to you. We never claim to represent Amazon or Pinterest, and all trademarks belong to their respective owners.",
+    "mini_tech_description": "Useful gadgets and smart devices",
+    "mini_gifts_description": "Useful gift ideas for every occasion",
+    "featured_status": "Verified picks",
+    "featured_link": "View selected products"
   },
   "footer": {
     "description": "Smart shopping ideas, useful product inspiration, and transparent affiliate recommendations.",

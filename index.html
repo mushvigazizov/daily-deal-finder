@@ -60,15 +60,19 @@
         </div>
         <div class="mockup">
           <div class="deal-card">
-            <div class="deal-top"><span class="badge" data-i18n="home.featured_badge">Today's featured find</span><span class="price">-35%</span></div>
-            <h2 style="color:#061b3b;margin:18px 0 8px" data-i18n="home.featured_title">Useful products. Better decisions.</h2>
-            <p style="color:#667085;line-height:1.6" data-i18n="home.featured_description">Explore carefully presented product ideas across camping, home, technology, travel and everyday life.</p>
+            <div class="deal-top">
+              <span class="badge" data-i18n="home.featured_badge">Editorial selection</span>
+              <span class="price" data-i18n="home.featured_status">Verified picks</span>
+            </div>
+            <h2 data-i18n="home.featured_title">Useful products. Better decisions.</h2>
+            <p data-i18n="home.featured_description">Explore carefully presented product ideas across camping, home, kitchen, technology, and everyday life.</p>
+            <a class="featured-link" href="#products" data-i18n="home.featured_link">View selected products</a>
           </div>
           <div class="grid-products">
             <a class="mini" href="/category.html?category=home">🏡<strong data-i18n="categories.home.title">Home</strong><p data-i18n="home.mini_home_description">Useful everyday items</p></a>
-            <a class="mini" href="/category.html?category=electronics">💻<strong data-i18n="categories.electronics.title">Electronics</strong><p data-i18n="home.mini_electronics_description">Useful gadgets and smart devices</p></a>
+            <a class="mini" href="/category.html?category=tech">💻<strong data-i18n="categories.tech.title">Tech</strong><p data-i18n="home.mini_tech_description">Useful gadgets and smart devices</p></a>
             <a class="mini" href="/category.html?category=kitchen">🍳<strong data-i18n="categories.kitchen.title">Kitchen</strong><p data-i18n="home.mini_kitchen_description">Practical cooking finds</p></a>
-            <a class="mini" href="/category.html?category=lifestyle">🎁<strong data-i18n="categories.lifestyle.title">Lifestyle</strong><p data-i18n="home.mini_lifestyle_description">Useful ideas for everyday living</p></a>
+            <a class="mini" href="/category.html?category=gifts">🎁<strong data-i18n="categories.gifts.title">Gifts</strong><p data-i18n="home.mini_gifts_description">Useful gift ideas for every occasion</p></a>
           </div>
         </div>
       </div>
@@ -82,11 +86,11 @@
           <a class="card" href="/category.html?category=camping"><div class="icon">🏕️</div><h3 data-i18n="categories.camping.title">Camping</h3><p data-i18n="categories.camping.description">Outdoor essentials, tents, hiking and adventure gear.</p></a>
           <a class="card" href="/category.html?category=home"><div class="icon">🏠</div><h3 data-i18n="categories.home.title">Home</h3><p data-i18n="categories.home.description">Functional home essentials, organizers, and everyday helpers.</p></a>
           <a class="card" href="/category.html?category=kitchen"><div class="icon">🍳</div><h3 data-i18n="categories.kitchen.title">Kitchen</h3><p data-i18n="categories.kitchen.description">Useful kitchen tools, smart accessories, and cooking inspiration.</p></a>
-          <a class="card" href="/category.html?category=electronics"><div class="icon">💻</div><h3 data-i18n="categories.electronics.title">Electronics</h3><p data-i18n="categories.electronics.description">Electronics, gadgets, accessories, and useful tech finds.</p></a>
-          <a class="card" href="/category.html?category=fitness"><div class="icon">🏋️</div><h3 data-i18n="categories.fitness.title">Fitness</h3><p data-i18n="categories.fitness.description">Fitness gear, sports accessories, and active lifestyle products.</p></a>
-          <a class="card" href="/category.html?category=travel"><div class="icon">✈️</div><h3 data-i18n="categories.travel.title">Travel</h3><p data-i18n="categories.travel.description">Travel gear, packing helpers, and practical trip accessories.</p></a>
+          <a class="card" href="/category.html?category=tech"><div class="icon">💻</div><h3 data-i18n="categories.tech.title">Tech</h3><p data-i18n="categories.tech.description">Smart gadgets, practical accessories, and useful technology.</p></a>
+          <a class="card" href="/category.html?category=outdoor"><div class="icon">🥾</div><h3 data-i18n="categories.outdoor.title">Outdoor</h3><p data-i18n="categories.outdoor.description">Practical equipment for hiking, travel, and outdoor adventures.</p></a>
+          <a class="card" href="/category.html?category=beauty"><div class="icon">✨</div><h3 data-i18n="categories.beauty.title">Beauty</h3><p data-i18n="categories.beauty.description">Selected beauty tools, personal care, and everyday essentials.</p></a>
           <a class="card" href="/category.html?category=pets"><div class="icon">🐶</div><h3 data-i18n="categories.pets.title">Pets</h3><p data-i18n="categories.pets.description">Helpful product inspiration for pets and pet owners.</p></a>
-          <a class="card" href="/category.html?category=lifestyle"><div class="icon">🎁</div><h3 data-i18n="categories.lifestyle.title">Lifestyle</h3><p data-i18n="categories.lifestyle.description">Lifestyle finds, useful everyday ideas, and smart inspiration.</p></a>
+          <a class="card" href="/category.html?category=gifts"><div class="icon">🎁</div><h3 data-i18n="categories.gifts.title">Gifts</h3><p data-i18n="categories.gifts.description">Thoughtful gift ideas and useful finds for special occasions.</p></a>
         </div>
       </div>
     </section>
@@ -147,8 +151,12 @@
   </footer>
 
 
+  <script src="/js/i18n.js"></script>
   <script src="/js/products.js?v=3"></script>
-  <script>initHomePage();</script>
-  <script src="/js/i18n.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      initHomePage();
+    });
+  </script>
 </body>
 </html>

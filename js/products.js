@@ -253,15 +253,24 @@ function renderProductGrid(products, containerId) {
       <a href="${buildProductUrl(p.id)}">
         <div class="product-image-wrap">
       ${imgHtml}
-      <span class="ai-visual-badge">AI Visual</span>
+      <span class="ai-visual-badge">${translateUi(
+        "common.ai_visual",
+        "AI Visual"
+      )}</span>
     </div>
       </a>
       <div class="info">
         <span class="category-tag">${p.category || ''}</span>
         <h3><a href="${buildProductUrl(p.id)}">${p.title}</a></h3>
         <p>${p.short_description || ''}</p>
-        <a href="${buildAmazonUrl(p.amazon_asin)}" target="_blank" rel="nofollow sponsored noopener" class="button">${p.button_text || 'Auf Amazon ansehen'}</a>
-        <span class="ad-badge">#Anzeige</span>
+        <a href="${buildAmazonUrl(p.amazon_asin)}" target="_blank" rel="nofollow sponsored noopener" class="button">${p.button_text || translateUi(
+          "common.view_on_amazon",
+          "View on Amazon"
+        )}</a>
+        <span class="ad-badge">${translateUi(
+          "common.advertisement",
+          "#Ad"
+        )}</span>
       </div>
     </article>
   `}).join('');
