@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_updated": "2026-07-15T11:03:16Z",
+  "_updated": "2026-07-15T13:13:42Z",
   "products": [
     {
       "id": "camp-001",
@@ -132,8 +132,8 @@
       ],
       "identity_hash": "c794cb33eba92168d2c642a52b51fdf822c68def30bcee33e5cc7d32765e254e",
       "identity_locked": true,
-      "asin_verified_at": "2026-07-15T11:03:16Z",
-      "identity_applied_at": "2026-07-15T11:03:16Z",
+      "asin_verified_at": "2026-07-15T13:13:42Z",
+      "identity_applied_at": "2026-07-15T13:13:42Z",
       "amazon_size": "",
       "amazon_color": ""
     },
@@ -314,7 +314,7 @@
       "verified_amazon_url": "https://www.amazon.de/dp/B09ZN94FJ3",
       "amazon_url": "https://www.amazon.de/dp/B09ZN94FJ3",
       "asin_verified": true,
-      "asin_verified_at": "2026-07-15T08:36:57Z",
+      "asin_verified_at": "2026-07-15T13:09:11Z",
       "content_refreshed_at": "2026-07-12T10:35:54",
       "verified_asin": "B09ZN94FJ3",
       "verification_status": "verified",
@@ -337,7 +337,7 @@
       ],
       "identity_hash": "27a5d7e541d9978e79b71cce2cc1eebdf439f1624a8ad8b45ad6581380ecb1bb",
       "identity_locked": true,
-      "identity_applied_at": "2026-07-15T08:36:57Z",
+      "identity_applied_at": "2026-07-15T13:09:11Z",
       "amazon_size": "",
       "amazon_color": ""
     },
