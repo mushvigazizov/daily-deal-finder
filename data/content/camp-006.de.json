@@ -1,15 +1,33 @@
 {
   "id": "camp-006",
   "language": "de",
-  "seo_title": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, wiederaufladbar Test 2026 |",
-  "meta_description": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, wiederaufladbar von PETZL im Überblick: 450 Lumen Leuchtkraft, Wiederaufladbarer CORE-Akku, Drei Weißlichtstufen...",
-  "alt_text": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, wiederaufladbar",
-  "pinterest_title": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, wiederaufladbar für Camping 🏕️",
-  "pinterest_description": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, wiederaufladbar von PETZL: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
+  "title": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, Gelb",
+  "short_description": "Aufladbare PETZL TIKKA CORE Stirnlampe in Gelb mit 450 Lumen, CORE-Akku, Rotlicht und alternativem Betrieb mit drei AAA-Batterien.",
+  "long_description": "Die PETZL TIKKA CORE E067AA03 ist eine kompakte, aufladbare Stirnlampe in Gelb. Mit dem enthaltenen CORE-Akku erreicht sie bis zu 450 Lumen und wiegt 84 Gramm. Der breite, homogene Lichtkegel eignet sich für Camping, Wanderungen und Arbeiten im Nahbereich. Zusätzlich stehen rotes Dauerlicht und rotes Blinklicht zur Verfügung. Dank HYBRID CONCEPT kann die Lampe alternativ mit drei AAA-/LR03-Batterien betrieben werden. Diese Amazon-Variante verwendet einen Micro-USB-Ladeanschluss.",
+  "features": [
+    "Bis zu 450 Lumen",
+    "Nur 84 g Gewicht",
+    "CORE-Akku enthalten",
+    "Auch mit 3 AAA-Batterien nutzbar",
+    "Breiter Lichtkegel und Rotlicht",
+    "Micro-USB-Ladeanschluss",
+    "LOCK-Funktion"
+  ],
+  "button_text": "Auf Amazon ansehen",
+  "buying_angle": "Geeignet für Camping, Nachtwanderungen und Arbeiten im Dunkeln, wenn eine leichte Stirnlampe mit Akku, Rotlicht und optionalem Batteriebetrieb benötigt wird.",
+  "seo_title": "PETZL TIKKA CORE 450 Lumen Gelb | Daily Deal Finder",
+  "meta_description": "PETZL TIKKA CORE E067AA03 Stirnlampe in Gelb mit 450 Lumen, CORE-Akku, Rotlicht, 84 g Gewicht und optionalem AAA-Batteriebetrieb.",
+  "alt_text": "Mobicool ME24 elektrische Kühlbox mit 23 Litern Nutzinhalt",
+  "pinterest_title": "PETZL TIKKA CORE Stirnlampe mit 450 Lumen",
+  "pinterest_description": "Die gelbe PETZL TIKKA CORE bietet bis zu 450 Lumen, einen CORE-Akku, Rotlicht und optionalen Betrieb mit drei AAA-Batterien. Praktisch für Camping und Nachtwanderungen. #petzl #stirnlampe #camping",
   "hashtags": [
     "#camping",
-    "#outdoor",
-    "#campingausrüstung"
+    "#kühlbox",
+    "#mobicool"
   ],
-  "source": "products_json_de_v1"
+  "source": "amazon_verified_identity_v1",
+  "source_language": "de",
+  "identity_hash": "b7611da03f1dd33782fd2e42def46d61c610514aded55de0051e2d6f6372280b",
+  "generated_at": "2026-07-15T08:15:50Z",
+  "content_engine": "amazon_identity_sync_v1"
 }

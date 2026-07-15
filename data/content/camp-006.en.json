@@ -1,31 +1,34 @@
 {
   "id": "camp-006",
   "language": "en",
-  "title": "PETZL TIKKA CORE Headlamp — 450 Lumens, Rechargeable",
-  "short_description": "Compact and rechargeable PETZL TIKKA CORE headlamp with 450 lumens, red light, and multiple brightness levels.",
-  "long_description": "The PETZL TIKKA CORE is a compact, lightweight, and rechargeable headlamp with a brightness of up to 450 lumens. Its wide, even beam is perfect for camping, hiking, and close-range work. With three white light levels and a red light mode, it offers flexible use at night.",
+  "title": "PETZL TIKKA CORE Headlamp — 450 Lumens, Yellow",
+  "short_description": "A rechargeable yellow PETZL TIKKA CORE headlamp with 450 lumens, a CORE battery, red lighting and optional operation with three AAA batteries.",
+  "long_description": "The PETZL TIKKA CORE E067AA03 is a compact rechargeable headlamp in yellow. With the included CORE battery, it delivers up to 450 lumens while weighing 84 grams. Its wide, uniform beam is suitable for camping, hiking and close-range tasks. It also provides continuous and flashing red lighting. Thanks to the HYBRID CONCEPT design, it can alternatively run on three AAA/LR03 batteries. This Amazon variant uses a Micro-USB charging connection.",
   "features": [
-    "450 lumens brightness",
-    "Rechargeable CORE battery",
-    "Three white light levels",
-    "Red light mode",
-    "Compact & lightweight"
+    "Up to 450 lumens",
+    "Only 84 g",
+    "CORE rechargeable battery included",
+    "Also works with 3 AAA batteries",
+    "Wide beam and red lighting",
+    "Micro-USB charging",
+    "LOCK function"
   ],
   "button_text": "View on Amazon",
-  "buying_angle": "Ideal for buyers who prioritize features like 450 lumens brightness, rechargeable CORE battery, and three white light levels in headlamps.",
-  "seo_title": "PETZL TIKKA CORE Headlamp — 450 Lumens, Rechargeable Review 2026 |",
-  "meta_description": "Overview of the PETZL TIKKA CORE Headlamp — 450 lumens, rechargeable: 450 lumens brightness, rechargeable CORE battery, three white light levels...",
-  "alt_text": "PETZL TIKKA CORE Headlamp — 450 Lumens, Rechargeable",
-  "pinterest_title": "PETZL TIKKA CORE Headlamp — 450 Lumens, Rechargeable for Camping 🏕️",
-  "pinterest_description": "The PETZL TIKKA CORE Headlamp — 450 lumens, rechargeable by PETZL: a practical choice for camping, outdoor activities, and weekend trips. Save this find for your next adventure. #camping #outdoor #campinggear",
+  "buying_angle": "Suitable for camping, night hiking and close-range work when a lightweight rechargeable headlamp with red lighting and optional battery operation is useful.",
+  "seo_title": "PETZL TIKKA CORE 450 Lumens Yellow | Daily Deal Finder",
+  "meta_description": "Yellow PETZL TIKKA CORE E067AA03 headlamp with 450 lumens, CORE battery, red lighting, 84 g weight and optional AAA battery operation.",
+  "alt_text": "Yellow PETZL TIKKA CORE E067AA03 headlamp",
+  "pinterest_title": "PETZL TIKKA CORE 450-Lumen Headlamp",
+  "pinterest_description": "The yellow PETZL TIKKA CORE offers up to 450 lumens, a CORE battery, red lighting and optional use with three AAA batteries. Useful for camping and night hiking. #petzl #headlamp #camping",
   "hashtags": [
-    "#camping",
-    "#outdoor",
-    "#campinggear"
+    "#petzl",
+    "#headlamp",
+    "#camping"
   ],
-  "source": "localized_from_de_v2",
+  "source": "localized_from_verified_de_v1",
   "source_language": "de",
-  "source_hash": "3d665535ea084ebdf4df451a35865463ca999ff43432625e879e543fd608ee6f",
-  "generated_at": "2026-07-12T14:14:26Z",
-  "content_engine": "openai_localization_v2"
+  "source_hash": "04458131e79e73f4d9e4772b8e80323bf147f5f65eaba4ccdfb316ee236bc2a3",
+  "identity_hash": "b7611da03f1dd33782fd2e42def46d61c610514aded55de0051e2d6f6372280b",
+  "generated_at": "2026-07-15T08:15:50Z",
+  "content_engine": "amazon_identity_sync_v1"
 }

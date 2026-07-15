@@ -1,4 +1,7 @@
 {
   "id": "camp-006",
-  "fingerprint": "cedb662b7b6bf88b1c91ba5d7c798e3575504d1d869f41b340555eafd0edae8d"
+  "fingerprint": "04458131e79e73f4d9e4772b8e80323bf147f5f65eaba4ccdfb316ee236bc2a3",
+  "identity_hash": "b7611da03f1dd33782fd2e42def46d61c610514aded55de0051e2d6f6372280b",
+  "content_engine": "amazon_identity_sync_v1",
+  "updated_at": "2026-07-15T08:15:50Z"
 }
