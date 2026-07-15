@@ -389,7 +389,8 @@ def prepare_changes(
         "status": "verified",
         "notes": (
             "Verified Amazon-first product identity. "
-            "Website content synchronized from Mobicool ME24."
+            "Website content synchronized from "
+            f"{identity['amazon_brand']} {identity['amazon_model']}."
         ),
         "amazon_product_title": identity[
             "amazon_product_title"
@@ -434,21 +435,14 @@ def prepare_changes(
         "meta_description": website[
             "seo_description"
         ],
-        "alt_text": (
-            "Mobicool ME24 elektrische Kühlbox mit "
-            "23 Litern Nutzinhalt"
-        ),
+        "alt_text": website["alt_text"],
         "pinterest_title": website[
             "pinterest_title"
         ],
         "pinterest_description": website[
             "pinterest_description"
         ],
-        "hashtags": [
-            "#camping",
-            "#kühlbox",
-            "#mobicool",
-        ],
+        "hashtags": website["hashtags"],
         "source": "amazon_verified_identity_v1",
         "source_language": "de",
         "identity_hash": computed_identity_hash,
@@ -485,7 +479,7 @@ def prepare_changes(
 
     if pinterest_item is None:
         raise SystemExit(
-            "ERROR: camp-014 Pinterest record not found."
+            f"ERROR: {product_id} Pinterest record not found."
         )
 
     pinterest_item.update({
@@ -518,17 +512,10 @@ def prepare_changes(
 
     if prompt_item is None:
         raise SystemExit(
-            "ERROR: camp-014 Pinterest prompt not found."
+            f"ERROR: {product_id} Pinterest prompt not found."
         )
 
-    prompt_item["prompt"] = (
-        "Create a premium Pinterest vertical image for "
-        "'Mobicool ME24 Electric Cooler — 23L, 12V & 230V'. "
-        "Show a realistic blue portable electric cooler at a "
-        "camping or road-trip setting. Natural lighting, clean "
-        "professional composition, space for a title overlay, "
-        "no Amazon logo, no inaccurate capacity text."
-    )
+    prompt_item["prompt"] = website["pinterest_prompt"]
     prompt_item["identity_hash"] = computed_identity_hash
     prompt_item["updated_at"] = timestamp[:10]
 
