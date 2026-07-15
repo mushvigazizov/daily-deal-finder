@@ -2,13 +2,13 @@
   "product_id": "camp-006",
   "candidates": [
     {
-      "asin": "B09ZNLSGJQ",
-      "amazon_url": "https://www.amazon.de/dp/B09ZNLSGJQ",
-      "amazon_product_title": "PETZL Unisex – Erwachsene TIKKA CORE Frontallampe",
+      "asin": "B09ZN94FJ3",
+      "amazon_url": "https://www.amazon.de/dp/B09ZN94FJ3",
+      "amazon_product_title": "PETZL TIKKA CORE Stirnlampe – Unisex, Grün, Einheitsgröße",
       "amazon_brand": "PETZL",
-      "amazon_model": "TIKKA CORE E067AA03",
+      "amazon_model": "TIKKA CORE",
       "amazon_size": "Einheitsgröße",
-      "amazon_color": "Gelb",
+      "amazon_color": "Grün",
       "amazon_key_specs": [
         "450 Lumen",
         "84 g Gewicht",
@@ -20,7 +20,7 @@
         "LOCK-Funktion",
         "phosphoreszierender Reflektor"
       ],
-      "candidate_source": "amazon_de_product_page",
+      "candidate_source": "amazon_de_exact_child_variant",
       "review_status": "reviewed_exact_variant"
     }
   ]

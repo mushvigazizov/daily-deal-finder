@@ -59,14 +59,14 @@
     {
       "product_id": "camp-006",
       "title": "PETZL TIKKA CORE Stirnlampe mit 450 Lumen",
-      "description": "Die gelbe PETZL TIKKA CORE bietet bis zu 450 Lumen, einen CORE-Akku, Rotlicht und optionalen Betrieb mit drei AAA-Batterien. Praktisch für Camping und Nachtwanderungen. #petzl #stirnlampe #camping",
+      "description": "Die grüne PETZL TIKKA CORE bietet bis zu 450 Lumen, einen CORE-Akku, Rotlicht und optionalen Betrieb mit drei AAA-Batterien. #petzl #stirnlampe #camping",
       "image": "assets/products/camp-006.webp",
       "target_url": "/product.html?id=camp-006",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
       "created_at": "2026-07-09",
       "updated_at": "2026-07-15",
-      "identity_hash": "b7611da03f1dd33782fd2e42def46d61c610514aded55de0051e2d6f6372280b"
+      "identity_hash": "27a5d7e541d9978e79b71cce2cc1eebdf439f1624a8ad8b45ad6581380ecb1bb"
     },
     {
       "product_id": "camp-007",
