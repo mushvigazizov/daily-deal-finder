@@ -215,18 +215,60 @@ async function loadProducts() {
   }
 }
 
-function buildAmazonUrl(asin) {
-  if (!asin) return 'https://www.amazon.de/';
-  const tag = CONFIG.affiliate?.amazon_associate_tag || '';
-  const domain = CONFIG.site?.amazon_domain || 'amazon.de';
-  // Search URL format: "s?k=..."
-  if (asin.startsWith('s?k=')) {
-    const base = `https://www.${domain}/${asin}`;
-    return tag ? `${base}&tag=${tag}` : base;
-  }
-  // ASIN format: "B0XXXXX"
-  const base = `https://www.${domain}/dp/${asin}`;
-  return tag ? `${base}?tag=${tag}` : base;
+function getVerifiedAmazonUrl(product) {
+  if (!product || typeof product !== "object") return null;
+
+  const asin = String(product.verified_asin || "").trim().toUpperCase();
+  const verifiedUrl = String(product.verified_amazon_url || "").trim();
+  const verificationStatus = String(
+    product.verification_status || ""
+  ).trim().toLowerCase();
+  const linkType = String(
+    product.amazon_link_type || ""
+  ).trim().toLowerCase();
+
+  const isValidAsin = /^[A-Z0-9]{10}$/.test(asin);
+  const expectedUrl = `https://www.amazon.de/dp/${asin}`;
+
+  const isVerified =
+    product.identity_locked === true &&
+    verificationStatus === "verified" &&
+    linkType === "product" &&
+    isValidAsin &&
+    verifiedUrl === expectedUrl;
+
+  if (!isVerified) return null;
+
+  const tag = String(
+    CONFIG.affiliate?.amazon_associate_tag || ""
+  ).trim();
+
+  return tag
+    ? `${verifiedUrl}?tag=${encodeURIComponent(tag)}`
+    : verifiedUrl;
+}
+
+
+function renderAmazonButton(product, className = "button") {
+  const url = getVerifiedAmazonUrl(product);
+
+  if (!url) return "";
+
+  const label =
+    product.button_text ||
+    translateUi(
+      "common.view_on_amazon",
+      "View on Amazon"
+    );
+
+  return `
+    <a
+      href="${url}"
+      target="_blank"
+      rel="nofollow sponsored noopener"
+      class="${className}"
+    >${label}</a>
+  `;
 }
 
 // ========== ANA SƏHİFƏ ==========
@@ -263,14 +305,13 @@ function renderProductGrid(products, containerId) {
         <span class="category-tag">${p.category || ''}</span>
         <h3><a href="${buildProductUrl(p.id)}">${p.title}</a></h3>
         <p>${p.short_description || ''}</p>
-        <a href="${buildAmazonUrl(p.amazon_asin)}" target="_blank" rel="nofollow sponsored noopener" class="button">${p.button_text || translateUi(
-          "common.view_on_amazon",
-          "View on Amazon"
-        )}</a>
-        <span class="ad-badge">${translateUi(
-          "common.advertisement",
-          "#Ad"
-        )}</span>
+        ${getVerifiedAmazonUrl(p) ? `
+          ${renderAmazonButton(p)}
+          <span class="ad-badge">${translateUi(
+            "common.advertisement",
+            "#Ad"
+          )}</span>
+        ` : ""}
       </div>
     </article>
   `}).join('');
@@ -339,16 +380,25 @@ function renderProductPage(product) {
           ${product.features.map(f => `<li>${f}</li>`).join('')}
         </ul>` : ''}
 
-        <div class="product-trust-row">
-          <div class="product-trust-item">Amazon.de</div>
-          <div class="product-trust-item">Camping Auswahl</div>
-          <div class="product-trust-item">Affiliate Hinweis</div>
-        </div>
+        ${getVerifiedAmazonUrl(product) ? `
+          <div class="product-trust-row">
+            <div class="product-trust-item">Amazon.de</div>
+            <div class="product-trust-item">Camping Auswahl</div>
+            <div class="product-trust-item">Affiliate Hinweis</div>
+          </div>
 
-        <a href="${buildAmazonUrl(product.amazon_asin)}" target="_blank" rel="nofollow sponsored noopener" class="button cta">${product.button_text || 'Auf Amazon ansehen'}</a>
+          ${renderAmazonButton(product, "button cta")}
 
-        <p class="price-note">*Preise und Verfügbarkeit können sich ändern. Aktuellen Preis bitte direkt auf Amazon.de prüfen.</p>
-        <p class="disclosure">Als Amazon Associate verdienen wir an qualifizierten Käufen.</p>
+          <p class="price-note">*Preise und Verfügbarkeit können sich ändern. Aktuellen Preis bitte direkt auf Amazon.de prüfen.</p>
+          <p class="disclosure">Als Amazon Associate verdienen wir an qualifizierten Käufen.</p>
+        ` : `
+          <p class="product-verification-note">
+            ${translateUi(
+              "common.product_under_verification",
+              "This product is currently being verified."
+            )}
+          </p>
+        `}
       </section>
     </div>
   `;
