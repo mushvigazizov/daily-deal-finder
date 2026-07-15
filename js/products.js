@@ -311,7 +311,16 @@ function renderProductGrid(products, containerId) {
             "common.advertisement",
             "#Ad"
           )}</span>
-        ` : ""}
+        ` : `
+          <span class="button disabled amazon-pending-button"
+                aria-disabled="true"
+                role="status">
+            ${translateUi(
+              "common.amazon_link_pending",
+              "Amazon link under review"
+            )}
+          </span>
+        `}
       </div>
     </article>
   `}).join('');
@@ -392,12 +401,14 @@ function renderProductPage(product) {
           <p class="price-note">*Preise und Verfügbarkeit können sich ändern. Aktuellen Preis bitte direkt auf Amazon.de prüfen.</p>
           <p class="disclosure">Als Amazon Associate verdienen wir an qualifizierten Käufen.</p>
         ` : `
-          <p class="product-verification-note">
+          <span class="button disabled amazon-pending-button"
+                aria-disabled="true"
+                role="status">
             ${translateUi(
-              "common.product_under_verification",
-              "This product is currently being verified."
+              "common.amazon_link_pending",
+              "Amazon link under review"
             )}
-          </p>
+          </span>
         `}
       </section>
     </div>

@@ -29,7 +29,8 @@
     "recommended_product": "Recommended product",
     "ai_visual": "AI Visual",
     "advertisement": "#Ad",
-    "view_on_amazon": "View on Amazon"
+    "view_on_amazon": "View on Amazon",
+    "amazon_link_pending": "Amazon link under review"
   },
   "product": {
     "loading": "Loading product...",

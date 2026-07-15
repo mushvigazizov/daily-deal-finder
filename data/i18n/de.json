@@ -29,7 +29,8 @@
     "recommended_product": "Empfohlenes Produkt",
     "ai_visual": "KI-Visualisierung",
     "advertisement": "#Anzeige",
-    "view_on_amazon": "Auf Amazon ansehen"
+    "view_on_amazon": "Auf Amazon ansehen",
+    "amazon_link_pending": "Amazon-Link wird geprüft"
   },
   "product": {
     "loading": "Produkt wird geladen...",
