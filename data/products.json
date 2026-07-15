@@ -1,6 +1,6 @@
 {
   "_schema": "2.0",
-  "_updated": "2026-07-15T08:36:57Z",
+  "_updated": "2026-07-15T11:03:16Z",
   "products": [
     {
       "id": "camp-001",
@@ -132,8 +132,8 @@
       ],
       "identity_hash": "c794cb33eba92168d2c642a52b51fdf822c68def30bcee33e5cc7d32765e254e",
       "identity_locked": true,
-      "asin_verified_at": "2026-07-15T06:52:12Z",
-      "identity_applied_at": "2026-07-15T06:52:12Z",
+      "asin_verified_at": "2026-07-15T11:03:16Z",
+      "identity_applied_at": "2026-07-15T11:03:16Z",
       "amazon_size": "",
       "amazon_color": ""
     },
