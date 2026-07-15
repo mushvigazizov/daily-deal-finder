@@ -14,8 +14,10 @@
       "product_id": "camp-002",
       "image": "assets/products/camp-002.webp",
       "style": "Pinterest Vertical 1000x1500",
-      "prompt": "Create a premium Pinterest vertical image for 'Skandika Familienzelt 4-Personen — Geräumig & Sturmfest'. Realistic outdoor lifestyle photography, natural lighting, professional composition, clean background, high click-through design, space for title overlay, premium quality, no Amazon logo.",
-      "created_at": "2026-07-09"
+      "prompt": "Create a premium Pinterest vertical image for 'Mobicool ME24 Electric Cooler — 23L, 12V & 230V'. Show a realistic blue portable electric cooler at a camping or road-trip setting. Natural lighting, clean professional composition, space for a title overlay, no Amazon logo, no inaccurate capacity text.",
+      "created_at": "2026-07-09",
+      "identity_hash": "c794cb33eba92168d2c642a52b51fdf822c68def30bcee33e5cc7d32765e254e",
+      "updated_at": "2026-07-15"
     },
     {
       "product_id": "camp-003",

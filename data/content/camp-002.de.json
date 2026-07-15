@@ -1,15 +1,32 @@
 {
   "id": "camp-002",
   "language": "de",
-  "seo_title": "Skandika Familienzelt 4-Personen - Geräumig & Sturmfest Test 2026 |",
-  "meta_description": "Skandika Familienzelt 4-Personen - Geräumig & Sturmfest von Skandika im Überblick: 4-Personen Kapazität, Stehhöhe im Innenraum, Sturmfeste Konstruktion. Eine",
-  "alt_text": "Skandika Familienzelt 4-Personen — Geräumig & Sturmfest",
-  "pinterest_title": "Skandika Familienzelt 4-Personen - Geräumig & Sturmfest für Camping 🏕️",
-  "pinterest_description": "Skandika Familienzelt 4-Personen - Geräumig & Sturmfest von Skandika: eine nützliche Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
+  "title": "Skandika Nordland 4 Tunnelzelt — 4 Personen, 5000 mm",
+  "short_description": "Geräumiges Skandika Nordland 4 Tunnelzelt für vier Personen mit 200 cm Stehhöhe, eingenähtem Zeltboden und 5000 mm Wassersäule.",
+  "long_description": "Das Skandika Nordland 4 ist ein geräumiges Tunnelzelt für bis zu vier Personen. Die lichte Höhe von 200 cm ermöglicht komfortable Bewegungsfreiheit im Wohnbereich. Ein eingenähter Zeltboden, wetterbeständiges und atmungsaktives Material sowie eine Wassersäule von 5000 mm bieten Schutz bei wechselhaftem Campingwetter. Die Schlafkabine lässt sich teilen und Moskitonetze unterstützen eine gute Belüftung bei gleichzeitigem Insektenschutz.",
+  "features": [
+    "Für bis zu 4 Personen",
+    "200 cm Stehhöhe",
+    "5000 mm Wassersäule",
+    "Eingenähter Zeltboden",
+    "Teilbare Schlafkabine",
+    "Moskitonetze und atmungsaktives Material"
+  ],
+  "button_text": "Auf Amazon ansehen",
+  "buying_angle": "Geeignet für Familien und kleine Campinggruppen, die ein geräumiges Vier-Personen-Zelt mit Stehhöhe, fest eingenähtem Boden und hohem Wetterschutz suchen.",
+  "seo_title": "Skandika Nordland 4 Tunnelzelt – 4 Personen | Daily Deal Finder",
+  "meta_description": "Skandika Nordland 4 Tunnelzelt für vier Personen mit 200 cm Stehhöhe, eingenähtem Boden, teilbarer Schlafkabine und 5000 mm Wassersäule.",
+  "alt_text": "Mobicool ME24 elektrische Kühlbox mit 23 Litern Nutzinhalt",
+  "pinterest_title": "Skandika Nordland 4 Tunnelzelt für 4 Personen",
+  "pinterest_description": "Das Skandika Nordland 4 bietet Platz für vier Personen, 200 cm Stehhöhe, einen eingenähten Zeltboden und 5000 mm Wassersäule. Eine geräumige Option für Familiencamping. #camping #familienzelt #skandika",
   "hashtags": [
     "#camping",
-    "#outdoor",
-    "#campingausrüstung"
+    "#kühlbox",
+    "#mobicool"
   ],
-  "source": "products_json_de_v1"
+  "source": "amazon_verified_identity_v1",
+  "source_language": "de",
+  "identity_hash": "c794cb33eba92168d2c642a52b51fdf822c68def30bcee33e5cc7d32765e254e",
+  "generated_at": "2026-07-15T06:52:11Z",
+  "content_engine": "amazon_identity_sync_v1"
 }

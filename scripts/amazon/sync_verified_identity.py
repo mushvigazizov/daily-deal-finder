@@ -175,6 +175,34 @@ VERIFIED_IDENTITIES: dict[str, dict[str, Any]] = {
 }
 
 
+VERIFIED_IDENTITIES_DIR = Path("data/verified_identities")
+
+
+def load_external_verified_identities() -> None:
+    if not VERIFIED_IDENTITIES_DIR.exists():
+        return
+
+    for identity_path in sorted(
+        VERIFIED_IDENTITIES_DIR.glob("*.json")
+    ):
+        product_id = identity_path.stem
+        identity = json.loads(
+            identity_path.read_text(encoding="utf-8")
+        )
+
+        if not isinstance(identity, dict):
+            raise SystemExit(
+                f"ERROR: identity file must contain an object: "
+                f"{identity_path}"
+            )
+
+        VERIFIED_IDENTITIES[product_id] = identity
+
+
+load_external_verified_identities()
+
+
+
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 

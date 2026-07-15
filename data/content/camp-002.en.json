@@ -1,31 +1,33 @@
 {
   "id": "camp-002",
   "language": "en",
-  "title": "Skandika Family Tent for 4 People — Spacious & Stormproof",
-  "short_description": "Large family tent for 4 people with standing height. Stormproof construction, breathable, and with mosquito net. Perfect for family vacations.",
-  "long_description": "The Skandika Family Tent offers generous space for four people and impresses with its high stability even in windy weather. The breathable materials ensure a pleasant indoor climate, while integrated mosquito nets keep pesky insects at bay. With standing height and a separate sleeping area, it is ideal for longer camping stays.",
+  "title": "Skandika Nordland 4 Tunnel Tent — 4 Person, 5000 mm",
+  "short_description": "A spacious Skandika Nordland 4 tunnel tent for four people with 200 cm standing height, a sewn-in groundsheet and a 5000 mm water column.",
+  "long_description": "The Skandika Nordland 4 is a spacious tunnel tent for up to four people. Its 200 cm clear height provides comfortable freedom of movement in the living area. A sewn-in groundsheet, weather-resistant breathable material and a 5000 mm water column provide protection in changing camping conditions. The sleeping cabin can be divided, while mosquito nets support ventilation and insect protection.",
   "features": [
-    "4-person capacity",
-    "Standing height inside",
-    "Stormproof construction",
-    "Integrated mosquito net",
-    "Breathable material"
+    "Capacity for up to 4 people",
+    "200 cm standing height",
+    "5000 mm water column",
+    "Sewn-in groundsheet",
+    "Dividable sleeping cabin",
+    "Mosquito nets and breathable material"
   ],
   "button_text": "View on Amazon",
-  "buying_angle": "Especially appealing for campers who prioritize practical features: 4-person capacity, standing height inside, stormproof construction.",
-  "seo_title": "Skandika Family Tent for 4 People - Spacious & Stormproof Review 2026",
-  "meta_description": "Overview of the Skandika Family Tent for 4 People - Spacious & Stormproof: 4-person capacity, standing height inside, stormproof construction.",
-  "alt_text": "Skandika Family Tent for 4 People — Spacious & Stormproof",
-  "pinterest_title": "Skandika Family Tent for 4 People - Spacious & Stormproof for Camping 🏕️",
-  "pinterest_description": "Skandika Family Tent for 4 People - Spacious & Stormproof: a practical idea for camping, outdoor activities, and weekend trips. Save this find for your next adventure. #camping #outdoor #campinggear",
+  "buying_angle": "Suitable for families and small camping groups seeking a spacious four-person tent with standing height, a sewn-in floor and strong weather protection.",
+  "seo_title": "Skandika Nordland 4 Tunnel Tent – 4 Person | Daily Deal Finder",
+  "meta_description": "Skandika Nordland 4 four-person tunnel tent with 200 cm standing height, sewn-in groundsheet, dividable sleeping cabin and 5000 mm water column.",
+  "alt_text": "Skandika Nordland 4 tunnel tent for four people",
+  "pinterest_title": "Skandika Nordland 4 Four-Person Tunnel Tent",
+  "pinterest_description": "The Skandika Nordland 4 offers space for four people, 200 cm standing height, a sewn-in groundsheet and a 5000 mm water column. A spacious option for family camping. #camping #familytent #skandika",
   "hashtags": [
     "#camping",
-    "#outdoor",
-    "#campinggear"
+    "#familytent",
+    "#skandika"
   ],
-  "source": "localized_from_de_v2",
+  "source": "localized_from_verified_de_v1",
   "source_language": "de",
-  "source_hash": "9768393118e5d45c030d918a3697146abadf837d7f8dd6d73c01d23fc58a38f2",
-  "generated_at": "2026-07-12T14:13:34Z",
-  "content_engine": "openai_localization_v2"
+  "source_hash": "dad9a1514576f4a6d26e9dc28b374c607914d9c8d9b932e02e6475ad430df550",
+  "identity_hash": "c794cb33eba92168d2c642a52b51fdf822c68def30bcee33e5cc7d32765e254e",
+  "generated_at": "2026-07-15T06:52:11Z",
+  "content_engine": "amazon_identity_sync_v1"
 }
