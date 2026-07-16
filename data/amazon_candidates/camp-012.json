@@ -1,0 +1,24 @@
+{
+  "product_id": "camp-012",
+  "candidates": [
+    {
+      "asin": "B0F749Z97T",
+      "amazon_url": "https://www.amazon.de/dp/B0F749Z97T",
+      "amazon_product_title": "BRUNNER PowerKook 2-flammig Edelstahl Campingkocher 50 mbar",
+      "amazon_brand": "BRUNNER",
+      "amazon_model": "PowerKook",
+      "amazon_size": "50 mbar",
+      "amazon_color": "Edelstahl",
+      "amazon_key_specs": [
+        "2-flammig",
+        "50 mbar",
+        "Edelstahl",
+        "Piezo-Zundung",
+        "Gaschlauch 1m"
+      ],
+      "candidate_source": "manual_verified",
+      "review_status": "confirmed_verified",
+      "observed_at": "2026-07-16"
+    }
+  ]
+}

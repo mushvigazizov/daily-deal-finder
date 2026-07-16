@@ -1,31 +1,20 @@
 {
   "id": "camp-012",
   "language": "en",
-  "title": "Campingaz 2-Burner Gas Stove — Powerful & Compact",
-  "short_description": "Two-burner gas stove with piezo ignition and wind shield. Compact and foldable, compatible with Campingaz gas cartridges.",
-  "long_description": "The Campingaz 2-burner gas stove is your mobile kitchen for camping. Two independently adjustable burners allow for simultaneous cooking, and the practical piezo ignition works without a lighter. The integrated wind shield ensures efficient heat utilization. It is compact, foldable, and easy to clean.",
+  "title": "BRUNNER PowerKook 2-Burner Camping Stove — 50 mbar, Stainless Steel",
+  "short_description": "Two-burner stainless steel camping stove by BRUNNER with 50 mbar and piezo ignition.",
   "features": [
-    "2 independent burners",
+    "2 burners",
+    "50 mbar",
+    "Stainless steel",
     "Piezo ignition",
-    "Integrated wind shield",
-    "Compact and foldable",
-    "Easy to clean"
+    "Windshield"
   ],
   "button_text": "View on Amazon",
-  "buying_angle": "Ideal for campers who prioritize practical features in cooking: 2 independent burners, piezo ignition, integrated wind shield.",
-  "seo_title": "Campingaz 2-Burner Gas Stove - Powerful & Compact Review 2026 |",
-  "meta_description": "Overview of the Campingaz 2-Burner Gas Stove - Powerful & Compact: 2 independent burners, piezo ignition, integrated wind shield.",
-  "alt_text": "Campingaz 2-Burner Gas Stove — Powerful & Compact",
-  "pinterest_title": "Campingaz 2-Burner Gas Stove - Powerful & Compact for Camping 🏕️",
-  "pinterest_description": "Campingaz 2-Burner Gas Stove - Powerful & Compact: a useful idea for camping, outdoor activities, and weekend trips. Save this find for your next adventure. #camping #outdoor #campinggear",
-  "hashtags": [
-    "#camping",
-    "#outdoor",
-    "#campinggear"
-  ],
-  "source": "localized_from_de_v2",
-  "source_language": "de",
-  "source_hash": "caf96692a4050d3a6fb02425be7c2a9dc399d11768a9c0f8485fdee5eef360fd",
-  "generated_at": "2026-07-12T14:15:52Z",
-  "content_engine": "openai_localization_v2"
+  "alt_text": "BRUNNER PowerKook 2-Burner Camping Stove Stainless Steel",
+  "seo_title": "BRUNNER PowerKook Camping Stove Review 2026",
+  "meta_description": "BRUNNER PowerKook 2-Burner Camping Stove 50 mbar Stainless Steel.",
+  "source": "manual_v1",
+  "source_language": "en",
+  "content_engine": "manual_v1"
 }
