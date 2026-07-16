@@ -1,4 +1,8 @@
 {
   "id": "camp-008",
-  "fingerprint": "44a413d99ec9ee91a22c793115ebc23a4ab5c7143e25710f7ea700381e23c68c"
+  "status": "verified",
+  "identity_locked": true,
+  "verification_status": "verified",
+  "verified_asin": "B0DJPS3YTS",
+  "verified_at": "2026-07-16T17:50:00Z"
 }

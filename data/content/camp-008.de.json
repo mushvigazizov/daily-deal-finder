@@ -1,15 +1,31 @@
 {
   "id": "camp-008",
   "language": "de",
-  "seo_title": "Berghaus Wanderrucksack 40L - Leicht & Ergonomisch Test 2026 | Camping",
-  "meta_description": "Berghaus Wanderrucksack 40L - Leicht & Ergonomisch von Berghaus im Überblick: 40L Volumen, Ergonomisches Tragesystem, Atmungsaktiver Rücken. Eine praktische",
-  "alt_text": "Berghaus Wanderrucksack 40L — Leicht & Ergonomisch",
-  "pinterest_title": "Berghaus Wanderrucksack 40L - Leicht & Ergonomisch für Camping 🏕️",
-  "pinterest_description": "Berghaus Wanderrucksack 40L - Leicht & Ergonomisch von Berghaus: eine nützliche Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-  "hashtags": [
-    "#camping",
-    "#outdoor",
-    "#campingausrüstung"
+  "title": "Berghaus Arrow U30 Rucksack — 30L, Leicht & Ergonomisch",
+  "short_description": "Vielseitiger 30-Liter-Rucksack von Berghaus. Das Arrow U30 Modell in klassischem Jet Black mit ergonomischem Komfort und recyceltem Material.",
+  "long_description": "Der Berghaus Arrow U30 ist ein vielseitiger 30-Liter-Tagesrucksack fur Alltag und leichte Wanderungen. Gepolsterte Schultergurte, seitliche Netztaschen und reflektierende Details. Farbe: Jet Black, Groe: ONESZ.",
+  "features": [
+    "30 Liter Volumen",
+    "Gepolsterte Schultergurte und Brustgurt",
+    "Seitliche Netztaschen",
+    "Reiverschlusstasche am Huftgurt",
+    "Reflektierende Details",
+    "Recyceltes Obermaterial",
+    "Farbe: Jet Black"
   ],
-  "source": "products_json_de_v1"
+  "button_text": "Auf Amazon ansehen",
+  "buying_angle": "Vielseitiger Daypack fur Alltag und Wanderungen. Ergonomisch, recycelt, klassisches Schwarz.",
+  "seo_title": "Berghaus Arrow U30 Rucksack Test 2026 | 30L Daypack",
+  "meta_description": "Berghaus Arrow U30: 30L Daypack in Jet Black, ONESZ, recycelt, ergonomisch.",
+  "alt_text": "Berghaus Arrow U30 Rucksack in Jet Black, 30 Liter",
+  "pinterest_title": "Berghaus Arrow U30 — 30L Daypack in Jet Black",
+  "pinterest_description": "Berghaus Arrow U30: Vielseitiger 30L Daypack in Jet Black. Perfekt fur Alltag und leichte Wanderungen. #berghaus #daypack",
+  "hashtags": [
+    "#berghaus",
+    "#daypack",
+    "#rucksack"
+  ],
+  "source": "amazon_verified_v1",
+  "source_language": "de",
+  "content_engine": "manual_verified_replacement_v1"
 }
