@@ -17,6 +17,7 @@ import argparse
 import json
 import os
 import sys
+from pathlib import Path
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
@@ -108,7 +109,16 @@ def main():
 
         reference_image = None
 
-        if amazon_url:
+        reference_dir = Path(ROOT) / "data" / "amazon_reference_images"
+        cached_references = sorted(
+            reference_dir.glob(f"{p['id']}.*")
+        )
+
+        if cached_references:
+            reference_image = str(cached_references[0])
+            print(f"REFERENCE CACHED {reference_image}")
+
+        elif amazon_url:
             try:
                 reference_image = gen.download_amazon_reference(
                     amazon_url,
