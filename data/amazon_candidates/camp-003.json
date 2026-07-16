@@ -1,0 +1,25 @@
+{
+  "product_id": "camp-003",
+  "candidates": [
+    {
+      "asin": "B0G2J16BQ3",
+      "amazon_url": "https://www.amazon.de/dp/B0G2J16BQ3",
+      "amazon_product_title": "Salewa Denali II Kuppelzelt — 2 Personen, 3-Jahreszeiten, Cactus/Grey",
+      "amazon_brand": "Salewa",
+      "amazon_model": "Denali II",
+      "amazon_size": "UNI",
+      "amazon_color": "Cactus/Grey",
+      "amazon_key_specs": [
+        "2 Personen",
+        "2630 g Gesamtgewicht",
+        "3000 mm Wassersaule",
+        "3-Jahreszeiten",
+        "Farbe: Cactus/Grey",
+        "UNI"
+      ],
+      "candidate_source": "manual_browser_verification",
+      "review_status": "confirmed_manual",
+      "observed_at": "2026-07-15"
+    }
+  ]
+}

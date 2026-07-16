@@ -1,4 +1,7 @@
 {
   "id": "camp-003",
-  "fingerprint": "9c623a9f2a4d94bc664d635fb96e28758d9510c178927745bd09c5f09bcdfbcb"
+  "fingerprint": "5c5b4fba303cdf334fcc1c725a93a3d2c276e7f65006a6ec42eafd2c17b30b30",
+  "identity_hash": "ac45c643ee766fe2b8747dbfdfff1a405f55e31bc65ffbb1b1552326ea8a151e",
+  "content_engine": "amazon_identity_sync_v1",
+  "updated_at": "2026-07-16T05:47:03Z"
 }
