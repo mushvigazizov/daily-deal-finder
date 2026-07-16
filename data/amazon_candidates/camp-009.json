@@ -2,19 +2,19 @@
   "product_id": "camp-009",
   "candidates": [
     {
-      "asin": "B0G6J75WH3",
-      "amazon_url": "https://www.amazon.de/dp/B0G6J75WH3",
-      "amazon_product_title": "Tatonka Damen Yukon X1 65+10 Women Trekkingrucksack, Schwarz",
+      "asin": "B081KCJ9B1",
+      "amazon_url": "https://www.amazon.de/dp/B081KCJ9B1",
+      "amazon_product_title": "Tatonka Damen Yukon X1 65+10 Women Trekkingrucksack, Bordeaux",
       "amazon_brand": "Tatonka",
       "amazon_model": "Yukon X1 65+10 Women",
       "amazon_size": "65+10 Liter",
-      "amazon_color": "Schwarz",
+      "amazon_color": "Bordeaux",
       "amazon_key_specs": [
         "65+10L",
         "Y1 Damen-System",
         "Vent Comfort",
         "PFC-frei",
-        "Schwarz"
+        "Bordeaux"
       ],
       "candidate_source": "manual_verified",
       "review_status": "confirmed_verified",
