@@ -193,8 +193,9 @@ def remove_white_background(image: Image.Image) -> Image.Image:
 
 
 def resize_product(product: Image.Image) -> Image.Image:
-    max_width = 900
-    max_height = 790
+    # Keep the complete product inside the frame with comfortable margins.
+    max_width = 850
+    max_height = 700
 
     ratio = min(
         max_width / product.width,
@@ -223,8 +224,8 @@ def create_shadow(product: Image.Image) -> Image.Image:
 
     shadow.putalpha(
         alpha.filter(
-            ImageFilter.GaussianBlur(22)
-        ).point(lambda value: int(value * 0.42))
+            ImageFilter.GaussianBlur(28)
+        ).point(lambda value: int(value * 0.28))
     )
 
     return shadow
@@ -254,13 +255,13 @@ def composite_product(
     )
 
     x = (CANVAS_SIZE[0] - product.width) // 2
-    y = CANVAS_SIZE[1] - product.height - 115
+    y = CANVAS_SIZE[1] - product.height - 150
 
     shadow = create_shadow(product)
 
     background.alpha_composite(
         shadow,
-        (x + 14, y + 27),
+        (x + 10, y + 34),
     )
 
     background.alpha_composite(
