@@ -19,7 +19,6 @@ BASE_REQUIRED_FIELDS = {
     "long_description",
     "features",
     "image",
-    "amazon_asin",
     "amazon_link_type",
     "seo_title",
     "seo_description",
