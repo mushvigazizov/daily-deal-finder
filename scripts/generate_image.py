@@ -100,7 +100,29 @@ def main():
         suffix = {"pinterest": "-pin", "social": "-og"}.get(args.platform, "")
         filename = f"{p['id']}{suffix}.webp"
         out = os.path.join(out_dir, filename)
-        if gen.generate(prompt, out):
+        amazon_url = (
+            p.get("verified_amazon_url")
+            or p.get("amazon_url")
+            or ""
+        )
+
+        reference_image = None
+
+        if amazon_url:
+            try:
+                reference_image = gen.download_amazon_reference(
+                    amazon_url,
+                    p["id"],
+                )
+            except Exception as error:
+                print(f"REFERENCE ERROR {p['id']}: {error}")
+                return 1
+
+        if gen.generate(
+            prompt,
+            out,
+            reference_image=reference_image,
+        ):
             ok += 1
 
     print(f"\n✅ {ok}/{len(targets)} sekil ({args.platform})")

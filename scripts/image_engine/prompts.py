@@ -1,73 +1,72 @@
-DEFAULT_CONTEXT = "realistic product lifestyle photography"
-
-SUBCATEGORY_CONTEXT = {
-    "zelte": "realistic camping tent in an outdoor campsite setting",
-    "schlafsacke": "realistic sleeping bag in a cozy camping environment",
-    "lampen": "realistic camping light or headlamp used outdoors",
-    "rucksacke": "realistic hiking backpack in a mountain or forest trail setting",
-    "mobel": "realistic camping furniture in an outdoor relaxation setting",
-    "kuche": "realistic camping cooking gear in an outdoor kitchen setting",
-    "sicherheit": "realistic outdoor safety and survival gear setting",
-    "kleidung": "realistic outdoor clothing in a hiking or camping setting",
-    "zubehor": "realistic camping accessory in a practical outdoor scene",
-}
-
-def _features(product: dict, limit: int = 4) -> str:
-    items = product.get("features") or []
-    if not items:
-        return ""
-    return ", ".join(items[:limit])
-
-def _base_product_prompt(product: dict) -> str:
-    title = product.get("title", "")
-    brand = product.get("brand", "")
-    sub = product.get("subcategory", "")
-    ctx = SUBCATEGORY_CONTEXT.get(sub, DEFAULT_CONTEXT)
-    short = product.get("short_description", "")
-    features = _features(product)
-
-    return (
-        f"{ctx}. "
-        f"Product title: {title}. "
-        f"Brand reference: {brand}. "
-        f"Key features: {features}. "
-        f"Short product description: {short}. "
-        f"Create a photorealistic commercial lifestyle image that accurately represents the product type, size, function, and intended use. "
-        f"The product must look realistic, useful, and trustworthy. "
-        f"Do not exaggerate capacity, size, material, or features. "
-        f"Do not copy Amazon product photography. "
-        f"No brand logos, no text, no watermark, no price tags."
-    )
-
 def build_website_prompt(product: dict) -> str:
-    """Website məhsul kartı üçün prompt."""
-    return (
-        _base_product_prompt(product)
-        + " Horizontal website product card composition, product centered and clearly visible, natural light, clean background, premium outdoor e-commerce style."
-    )
+    title = str(
+        product.get("amazon_product_title")
+        or product.get("title")
+        or ""
+    ).strip()
+
+    category = str(
+        product.get("subcategory")
+        or product.get("category")
+        or ""
+    ).strip()
+
+    return f"""
+Create a high-converting Pinterest-style product image in vertical 2:3 format
+using the uploaded product image.
+
+Product title: {title}
+Category: {category}
+
+The uploaded Amazon product image is the primary and authoritative product
+reference. Keep the product accurate, recognizable and visually faithful to
+the original item. Preserve its shape, proportions, color, construction,
+openings, seams, poles, zippers, logo placement and recognizable details.
+
+Place the same product in a fresh, beautiful and realistic lifestyle scene
+that naturally matches the category. Do not copy the original background or
+composition.
+
+Creative direction:
+- Make the product the clear hero
+- Use a realistic premium lifestyle environment
+- Aspirational, polished and Pinterest-friendly
+- Warm, attractive, visually rich photography
+- High clarity and no clutter
+- Do not distort or redesign the product
+
+Text overlay:
+- Add exactly ONE short bold headline
+- Headline must contain 3 to 6 words
+- Add exactly ONE short CTA button or CTA label
+- Use a CTA such as Get the Look, Shop Now, See More, Discover More or View the Find
+- Text must be large, clean, correctly spelled and mobile-readable
+- Do not cover the product excessively
+- Do not add specifications, dimensions, bullets or additional text
+
+Restrictions:
+- No Amazon logo
+- No fake discount
+- No fake rating or review
+- No misleading claim
+- No messy collage
+- No distorted product
+- No unrelated product
+- No typo-filled text
+- No repeated text
+- No overcrowded layout
+
+Premium commercial lifestyle photography, vertical 2:3 composition.
+""".strip()
+
 
 def build_pinterest_prompt(product: dict) -> str:
-    """Pinterest Pin üçün prompt."""
-
-    return (
-        _base_product_prompt(product)
-        + "Create a premium photorealistic Pinterest image with a 2:3 vertical composition. "
-        + "The product must be the clear main subject in realistic outdoor use. "
-        + "Use natural lighting, premium lifestyle photography, realistic textures, shallow depth of field and clean composition. "
-        + "Leave subtle negative space suitable for adding text later. "
-        + "Do NOT include any text, letters, words, typography, captions, "
-        + "logos, watermarks, price tags, UI elements, badges or labels "
-        + "anywhere in the image. "
-        + "The image should look like a high-end commercial outdoor advertisement. "
-        + "The image must be visually clean, elegant and suitable for a premium Pinterest brand."
-    )
-
-
+    return build_website_prompt(product)
 
 
 def build_social_prompt(product: dict) -> str:
-    """Social media / OG üçün prompt."""
+    title = product.get("title", "")
     return (
-        _base_product_prompt(product)
-        + " Wide social media composition, professional outdoor lifestyle photography, vibrant but natural colors, clean and shareable image."
+        f"Premium realistic product lifestyle photography for {title}. "
+        "Wide composition, no misleading claims, no Amazon logo."
     )
