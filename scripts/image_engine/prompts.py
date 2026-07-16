@@ -18,66 +18,60 @@ def build_website_prompt(product: dict) -> str:
     title, category = _product_context(product)
 
     return f"""
-Create a high-converting Pinterest-style product image in vertical 2:3 format
-using the uploaded Amazon product image.
+Use the uploaded Amazon product image as the authoritative product reference.
 
 Product title: {title}
 Category: {category}
 
-REFERENCE IMAGE RULES:
-- The uploaded Amazon product image is the single source of truth.
-- Preserve the exact product identity.
-- Keep the same model, shape, proportions, color, materials and construction.
-- Preserve visible openings, poles, seams, zippers, panels and accessories.
-- Do not redesign, simplify, replace or reinterpret the product.
-- The generated product must remain immediately recognizable as the same item.
+PRODUCT IDENTITY:
+- Show exactly the same product model from the uploaded image.
+- Do not create a different product or alternative design.
+- Preserve its exact silhouette, proportions, colours, materials, doors,
+  openings, poles, seams, panels and visible construction.
+- The product must remain immediately recognizable as the original item.
 
-PRODUCT VISIBILITY:
-- Show the entire product fully inside the frame.
-- Do not crop, cut off or hide any part of the product.
-- Keep comfortable space around the complete product.
-- Make the product large, clear and the main hero.
-- Use a natural three-quarter viewing angle.
-- Do not place unrelated products in front of it.
+COMPOSITION:
+- Show the complete product fully inside the frame.
+- Do not crop, cut off, hide or cover any part of it.
+- Leave comfortable space around the entire product.
+- Make it the clear hero and dominant subject.
+- Use a natural three-quarter product-photography angle.
 
-LIGHTING AND SCENE:
-- Use bright natural daylight or warm golden-hour light.
-- The product must be clearly visible and correctly exposed.
-- Avoid darkness, night scenes, deep shadows, fog and underexposure.
-- Create a realistic, fresh and beautiful lifestyle scene matching the category.
-- Use an aspirational premium Pinterest aesthetic.
-- Rich but natural colors, realistic textures and high clarity.
-- Clean composition with no clutter.
-- Do not copy the original Amazon background.
+LIFESTYLE INTEGRATION:
+- Place the exact product naturally in a fresh, beautiful lifestyle scene
+  that genuinely matches the category.
+- Integrate it with realistic contact shadows, ambient light, reflections,
+  perspective and surrounding colours.
+- It must look physically present and professionally photographed there.
+- It must not look pasted, composited, floating or artificially inserted.
+- Use bright natural daylight or warm golden-hour lighting.
+- Keep the product itself clearly illuminated and highly visible.
 
-TEXT OVERLAY:
-- Add exactly ONE short bold headline.
-- Headline must contain 3 to 6 correctly spelled words.
-- Create the headline from the product's strongest emotional appeal.
-- Add exactly ONE CTA button or CTA label.
-- CTA examples: Get the Look, Shop Now, See More, Discover More, View the Find.
-- Text must be large, clean and mobile-readable.
-- Do not cover the product with text.
-- Do not add specifications, dimensions, bullet points or extra text.
+VISUAL STYLE:
+- Premium Pinterest-inspired outdoor lifestyle photography.
+- Aspirational, polished, warm and visually rich.
+- High-end DSLR commercial photography appearance.
+- Realistic textures, natural colours and high clarity.
+- Clean, elegant composition with no clutter.
+
+WEBSITE TEXT RULE:
+- No headline.
+- No CTA.
+- No Shop Now button.
+- No labels, badges, specifications or extra text.
 
 RESTRICTIONS:
 - No Amazon logo.
-- No fake discount.
-- No fake rating or review.
-- No misleading claim.
-- No messy collage.
-- No distorted product.
-- No duplicated product.
-- No typo-filled text.
-- No repeated text.
-- No overcrowded layout.
-- No unrelated product stealing attention.
+- No fake discounts, ratings, reviews or claims.
+- No distorted or duplicated product.
+- No unrelated products.
+- No collage, watermark or overcrowded layout.
+- No dark scene, night scene, heavy fog or deep underexposure.
 
-Final result:
-A bright, polished, realistic premium lifestyle product pin in vertical 2:3
-format, with the entire original product clearly visible, one headline and one CTA.
+Final output:
+A photorealistic vertical 2:3 premium lifestyle photograph showing the entire
+exact Amazon product naturally integrated into the environment.
 """.strip()
-
 
 def build_pinterest_prompt(product: dict) -> str:
     return build_website_prompt(product)
