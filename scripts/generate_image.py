@@ -60,18 +60,41 @@ def main():
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--test", action="store_true", help="Test: 1 sekil")
     group.add_argument("--product", type=str, help="Mehsul ID (mes: camp-001)")
-    group.add_argument("--all", action="store_true", help="Butun mehsullar")
+    group.add_argument(
+        "--all-verified",
+        action="store_true",
+        help="Yalniz verified ve locked mehsullar",
+    )
+    parser.add_argument(
+        "--references-only",
+        action="store_true",
+        help="Yalniz Amazon reference sekillerini yukle",
+    )
     parser.add_argument(
         "--platform",
         choices=["website", "pinterest", "social"],
         default="website",
         help="Platforma (default: website)",
     )
+    parser.add_argument(
+        "--candidate",
+        action="store_true",
+        help="Neticeni sayta yazmadan inspection/candidates qovlugunda saxla",
+    )
     args = parser.parse_args()
 
     gen_cls = GENERATORS[args.platform]
     gen = gen_cls()
-    out_dir = OUTPUT_DIRS[args.platform]
+    if args.candidate:
+        out_dir = os.path.join(
+            ROOT,
+            "inspection",
+            "candidates",
+            args.platform,
+        )
+    else:
+        out_dir = OUTPUT_DIRS[args.platform]
+
     os.makedirs(out_dir, exist_ok=True)
 
     if args.test:
@@ -87,13 +110,42 @@ def main():
     products = load_products()["products"]
 
     if args.product:
-        prod = next((p for p in products if p["id"] == args.product), None)
+        prod = next(
+            (p for p in products if p["id"] == args.product),
+            None,
+        )
+
         if not prod:
-            print(f"❌ Mehsul tapilmadi: {args.product}")
+            print(f"ERROR: Mehsul tapilmadi: {args.product}")
             return 1
+
+        if (
+            prod.get("verification_status") != "verified"
+            or prod.get("identity_locked") is not True
+        ):
+            print(
+                f"ERROR: {args.product} verified ve locked deyil."
+            )
+            return 1
+
         targets = [prod]
     else:
-        targets = products
+        targets = [
+            product
+            for product in products
+            if (
+                product.get("verification_status") == "verified"
+                and product.get("identity_locked") is True
+            )
+        ]
+
+    print(f"VERIFIED LOCKED TARGETS: {len(targets)}")
+
+    for product in targets:
+        print(
+            f"  - {product['id']} | "
+            f"{product.get('verified_asin', '')}"
+        )
 
     ok = 0
     for p in targets:
@@ -101,11 +153,14 @@ def main():
         suffix = {"pinterest": "-pin", "social": "-og"}.get(args.platform, "")
         filename = f"{p['id']}{suffix}.webp"
         out = os.path.join(out_dir, filename)
-        amazon_url = (
-            p.get("verified_amazon_url")
-            or p.get("amazon_url")
-            or ""
-        )
+        amazon_url = p.get("verified_amazon_url") or ""
+
+        if not amazon_url:
+            print(
+                f"REFERENCE ERROR {p['id']}: "
+                "verified_amazon_url yoxdur"
+            )
+            return 1
 
         reference_image = None
 
@@ -126,7 +181,12 @@ def main():
                 )
             except Exception as error:
                 print(f"REFERENCE ERROR {p['id']}: {error}")
-                return 1
+                continue
+
+        if args.references_only:
+            print(f"REFERENCE READY {p['id']}: {reference_image}")
+            ok += 1
+            continue
 
         if gen.generate(
             prompt,
@@ -135,7 +195,12 @@ def main():
         ):
             ok += 1
 
-    print(f"\n✅ {ok}/{len(targets)} sekil ({args.platform})")
+    operation = (
+        "reference"
+        if args.references_only
+        else f"{args.platform} sekil"
+    )
+    print(f"\nRESULT: {ok}/{len(targets)} {operation}")
     return 0 if ok == len(targets) else 1
 
 
