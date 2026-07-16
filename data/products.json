@@ -528,11 +528,11 @@
       "amazon_size": "65+10 Liter",
       "amazon_color": "Bordeaux",
       "amazon_key_specs": [
-        "65+10L",
-        "Y1 Damen-System",
-        "Vent Comfort",
-        "PFC-frei",
-        "Bordeaux"
+        "65+10l",
+        "bordeaux",
+        "pfc-frei",
+        "vent comfort",
+        "y1 damen-system"
       ],
       "verification_status": "verified",
       "identity_locked": true,
@@ -540,7 +540,9 @@
       "verified_amazon_url": "https://www.amazon.de/dp/B081KCJ9B1",
       "verification_source": "https://www.amazon.de/dp/B081KCJ9B1",
       "asin_verified": true,
-      "asin_verified_at": "2026-07-16T20:00:00Z"
+      "asin_verified_at": "2026-07-16T21:02:20Z",
+      "identity_hash": "4aa0fe8b8480e75af381c3b781c0914e5127711edb7afa10aa9c5ba5f701b656",
+      "identity_applied_at": "2026-07-16T21:02:20Z"
     },
     {
       "id": "camp-010",
@@ -679,9 +681,9 @@
       "amazon_key_specs": [
         "2-flammig",
         "50 mbar",
-        "Edelstahl",
-        "Piezo-Zundung",
-        "Gaschlauch 1m"
+        "edelstahl",
+        "gaschlauch 1m",
+        "piezo-zundung"
       ],
       "verification_status": "verified",
       "identity_locked": true,
@@ -690,9 +692,11 @@
       "verified_amazon_url": "https://www.amazon.de/dp/B0F749Z97T",
       "verification_source": "https://www.amazon.de/dp/B0F749Z97T",
       "asin_verified": true,
-      "asin_verified_at": "2026-07-16T22:00:00Z",
+      "asin_verified_at": "2026-07-16T21:02:20Z",
       "amazon_product_title": "BRUNNER Camping Kocher 2-flammig Edelstahl POWERKOOK 50 mbar",
-      "amazon_brand": "BRUNNER"
+      "amazon_brand": "BRUNNER",
+      "identity_hash": "9748ca5335f1a3c8ba99bc0c8f1910d0566939308ace1c6fd20a41d696d3a8b8",
+      "identity_applied_at": "2026-07-16T21:02:20Z"
     },
     {
       "id": "camp-013",
