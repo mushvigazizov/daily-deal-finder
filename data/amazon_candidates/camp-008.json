@@ -1,0 +1,25 @@
+{
+  "product_id": "camp-008",
+  "candidates": [
+    {
+      "asin": "B0DJPS3YTS",
+      "amazon_url": "https://www.amazon.de/dp/B0DJPS3YTS",
+      "amazon_product_title": "Berghaus Adult Unisex Arrow U30 Rucsac, Jet Black, ONESZ",
+      "amazon_brand": "Berghaus",
+      "amazon_model": "Arrow U30",
+      "amazon_size": "ONESZ",
+      "amazon_color": "Jet Black",
+      "amazon_key_specs": [
+        "30 Liter Volumen",
+        "Jet Black",
+        "ONESZ",
+        "Recyceltes Obermaterial",
+        "Gepolsterte Schultergurte",
+        "Reflektierende Details"
+      ],
+      "candidate_source": "manual_browser_verification",
+      "review_status": "confirmed_verified",
+      "observed_at": "2026-07-16"
+    }
+  ]
+}
