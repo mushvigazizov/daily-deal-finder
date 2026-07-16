@@ -398,7 +398,7 @@ body {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.35s ease;
 }
 
@@ -967,7 +967,7 @@ html[lang="ru"] .hero h1 {
 .home-page .product-card .product-image-wrap img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .home-page .product-card .ai-visual-badge {
