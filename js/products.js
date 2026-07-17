@@ -275,9 +275,14 @@ function renderAmazonButton(product, className = "button") {
 
 function renderProductGrid(products, containerId) {
   const container = document.getElementById(containerId);
+  const publicProducts = products.filter(
+    product =>
+      product.active !== false &&
+      Boolean(getVerifiedAmazonUrl(product))
+  );
   if (!container) return;
 
-  if (!products.length) {
+  if (!publicProducts.length) {
     container.innerHTML =
       `<p class="empty">${translateUi(
         "common.products_not_found",
@@ -286,7 +291,7 @@ function renderProductGrid(products, containerId) {
     return;
   }
 
-  container.innerHTML = products.map(p => {
+  container.innerHTML = publicProducts.map(p => {
     const imgHtml = p.image 
       ? `<img src="/${p.image}" alt="${p.alt_text || p.title}" loading="lazy">`
       : `<div class="product-placeholder" aria-label="${p.title}">${p.title}</div>`;
@@ -333,7 +338,12 @@ async function initHomePage() {
   ]);
 
   const products = await loadProducts();
-  const active = products.filter(p => p.active !== false && p.featured);
+  const active = products.filter(
+      p =>
+        p.active !== false &&
+        p.featured &&
+        getVerifiedAmazonUrl(p)
+    );
   renderProductGrid(active, 'product-grid');
 }
 
