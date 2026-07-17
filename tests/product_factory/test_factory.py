@@ -222,3 +222,137 @@ class ProductFactoryHydrateTests(unittest.TestCase):
                     root=root,
                     product_id="camp-004",
                 )
+
+class ProductFactoryApprovalPublishTests(unittest.TestCase):
+    def create_ready_preview(self, root: Path) -> Path:
+        from core.product_factory.factory import create_preview, hydrate_preview
+
+        (root / "data").mkdir(parents=True, exist_ok=True)
+        (root / "data/amazon_reference_images").mkdir(parents=True)
+        (root / "inspection/candidates/website").mkdir(parents=True)
+        (root / "assets/products").mkdir(parents=True)
+
+        (root / "data/products.json").write_text(
+            json.dumps(
+                {
+                    "products": [
+                        {
+                            "id": "camp-008",
+                            "title": "Berghaus Arrow",
+                            "verification_status": "verified",
+                            "identity_locked": True,
+                            "verified_asin": "B0DJPS3YTS",
+                            "verified_amazon_url": (
+                                "https://www.amazon.de/dp/B0DJPS3YTS"
+                            ),
+                            "amazon_product_title": "Berghaus Arrow",
+                            "amazon_brand": "Berghaus",
+                            "amazon_model": "Arrow 30L",
+                            "amazon_size": "30 Liter",
+                            "amazon_color": "Jet Black",
+                            "amazon_key_specs": ["30 Liter"],
+                            "identity_hash": "test-hash",
+                            "features": [],
+                            "tags": [],
+                        }
+                    ]
+                }
+            ),
+            encoding="utf-8",
+        )
+
+        (root / "data/amazon_reference_images/camp-008.jpg").write_bytes(
+            b"reference"
+        )
+        (
+            root
+            / "inspection/candidates/website/camp-008.webp"
+        ).write_bytes(b"new-candidate")
+
+        create_preview(
+            root=root,
+            product_id="camp-008",
+            amazon_url="https://www.amazon.de/dp/B0DJPS3YTS",
+            reference_image=str(
+                root
+                / "data/amazon_reference_images/camp-008.jpg"
+            ),
+        )
+
+        return hydrate_preview(
+            root=root,
+            product_id="camp-008",
+        )
+
+    def test_publish_is_blocked_without_approval(self):
+        from core.product_factory.factory import (
+            ProductFactoryError,
+            publish_preview,
+        )
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.create_ready_preview(root)
+
+            with self.assertRaises(ProductFactoryError):
+                publish_preview(
+                    root=root,
+                    product_id="camp-008",
+                )
+
+    def test_approve_does_not_modify_live_image(self):
+        from core.product_factory.factory import approve_preview
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.create_ready_preview(root)
+
+            live = root / "assets/products/camp-008.webp"
+            live.write_bytes(b"old-live")
+
+            approve_preview(
+                root=root,
+                product_id="camp-008",
+                approved_by="Mushvig",
+                approval_note="Visual match confirmed.",
+            )
+
+            self.assertEqual(live.read_bytes(), b"old-live")
+
+    def test_publish_approved_candidate_and_create_backup(self):
+        from core.product_factory.factory import (
+            approve_preview,
+            publish_preview,
+        )
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.create_ready_preview(root)
+
+            live = root / "assets/products/camp-008.webp"
+            live.write_bytes(b"old-live")
+
+            approve_preview(
+                root=root,
+                product_id="camp-008",
+                approved_by="Mushvig",
+            )
+
+            destination = publish_preview(
+                root=root,
+                product_id="camp-008",
+            )
+
+            backup = (
+                root
+                / "assets/products/camp-008.webp.factory-backup"
+            )
+
+            self.assertEqual(
+                destination.read_bytes(),
+                b"new-candidate",
+            )
+            self.assertEqual(
+                backup.read_bytes(),
+                b"old-live",
+            )

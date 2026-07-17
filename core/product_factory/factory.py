@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import shutil
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -360,3 +361,210 @@ def hydrate_preview(
     )
 
     return preview_root
+
+
+
+def approve_preview(
+    *,
+    root: Path,
+    product_id: str,
+    approved_by: str,
+    approval_note: str | None = None,
+) -> Path:
+    product_id = validate_product_id(product_id)
+    approved_by = approved_by.strip()
+
+    if not approved_by:
+        raise ProductFactoryError("approved_by cannot be empty.")
+
+    preview_root = (
+        root
+        / "data"
+        / "product_factory"
+        / "previews"
+        / product_id
+    )
+
+    if not preview_root.exists():
+        raise ProductFactoryError(
+            f"Preview was not found: {product_id}"
+        )
+
+    identity_path = preview_root / "identity.json"
+    media_path = preview_root / "media.json"
+    approval_path = preview_root / "approval.json"
+    manifest_path = preview_root / "manifest.json"
+
+    for required_path in [
+        identity_path,
+        media_path,
+        approval_path,
+        manifest_path,
+    ]:
+        if not required_path.exists():
+            raise ProductFactoryError(
+                f"Preview file was not found: {required_path.name}"
+            )
+
+    identity = read_json(identity_path)
+    media = read_json(media_path)
+    manifest = read_json(manifest_path)
+
+    if (
+        identity.get("verification_status") != "verified"
+        or identity.get("identity_locked") is not True
+    ):
+        raise ProductFactoryError(
+            f"Preview identity is not verified and locked: {product_id}"
+        )
+
+    candidate_value = media.get("website_image")
+
+    if not candidate_value:
+        raise ProductFactoryError(
+            f"Website candidate is not ready: {product_id}"
+        )
+
+    candidate_path = root / candidate_value
+
+    if not candidate_path.exists():
+        raise ProductFactoryError(
+            f"Website candidate was not found: {candidate_value}"
+        )
+
+    approved_at = datetime.now(timezone.utc).isoformat()
+
+    identity["human_approved"] = True
+
+    approval = {
+        "approved": True,
+        "approved_by": approved_by,
+        "approved_at": approved_at,
+        "approval_note": approval_note,
+    }
+
+    manifest["status"] = "approved"
+    manifest["requires_human_approval"] = False
+    manifest["live_site_modified"] = False
+
+    identity_path.write_text(
+        json.dumps(identity, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    approval_path.write_text(
+        json.dumps(approval, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    manifest_path.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+    return preview_root
+
+
+def publish_preview(
+    *,
+    root: Path,
+    product_id: str,
+) -> Path:
+    product_id = validate_product_id(product_id)
+
+    preview_root = (
+        root
+        / "data"
+        / "product_factory"
+        / "previews"
+        / product_id
+    )
+
+    if not preview_root.exists():
+        raise ProductFactoryError(
+            f"Preview was not found: {product_id}"
+        )
+
+    identity_path = preview_root / "identity.json"
+    media_path = preview_root / "media.json"
+    approval_path = preview_root / "approval.json"
+    manifest_path = preview_root / "manifest.json"
+
+    identity = read_json(identity_path)
+    media = read_json(media_path)
+    approval = read_json(approval_path)
+    manifest = read_json(manifest_path)
+
+    if identity.get("human_approved") is not True:
+        raise ProductFactoryError(
+            f"Preview has no human approval: {product_id}"
+        )
+
+    if approval.get("approved") is not True:
+        raise ProductFactoryError(
+            f"Approval record is not approved: {product_id}"
+        )
+
+    if (
+        identity.get("verification_status") != "verified"
+        or identity.get("identity_locked") is not True
+    ):
+        raise ProductFactoryError(
+            f"Preview identity is not verified and locked: {product_id}"
+        )
+
+    candidate_value = media.get("website_image")
+
+    if not candidate_value:
+        raise ProductFactoryError(
+            f"Website candidate is missing: {product_id}"
+        )
+
+    candidate_path = root / candidate_value
+
+    if not candidate_path.exists():
+        raise ProductFactoryError(
+            f"Website candidate was not found: {candidate_value}"
+        )
+
+    destination = (
+        root
+        / "assets"
+        / "products"
+        / f"{product_id}.webp"
+    )
+    destination.parent.mkdir(parents=True, exist_ok=True)
+
+    backup = None
+
+    if destination.exists():
+        backup = destination.with_suffix(".webp.factory-backup")
+        shutil.copy2(destination, backup)
+
+    temporary = destination.with_suffix(".webp.tmp")
+    shutil.copy2(candidate_path, temporary)
+    temporary.replace(destination)
+
+    media["published_website_image"] = str(
+        destination.relative_to(root)
+    )
+    media["backup_image"] = (
+        str(backup.relative_to(root))
+        if backup is not None
+        else None
+    )
+    media["status"] = "published"
+
+    manifest["status"] = "published"
+    manifest["live_site_modified"] = True
+    manifest["requires_human_approval"] = False
+    manifest["published_at"] = datetime.now(timezone.utc).isoformat()
+
+    media_path.write_text(
+        json.dumps(media, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    manifest_path.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+    return destination

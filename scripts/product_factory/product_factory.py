@@ -13,8 +13,10 @@ sys.path.insert(0, str(ROOT))
 
 from core.product_factory.factory import (  # noqa: E402
     ProductFactoryError,
+    approve_preview,
     create_preview,
     hydrate_preview,
+    publish_preview,
 )
 
 
@@ -52,6 +54,31 @@ def main() -> int:
         help="Fill a preview from a verified and locked product.",
     )
     hydrate_parser.add_argument(
+        "--product-id",
+        required=True,
+    )
+
+    approve_parser = subparsers.add_parser(
+        "approve",
+        help="Approve a visually reviewed preview.",
+    )
+    approve_parser.add_argument(
+        "--product-id",
+        required=True,
+    )
+    approve_parser.add_argument(
+        "--approved-by",
+        required=True,
+    )
+    approve_parser.add_argument(
+        "--note",
+    )
+
+    publish_parser = subparsers.add_parser(
+        "publish",
+        help="Publish an already approved website candidate.",
+    )
+    publish_parser.add_argument(
         "--product-id",
         required=True,
     )
@@ -104,6 +131,38 @@ def main() -> int:
         print("Preview    :", preview.relative_to(ROOT))
         print("Live site  : unchanged")
         print("Approval   : required")
+        print("=" * 78)
+        return 0
+
+    if args.command == "approve":
+        preview = approve_preview(
+            root=ROOT,
+            product_id=args.product_id,
+            approved_by=args.approved_by,
+            approval_note=args.note,
+        )
+
+        print("=" * 78)
+        print("PRODUCT FACTORY PREVIEW APPROVED")
+        print("=" * 78)
+        print("Product ID  :", args.product_id)
+        print("Approved by :", args.approved_by)
+        print("Preview     :", preview.relative_to(ROOT))
+        print("Live site   : unchanged")
+        print("=" * 78)
+        return 0
+
+    if args.command == "publish":
+        destination = publish_preview(
+            root=ROOT,
+            product_id=args.product_id,
+        )
+
+        print("=" * 78)
+        print("PRODUCT FACTORY PREVIEW PUBLISHED")
+        print("=" * 78)
+        print("Product ID :", args.product_id)
+        print("Website    :", destination.relative_to(ROOT))
         print("=" * 78)
         return 0
 
