@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT))
 from core.product_factory.factory import (  # noqa: E402
     ProductFactoryError,
     create_preview,
+    hydrate_preview,
 )
 
 
@@ -44,6 +45,15 @@ def main() -> int:
     )
     create_parser.add_argument(
         "--reference-image",
+    )
+
+    hydrate_parser = subparsers.add_parser(
+        "hydrate",
+        help="Fill a preview from a verified and locked product.",
+    )
+    hydrate_parser.add_argument(
+        "--product-id",
+        required=True,
     )
 
     inspect_parser = subparsers.add_parser(
@@ -78,6 +88,22 @@ def main() -> int:
         print("Preview         :", preview.relative_to(ROOT))
         print("Live modified   :", manifest["live_site_modified"])
         print("Approval needed :", manifest["requires_human_approval"])
+        print("=" * 78)
+        return 0
+
+    if args.command == "hydrate":
+        preview = hydrate_preview(
+            root=ROOT,
+            product_id=args.product_id,
+        )
+
+        print("=" * 78)
+        print("PRODUCT FACTORY PREVIEW HYDRATED")
+        print("=" * 78)
+        print("Product ID :", args.product_id)
+        print("Preview    :", preview.relative_to(ROOT))
+        print("Live site  : unchanged")
+        print("Approval   : required")
         print("=" * 78)
         return 0
 

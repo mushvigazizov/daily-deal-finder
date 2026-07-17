@@ -195,3 +195,168 @@ def create_preview(
         )
 
     return preview_root
+
+
+def hydrate_preview(
+    *,
+    root: Path,
+    product_id: str,
+) -> Path:
+    product_id = validate_product_id(product_id)
+
+    preview_root = (
+        root
+        / "data"
+        / "product_factory"
+        / "previews"
+        / product_id
+    )
+
+    if not preview_root.exists():
+        raise ProductFactoryError(
+            f"Preview was not found: {product_id}"
+        )
+
+    products_payload = read_json(root / "data/products.json")
+    products = products_payload.get("products", products_payload)
+
+    product = next(
+        (
+            item
+            for item in products
+            if item.get("id") == product_id
+        ),
+        None,
+    )
+
+    if product is None:
+        raise ProductFactoryError(
+            f"Product does not exist in catalog: {product_id}"
+        )
+
+    if (
+        product.get("verification_status") != "verified"
+        or product.get("identity_locked") is not True
+    ):
+        raise ProductFactoryError(
+            f"Product is not verified and locked: {product_id}"
+        )
+
+    reference_path = (
+        root
+        / "data"
+        / "amazon_reference_images"
+        / f"{product_id}.jpg"
+    )
+    candidate_path = (
+        root
+        / "inspection"
+        / "candidates"
+        / "website"
+        / f"{product_id}.webp"
+    )
+
+    identity = {
+        "product_id": product_id,
+        "asin": product.get("verified_asin"),
+        "canonical_amazon_url": product.get(
+            "verified_amazon_url"
+        ),
+        "amazon_product_title": product.get(
+            "amazon_product_title"
+        ),
+        "amazon_brand": product.get("amazon_brand"),
+        "amazon_model": product.get("amazon_model"),
+        "amazon_size": product.get("amazon_size"),
+        "amazon_color": product.get("amazon_color"),
+        "amazon_key_specs": product.get(
+            "amazon_key_specs",
+            [],
+        ),
+        "verification_status": product.get(
+            "verification_status"
+        ),
+        "identity_locked": product.get(
+            "identity_locked"
+        ),
+        "identity_hash": product.get("identity_hash"),
+        "human_approved": False,
+    }
+
+    product_preview = {
+        "product_id": product_id,
+        "title": product.get("title"),
+        "short_description": product.get(
+            "short_description"
+        ),
+        "long_description": product.get(
+            "long_description"
+        ),
+        "features": product.get("features", []),
+        "tags": product.get("tags", []),
+        "seo_title": product.get("seo_title"),
+        "seo_description": product.get(
+            "seo_description"
+        ),
+        "pinterest_title": product.get(
+            "pinterest_title"
+        ),
+        "pinterest_description": product.get(
+            "pinterest_description"
+        ),
+        "status": "verified_preview",
+    }
+
+    media = {
+        "reference_image": (
+            str(reference_path.relative_to(root))
+            if reference_path.exists()
+            else None
+        ),
+        "website_image": (
+            str(candidate_path.relative_to(root))
+            if candidate_path.exists()
+            else None
+        ),
+        "pinterest_image": None,
+        "identity_preservation_required": True,
+        "status": (
+            "candidate_ready"
+            if candidate_path.exists()
+            else "reference_ready"
+            if reference_path.exists()
+            else "pending"
+        ),
+    }
+
+    for filename, payload in {
+        "identity.json": identity,
+        "product.json": product_preview,
+        "media.json": media,
+    }.items():
+        (preview_root / filename).write_text(
+            json.dumps(
+                payload,
+                ensure_ascii=False,
+                indent=2,
+            ) + "\n",
+            encoding="utf-8",
+        )
+
+    manifest_path = preview_root / "manifest.json"
+    manifest = read_json(manifest_path)
+    manifest["status"] = media["status"]
+    manifest["reference_image"] = media["reference_image"]
+    manifest["live_site_modified"] = False
+    manifest["requires_human_approval"] = True
+
+    manifest_path.write_text(
+        json.dumps(
+            manifest,
+            ensure_ascii=False,
+            indent=2,
+        ) + "\n",
+        encoding="utf-8",
+    )
+
+    return preview_root
