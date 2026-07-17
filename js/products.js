@@ -435,10 +435,8 @@ async function initProductPage() {
   const id = new URLSearchParams(window.location.search).get('id');
   const product = products.find(p => p.id === id);
 
-  if (!product || !getVerifiedAmazonUrl(product)) {
-    window.location.replace(buildLocalizedUrl("/"));
-    return;
-  }
+
+
 
   renderProductPage(product);
 }
