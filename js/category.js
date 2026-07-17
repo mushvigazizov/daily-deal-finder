@@ -69,14 +69,30 @@ function renderCategoryProducts(products, grid) {
           <p>${product.short_description || ""}</p>
 
           <div class="product-card-actions">
-            ${renderAmazonButton(
-              product,
-              "button category-amazon-button"
-            )}
-            <span class="ad-badge">${translateUi(
-              "common.advertisement",
-              "#Ad"
-            )}</span>
+            ${
+              amazonUrl
+                ? `
+                  ${renderAmazonButton(
+                    product,
+                    "button category-amazon-button"
+                  )}
+                  <span class="ad-badge">${translateUi(
+                    "common.advertisement",
+                    "#Ad"
+                  )}</span>
+                `
+                : `
+                  <span
+                    class="button disabled amazon-pending-button"
+                    aria-disabled="true"
+                  >
+                    ${translateUi(
+                      "common.amazon_link_pending",
+                      "Amazon link under review"
+                    )}
+                  </span>
+                `
+            }
           </div>
         </div>
       </article>
@@ -127,7 +143,6 @@ async function loadCategoryPage() {
 
     const filtered = products.filter(product =>
       product.active !== false &&
-      Boolean(getVerifiedAmazonUrl(product)) &&
       productMatchesCategory(product, slug)
     );
 

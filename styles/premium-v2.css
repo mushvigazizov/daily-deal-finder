@@ -1048,3 +1048,73 @@ html[lang="ru"] .hero h1 {
     padding: 20px;
   }
 }
+
+/* CATEGORY PAGE CARD VISIBILITY FIX V1 */
+.category-page .product-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: #0f1d30;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.category-page .product-card > .product-card-media-link {
+  height: auto;
+}
+
+.category-page .product-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 22px 22px 24px;
+  background: #0f1d30;
+}
+
+.category-page .product-card h3,
+.category-page .product-card h3 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.category-page .product-card p {
+  margin: 0 0 20px;
+  color: #b9c5d4;
+}
+
+.category-page .product-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.category-page .category-amazon-button,
+.category-page .amazon-pending-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 16px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.category-page .category-amazon-button {
+  background: linear-gradient(135deg, #ffd66d, var(--v2-gold));
+  color: #111827;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.category-page .amazon-pending-button {
+  cursor: default;
+  background: rgba(255, 255, 255, 0.08);
+  color: #b9c5d4;
+  font-weight: 750;
+}
+
+.category-page .product-card .ad-badge {
+  color: #8796a8;
+  font-size: 0.72rem;
+  text-align: center;
+}
