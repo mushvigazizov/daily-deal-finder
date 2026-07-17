@@ -38,7 +38,9 @@ function getCategoryInfo(slug) {
 function renderCategoryProducts(products, grid) {
   grid.innerHTML = products.map(product => `
     <article class="product-card">
-      <a href="${buildProductUrl(product.id)}">
+      <a href="${getVerifiedAmazonUrl(product)}"
+        target="_blank"
+        rel="nofollow sponsored noopener">
         <div class="product-image-wrap">
           <img
             src="/${product.image || "assets/placeholder.svg"}"
@@ -55,6 +57,11 @@ function renderCategoryProducts(products, grid) {
           <span class="category-tag">${product.category || ""}</span>
           <h3>${product.title}</h3>
           <p>${product.short_description || ""}</p>
+          ${renderAmazonButton(product, "button category-amazon-button")}
+          <span class="ad-badge">${translateUi(
+            "common.advertisement",
+            "#Ad"
+          )}</span>
         </div>
       </a>
     </article>
@@ -105,6 +112,7 @@ async function loadCategoryPage() {
 
     const filtered = products.filter(product =>
       product.active !== false &&
+      Boolean(getVerifiedAmazonUrl(product)) &&
       productMatchesCategory(product, slug)
     );
 
