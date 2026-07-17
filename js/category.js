@@ -36,31 +36,53 @@ function getCategoryInfo(slug) {
 
 
 function renderCategoryProducts(products, grid) {
-  grid.innerHTML = products.map(product => `
-    <article class="product-card">
-      <a href="${buildProductUrl(product.id)}">
-        <div class="product-image-wrap">
-          <img
-            src="/${product.image || "assets/placeholder.svg"}"
-            alt="${product.alt_text || product.title}"
-            loading="lazy"
-          >
-          <span class="ai-visual-badge">${translateUi(
-            "common.ai_visual",
-            "AI Visual"
-          )}</span>
-        </div>
+  // CATEGORY_VERIFIED_AMAZON_V4
+  grid.innerHTML = products.map(product => {
+    const amazonUrl = getVerifiedAmazonUrl(product);
+
+    return `
+      <article class="product-card">
+        <a
+          class="product-card-media-link"
+          href="${buildProductUrl(product.id)}"
+        >
+          <div class="product-image-wrap">
+            <img
+              src="/${product.image || "assets/placeholder.svg"}"
+              alt="${product.alt_text || product.title}"
+              loading="lazy"
+            >
+            <span class="ai-visual-badge">${translateUi(
+              "common.ai_visual",
+              "AI Visual"
+            )}</span>
+          </div>
+        </a>
 
         <div class="product-card-body">
           <span class="category-tag">${product.category || ""}</span>
-          <h3>${product.title}</h3>
-          <p>${product.short_description || ""}</p>
-        </div>
-      </a>
-    </article>
-  `).join("");
-}
 
+          <h3>
+            <a href="${buildProductUrl(product.id)}">${product.title}</a>
+          </h3>
+
+          <p>${product.short_description || ""}</p>
+
+          <div class="product-card-actions">
+            ${renderAmazonButton(
+              product,
+              "button category-amazon-button"
+            )}
+            <span class="ad-badge">${translateUi(
+              "common.advertisement",
+              "#Ad"
+            )}</span>
+          </div>
+        </div>
+      </article>
+    `;
+  }).join("");
+}
 
 async function loadCategoryPage() {
   const slug = getCategorySlug();
@@ -105,6 +127,7 @@ async function loadCategoryPage() {
 
     const filtered = products.filter(product =>
       product.active !== false &&
+      Boolean(getVerifiedAmazonUrl(product)) &&
       productMatchesCategory(product, slug)
     );
 
