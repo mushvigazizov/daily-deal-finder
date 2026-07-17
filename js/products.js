@@ -297,8 +297,12 @@ function renderProductGrid(products, containerId) {
       : `<div class="product-placeholder" aria-label="${p.title}">${p.title}</div>`;
     return `
     <article class="product-card">
-      <a href="${buildProductUrl(p.id)}">
-        <div class="product-image-wrap">
+      <a
+          href="${getVerifiedAmazonUrl(p)}"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+        >
+          <div class="product-image-wrap">
       ${imgHtml}
       <span class="ai-visual-badge">${translateUi(
         "common.ai_visual",
@@ -308,7 +312,13 @@ function renderProductGrid(products, containerId) {
       </a>
       <div class="info">
         <span class="category-tag">${p.category || ''}</span>
-        <h3><a href="${buildProductUrl(p.id)}">${p.title}</a></h3>
+        <h3>
+            <a
+              href="${getVerifiedAmazonUrl(p)}"
+              target="_blank"
+              rel="nofollow sponsored noopener"
+            >${p.title}</a>
+          </h3>
         <p>${p.short_description || ''}</p>
         ${getVerifiedAmazonUrl(p) ? `
           ${renderAmazonButton(p)}
