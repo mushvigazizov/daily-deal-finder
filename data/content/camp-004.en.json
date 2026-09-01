@@ -1,30 +1,31 @@
 {
   "id": "camp-004",
   "language": "en",
-  "title": "Campingaz 3-Season Sleeping Bag — Comfort Down to -5°C",
-  "short_description": "Versatile sleeping bag for spring, summer, and autumn. Comfortable down to -5°C, machine washable, and includes a compression sack.",
-  "long_description": "The Campingaz 3-Season Sleeping Bag is the perfect companion from spring to autumn. With a comfort temperature of -5°C, it keeps you warm on chilly nights. The durable outer fabric and soft inner lining ensure maximum sleeping comfort. It is machine washable and can be conveniently stored in the included compression sack.",
+  "title": "Yuzonc Camping Sleeping Pad — 195×68×10 cm with Foot Pump & Pillow",
+  "short_description": "Inflatable camping sleeping pad with an integrated foot pump and pillow. Dimensions: 195 × 68 × 10 cm.",
+  "long_description": "The Yuzonc camping sleeping pad is an inflatable single-person pad for camping and outdoor use. It measures 195 × 68 × 10 cm and includes an integrated foot pump and pillow. The material is 40D nylon with a TPU coating.",
   "features": [
-    "3-Season: Spring-Autumn",
-    "Comfort down to -5°C",
-    "Machine washable",
-    "Includes compression sack"
+    "195 × 68 × 10 cm",
+    "Integrated foot pump",
+    "Integrated pillow",
+    "40D nylon with TPU coating"
   ],
   "button_text": "View on Amazon",
-  "buying_angle": "Ideal for campers who value practical features in sleeping bags: 3-season use, comfort down to -5°C, machine washable.",
-  "seo_title": "Campingaz 3-Season Sleeping Bag - Comfort Down to -5°C Review 2026 |",
-  "meta_description": "Overview of the Campingaz 3-Season Sleeping Bag - Comfort Down to -5°C: 3-season use, comfort down to -5°C, machine washable.",
-  "alt_text": "Campingaz 3-Season Sleeping Bag — Comfort Down to -5°C",
-  "pinterest_title": "Campingaz 3-Season Sleeping Bag - Comfort Down to -5°C for Camping 🏕️",
-  "pinterest_description": "Campingaz 3-Season Sleeping Bag - Comfort Down to -5°C: a practical idea for camping, outdoor activities, and weekend trips. Save this find for your next adventure. #camping #outdoor #campinggear",
+  "buying_angle": "For camping and outdoor trips when an inflatable sleeping pad with an integrated foot pump and pillow is preferred.",
+  "seo_title": "Yuzonc Camping Sleeping Pad 195×68×10 cm | Daily Deal Finder",
+  "meta_description": "Yuzonc camping sleeping pad with 195 × 68 × 10 cm dimensions, integrated foot pump, pillow and 40D nylon with TPU coating.",
+  "alt_text": "Yuzonc inflatable camping sleeping pad with integrated foot pump and pillow",
+  "pinterest_title": "Yuzonc Camping Sleeping Pad with Foot Pump & Pillow",
+  "pinterest_description": "Yuzonc camping sleeping pad with integrated foot pump and pillow, measuring 195 × 68 × 10 cm. #camping #sleepingpad #outdoor",
   "hashtags": [
     "#camping",
-    "#outdoor",
-    "#campinggear"
+    "#sleepingpad",
+    "#outdoor"
   ],
-  "source": "localized_from_de_v2",
+  "source": "localized_from_verified_de_v1",
   "source_language": "de",
-  "source_hash": "6ac241fe0d208c2b4b02c696c8073c054e4a699f45436189cb6d009bec830654",
-  "generated_at": "2026-07-12T14:14:00Z",
-  "content_engine": "openai_localization_v2"
+  "source_hash": "1377acaceefd9b1bd5ba7eb75f62a6ae8919e055b284ac3502056c915a42cbb2",
+  "identity_hash": "19bcabaa58e856302aebe21e60c3b822cd4e1aa0f3eba445606298c12e9ab4d0",
+  "generated_at": "2026-09-01T09:24:55Z",
+  "content_engine": "amazon_identity_sync_v1"
 }
