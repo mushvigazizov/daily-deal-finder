@@ -1,204 +1,220 @@
 {
   "_schema": "1.0",
-  "_generated_at": "2026-07-09",
+  "_generated_at": "2026-09-06",
   "platform": "pinterest",
-  "total_pins": 20,
+  "total_pins": 21,
   "pins": [
     {
       "product_id": "camp-001",
-      "title": "Coleman 2-Personen Kuppelzelt - Wasserdicht & Schnellaufbau 🏕️",
-      "description": "Coleman 2-Personen Kuppelzelt - Wasserdicht & Schnellaufbau für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Coleman 2-Personen Kuppelzelt — Wasserdicht & Schnellaufbau für Camping 🏕️",
+      "description": "Coleman 2-Personen Kuppelzelt — Wasserdicht & Schnellaufbau von Coleman: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-001.webp",
       "target_url": "/product.html?id=camp-001",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-002",
-      "title": "Skandika Nordland 4 Tunnelzelt für 4 Personen",
-      "description": "Das Skandika Nordland 4 bietet Platz für vier Personen, 200 cm Stehhöhe, einen eingenähten Zeltboden und 5000 mm Wassersäule. Eine geräumige Option für Familiencamping. #camping #familienzelt #skandika",
+      "title": "Skandika Nordland 4 Tunnelzelt — 4 Personen, 5000 mm für Camping 🏕️",
+      "description": "Skandika Nordland 4 Tunnelzelt — 4 Personen, 5000 mm von Skandika: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-002.webp",
       "target_url": "/product.html?id=camp-002",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09",
-      "updated_at": "2026-07-15",
-      "identity_hash": "c794cb33eba92168d2c642a52b51fdf822c68def30bcee33e5cc7d32765e254e"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-003",
-      "title": "Salewa Denali II — Alpines Kuppelzelt fur 2 Personen",
-      "description": "Das Salewa Denali II ist ein alpines 3-Jahreszeiten-Zelt fur zwei Personen. Nur 2630 g, 3000 mm Wassersaule. Perfekt fur Berg- und Trekkingtouren. #salewa #camping #alpin",
+      "title": "Salewa Denali II Kuppelzelt — 2-Personen, 3-Jahreszeiten für Camping 🏕️",
+      "description": "Salewa Denali II Kuppelzelt — 2-Personen, 3-Jahreszeiten von Salewa: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-003.webp",
       "target_url": "/product.html?id=camp-003",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-004",
-      "title": "Campingaz 3-Jahreszeiten Schlafsack - Komfort bis -5°C 🏕️",
-      "description": "Campingaz 3-Jahreszeiten Schlafsack - Komfort bis -5°C für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Yuzonc Camping Isomatte mit Fußpumpe & Kissen",
+      "description": "Yuzonc Camping-Isomatte mit 195 × 68 × 10 cm, integrierter Fußpumpe und Kissen. Praktisch für Camping und Outdoor. #camping #isomatte #outdoor",
       "image": "assets/products/camp-004.webp",
       "target_url": "/product.html?id=camp-004",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-005",
-      "title": "Aubliss Ultraleicht Schlafsack - Nur 800g, ideal für Trekking 🏕️",
-      "description": "Aubliss Ultraleicht Schlafsack - Nur 800g, ideal für Trekking für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Ultraleichter Daunenschlafsack (680FP) — 3 Jahreszeiten, kompaktes Packmaß für Camping 🏕️",
+      "description": "Ultraleichter Daunenschlafsack (680FP) — 3 Jahreszeiten, kompaktes Packmaß von Generisch: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-005.webp",
       "target_url": "/product.html?id=camp-005",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-006",
-      "title": "PETZL TIKKA CORE Stirnlampe mit 450 Lumen",
-      "description": "Die grüne PETZL TIKKA CORE bietet bis zu 450 Lumen, einen CORE-Akku, Rotlicht und optionalen Betrieb mit drei AAA-Batterien. #petzl #stirnlampe #camping",
+      "title": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, Grün für Camping 🏕️",
+      "description": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, Grün von PETZL: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-006.webp",
       "target_url": "/product.html?id=camp-006",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09",
-      "updated_at": "2026-07-15",
-      "identity_hash": "27a5d7e541d9978e79b71cce2cc1eebdf439f1624a8ad8b45ad6581380ecb1bb"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-007",
-      "title": "Vango Camping LED Laterne - 360° Ausleuchtung 🏕️",
-      "description": "Vango Camping LED Laterne - 360° Ausleuchtung für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Glocusent Campinglampe — Aufladbar, 130 Std, 7 Leuchtmodi mit SOS für Camping 🏕️",
+      "description": "Glocusent Campinglampe — Aufladbar, 130 Std, 7 Leuchtmodi mit SOS von Glocusent: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-007.webp",
       "target_url": "/product.html?id=camp-007",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-008",
-      "title": "Berghaus Arrow U30 — 30L Daypack in Jet Black",
-      "description": "Berghaus Arrow U30: Vielseitiger 30L Daypack. Ergonomisch, recycelt, perfekt fur Alltag und leichte Wanderungen. #berghaus #daypack",
+      "title": "Berghaus Arrow U30 Rucksack — 30L, Leicht & Ergonomisch für Camping 🏕️",
+      "description": "Berghaus Arrow U30 Rucksack — 30L, Leicht & Ergonomisch von Berghaus: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-008.webp",
       "target_url": "/product.html?id=camp-008",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-009",
-      "title": "Tatonka Trekkingrucksack 65L - Für mehrtägige Touren 🏕️",
-      "description": "Tatonka Trekkingrucksack 65L - Für mehrtägige Touren für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Tatonka Yukon X1 65+10 Women — Damen Trekkingrucksack, Bordeaux für Camping 🏕️",
+      "description": "Tatonka Yukon X1 65+10 Women — Damen Trekkingrucksack, Bordeaux von Tatonka: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-009.webp",
       "target_url": "/product.html?id=camp-009",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-010",
-      "title": "Outsunny Camping Klappstuhl - Mit Armlehne & Getränkehalter 🏕️",
-      "description": "Outsunny Camping Klappstuhl - Mit Armlehne & Getränkehalter für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "tectake Campingstuhl — Faltbar mit Armlehnen & Getränkehalter für Camping 🏕️",
+      "description": "tectake Campingstuhl — Faltbar mit Armlehnen & Getränkehalter von tectake: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-010.webp",
       "target_url": "/product.html?id=camp-010",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-011",
-      "title": "Coleman Camping Klapptisch - 4 Personen, Aluminium 🏕️",
-      "description": "Coleman Camping Klapptisch - 4 Personen, Aluminium für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Coleman Campingtisch — Kompakt, faltbar & leicht für Camping 🏕️",
+      "description": "Coleman Campingtisch — Kompakt, faltbar & leicht von Coleman: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-011.webp",
       "target_url": "/product.html?id=camp-011",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-012",
-      "title": "Campingaz Gaskocher 2-flammig - Leistungsstark & Kompakt 🏕️",
-      "description": "Campingaz Gaskocher 2-flammig - Leistungsstark & Kompakt für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "BRUNNER PowerKook 2-Flammen Campingkocher — 50 mbar, Edelstahl für Camping 🏕️",
+      "description": "BRUNNER PowerKook 2-Flammen Campingkocher — 50 mbar, Edelstahl von BRUNNER: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-012.webp",
       "target_url": "/product.html?id=camp-012",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-013",
-      "title": "Esbit Camping Kochset 4-Personen - 10-teilig, Aluminium 🏕️",
-      "description": "Esbit Camping Kochset 4-Personen - 10-teilig, Aluminium für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Odoland Camping Kochgeschirr Set — Für Outdoor, Trekking & Picknick für Camping 🏕️",
+      "description": "Odoland Camping Kochgeschirr Set — Für Outdoor, Trekking & Picknick von Odoland: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-013.webp",
       "target_url": "/product.html?id=camp-013",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-014",
-      "title": "Mobicool ME24 Kühlbox 23L – 12V & 230V",
-      "description": "Die Mobicool ME24 bietet 23 Liter Nutzinhalt und läuft über 12 V im Auto oder 230 V an der Steckdose. Praktisch für Camping, Ausflüge und Roadtrips. #camping #kühlbox #mobicool",
+      "title": "Mobicool ME24 Elektrische Kühlbox — 23L, 12V & 230V für Camping 🏕️",
+      "description": "Mobicool ME24 Elektrische Kühlbox — 23L, 12V & 230V von Mobicool: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-014.webp",
       "target_url": "/product.html?id=camp-014",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09",
-      "updated_at": "2026-07-14",
-      "identity_hash": "85900bc45c5c3722f772c54b32af4811e2db8b63e4c9c192f4e9b94a7664b756"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-015",
-      "title": "Leina-Werke Erste-Hilfe-Set Outdoor - DIN 13167 🏕️",
-      "description": "Leina-Werke Erste-Hilfe-Set Outdoor - DIN 13167 für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Erste-Hilfe-Set 210-teilig — Für Outdoor, Auto, Camping & Zuhause für Camping 🏕️",
+      "description": "Erste-Hilfe-Set 210-teilig — Für Outdoor, Auto, Camping & Zuhause von Generisch: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-015.webp",
       "target_url": "/product.html?id=camp-015",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-016",
-      "title": "LifeStraw Wasserfilter - 4000L sauberes Trinkwasser 🏕️",
-      "description": "LifeStraw Wasserfilter - 4000L sauberes Trinkwasser für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "LifeStraw Persönlicher Wasserfilter — Sauberes Trinkwasser unterwegs für Camping 🏕️",
+      "description": "LifeStraw Persönlicher Wasserfilter — Sauberes Trinkwasser unterwegs von LifeStraw: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-016.webp",
       "target_url": "/product.html?id=camp-016",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-017",
-      "title": "Columbia Regenjacke - Wasserdicht & Atmungsaktiv 🏕️",
-      "description": "Columbia Regenjacke - Wasserdicht & Atmungsaktiv für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Columbia Pouring Adventure III — Wasserdichte Regenjacke für Herren für Camping 🏕️",
+      "description": "Columbia Pouring Adventure III — Wasserdichte Regenjacke für Herren von Columbia: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-017.webp",
       "target_url": "/product.html?id=camp-017",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
+    },
+    {
+      "product_id": "camp-018",
+      "title": "Odlo Active Warm Thermoshirt Herren — Langarm Funktionsunterwäsche für Camping 🏕️",
+      "description": "Odlo Active Warm Thermoshirt Herren — Langarm Funktionsunterwäsche von Odlo: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "image": "assets/products/camp-018.webp",
+      "target_url": "/product.html?id=camp-018",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-019",
-      "title": "Victorinox Outdoor Multitool - 15 Funktionen 🏕️",
-      "description": "Victorinox Outdoor Multitool - 15 Funktionen für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Victorinox Huntsman Taschenmesser — 15 Funktionen, 91 mm für Camping 🏕️",
+      "description": "Victorinox Huntsman Taschenmesser — 15 Funktionen, 91 mm von Victorinox: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-019.webp",
       "target_url": "/product.html?id=camp-019",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
     },
     {
       "product_id": "camp-020",
-      "title": "Military Paracord 30m - 250kg Belastbarkeit 🏕️",
-      "description": "Military Paracord 30m - 250kg Belastbarkeit für Camping und Outdoor. Praktisch, nützlich und ideal für deine nächste Tour. #camping #outdoor #campingausrüstung",
+      "title": "Abma Cord Paracord 550 — 4mm, 30m, bis 250kg belastbar für Camping 🏕️",
+      "description": "Abma Cord Paracord 550 — 4mm, 30m, bis 250kg belastbar von Abma Cord: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-020.webp",
       "target_url": "/product.html?id=camp-020",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
-      "created_at": "2026-07-09"
+      "created_at": "2026-09-06"
+    },
+    {
+      "product_id": "camp-021",
+      "title": "Bramble Rettungsdecke 10er-Pack — 210×160 cm für Notfall & Camping 🏕️",
+      "description": "Bramble Rettungsdecke im 10er-Pack, 210 x 160 cm, Gold/Silber. Praktisch für Erste-Hilfe-Set, Auto und Outdoor. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #erstehilfe",
+      "image": "assets/products/camp-021.webp",
+      "target_url": "/product.html?id=camp-021",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-09-06",
+      "updated_at": "2026-09-06",
+      "identity_hash": "4fc792954737ee91602916e21a90556299cd9da50fbfa92a72a59f264e895348"
     }
   ]
 }
