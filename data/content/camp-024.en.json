@@ -1,0 +1,32 @@
+{
+  "id": "camp-024",
+  "language": "en",
+  "title": "UGREEN Nexode 65W USB-C Charger — 3-Port GaN, PD 3.0, Compact",
+  "short_description": "A compact 65W USB-C charger with GaN technology and 3 ports (2x USB-C + 1x USB-A). Charges laptop, tablet and phone at the same time, fast.",
+  "long_description": "The UGREEN Nexode 65W is a compact GaN charger with three ports (2x USB-C + 1x USB-A). It delivers up to 65W on a C port and supports fast charging protocols like PD 3.0, QC 4+/3.0 and PPS. It charges MacBook, iPhone, iPad and other laptops quickly — even several devices at once. Thanks to GaN technology it stays small (66 x 40 x 31 mm), ideal for travel and the desk.",
+  "features": [
+    "65W maximum output",
+    "3 ports: 2x USB-C + 1x USB-A",
+    "GaN technology, compact",
+    "PD 3.0, QC 4+/3.0, PPS",
+    "Ideal for laptop, tablet & phone"
+  ],
+  "button_text": "View on Amazon",
+  "buying_angle": "Practical for anyone who wants to fast-charge a laptop, tablet and phone with a single compact power supply at the desk or on the go.",
+  "seo_title": "UGREEN Nexode 65W USB-C Charger — 3-Port GaN, PD 3.0 | Daily Deal Finder",
+  "meta_description": "UGREEN Nexode 65W USB-C charger with GaN tech, 3 ports (2x USB-C + 1x USB-A), PD 3.0 and PPS. Compact power supply for MacBook, iPhone, iPad and laptops.",
+  "alt_text": "Compact black UGREEN USB-C charger with multiple ports",
+  "pinterest_title": "UGREEN Nexode 65W USB-C Charger — compact & 3 ports",
+  "pinterest_description": "Compact 65W USB-C charger with GaN tech and 3 ports. Charges laptop, tablet and phone at once — ideal for travel and desk. Save this find. #tech #charger #usbc",
+  "hashtags": [
+    "#tech",
+    "#charger",
+    "#usbc"
+  ],
+  "source": "localized_from_verified_de_v1",
+  "source_language": "de",
+  "source_hash": "382503b57dd08662017e8adff678e8771944698dd7f2b58bdaf0a0fe9a768fec",
+  "identity_hash": "bfbbfb44434dbc270d55a8eeed9014aaa0f5c1bbaf463b70e69e05795723b96e",
+  "generated_at": "2026-09-10T08:31:19Z",
+  "content_engine": "amazon_identity_sync_v1"
+}
