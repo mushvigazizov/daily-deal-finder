@@ -1,31 +1,32 @@
 {
   "id": "camp-016",
   "language": "en",
-  "title": "LifeStraw Water Filter — 4000L Clean Drinking Water",
-  "short_description": "Portable water filter for up to 4000 liters. Removes 99.9% of bacteria and parasites. Perfect for trekking and emergencies.",
-  "long_description": "The LifeStraw water filter is a lifesaving tool for outdoor enthusiasts. It filters up to 4000 liters of contaminated water, removing 99.9% of bacteria, parasites, and microplastics. No pumping, no chemicals — just drink through the straw. Weighing only 57g, it fits in any bag.",
+  "title": "LifeStraw Personal Water Filter — up to 4,000 L, No Chemicals",
+  "short_description": "A compact personal water filter, filters up to 4,000 litres, removes 99.999999% of bacteria and 99.999% of protozoa. Only 57 g, no chemicals or batteries.",
+  "long_description": "The LifeStraw Personal Water Filter makes contaminated water drinkable on the go. It filters up to 4,000 litres, removes at least 99.999999% of bacteria and 99.999% of protozoa, and works down to 0.2 microns — without iodine, chlorine or other chemicals. At only 57 g and 22.5 cm long it is ultralight, needs no batteries and has no moving parts. Ideal for hiking, camping, travel, backpacking and emergency preparedness.",
   "features": [
-    "4000L filter capacity",
-    "99.9% bacteria removal",
-    "No chemicals",
-    "Weighs only 57g",
-    "No pumping required"
+    "Filters up to 4,000 litres",
+    "Removes 99.999999% bacteria, 99.999% protozoa",
+    "Down to 0.2 microns, no chemicals",
+    "Only 57 g, ultralight",
+    "No batteries, no moving parts"
   ],
   "button_text": "View on Amazon",
-  "buying_angle": "Especially appealing for campers who prioritize practical features: 4000L filter capacity, 99.9% bacteria removal, no chemicals.",
-  "seo_title": "LifeStraw Water Filter - 4000L Clean Drinking Water Review 2026 |",
-  "meta_description": "LifeStraw water filter - 4000L clean drinking water overview: 4000L filter capacity, 99.9% bacteria removal, no chemicals.",
-  "alt_text": "LifeStraw Water Filter — 4000L Clean Drinking Water",
-  "pinterest_title": "LifeStraw Water Filter - 4000L Clean Drinking Water for Camping 🏕️",
-  "pinterest_description": "LifeStraw water filter - 4000L clean drinking water: a useful idea for camping, outdoor activities, and weekend trips. Save this find for your next adventure. #camping #outdoor #campinggear",
+  "buying_angle": "Practical for hikers, campers and emergency preparedness — clean drinking water from almost any source, ultralight and chemical-free.",
+  "seo_title": "LifeStraw Personal Water Filter — up to 4,000 L, No Chemicals | Daily Deal Finder",
+  "meta_description": "LifeStraw Personal Water Filter: filters up to 4,000 litres, removes 99.999999% of bacteria and 99.999% of protozoa, only 57 g, no chemicals or batteries. For hiking, camping and emergencies.",
+  "alt_text": "LifeStraw personal water filter outdoors",
+  "pinterest_title": "LifeStraw Water Filter — clean drinking water on the go, ultralight",
+  "pinterest_description": "Personal water filter, filters up to 4,000 litres and removes 99.999999% of bacteria. Only 57 g, no chemicals — ideal for hiking, camping and emergencies. Save this find. #camping #outdoor #hiking",
   "hashtags": [
     "#camping",
     "#outdoor",
-    "#campinggear"
+    "#hiking"
   ],
-  "source": "localized_from_de_v2",
+  "source": "localized_from_verified_de_v1",
   "source_language": "de",
-  "source_hash": "fbf2302faf54c896b390cd81dc34e9c0696bd50d821d5d7e71069586ce26c3e7",
-  "generated_at": "2026-07-12T14:16:53Z",
-  "content_engine": "openai_localization_v2"
+  "source_hash": "a150fa4995601eed151cbdad27bf121ba213828fe01c6d936a5305e2c04be4cb",
+  "identity_hash": "f292f6a30bbe5233b14408cb44f5c3d5f67eb1eb18f6150bf3527addf3965fff",
+  "generated_at": "2026-09-10T19:32:24Z",
+  "content_engine": "amazon_identity_sync_v1"
 }

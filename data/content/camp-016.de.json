@@ -1,15 +1,31 @@
 {
   "id": "camp-016",
   "language": "de",
-  "seo_title": "LifeStraw Wasserfilter - 4000L sauberes Trinkwasser Test 2026 |",
-  "meta_description": "LifeStraw Wasserfilter - 4000L sauberes Trinkwasser von LifeStraw im Überblick: 4000L Filterkapazität, 99,9% Bakterien entfernt, Keine Chemikalien. Eine",
-  "alt_text": "LifeStraw Wasserfilter — 4000L sauberes Trinkwasser",
-  "pinterest_title": "LifeStraw Wasserfilter - 4000L sauberes Trinkwasser für Camping 🏕️",
-  "pinterest_description": "LifeStraw Wasserfilter - 4000L sauberes Trinkwasser von LifeStraw: eine nützliche Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
+  "title": "LifeStraw Persönlicher Wasserfilter — bis 4.000 L, ohne Chemikalien",
+  "short_description": "Kompakter persönlicher Wasserfilter, filtert bis zu 4.000 Liter, entfernt 99,999999% der Bakterien und 99,999% der Protozoen. Nur 57 g, keine Chemikalien oder Batterien.",
+  "long_description": "Der LifeStraw Persönliche Wasserfilter macht verunreinigtes Wasser unterwegs trinkbar. Er filtert bis zu 4.000 Liter, entfernt mindestens 99,999999% der Bakterien und 99,999% der Protozoen und arbeitet bis 0,2 Mikron — ohne Jod, Chlor oder andere Chemikalien. Mit nur 57 g und 22,5 cm Länge ist er ultraleicht, benötigt keine Batterien und keine beweglichen Teile. Ideal für Wandern, Camping, Reisen, Backpacking und die Notfallvorsorge.",
+  "features": [
+    "Filtert bis zu 4.000 Liter",
+    "Entfernt 99,999999% Bakterien, 99,999% Protozoen",
+    "Bis 0,2 Mikron, ohne Chemikalien",
+    "Nur 57 g, ultraleicht",
+    "Keine Batterien, keine beweglichen Teile"
+  ],
+  "button_text": "Auf Amazon ansehen",
+  "buying_angle": "Praktisch für Wanderer, Camper und Notfallvorsorge — sauberes Trinkwasser aus fast jeder Quelle, ultraleicht und ohne Chemikalien.",
+  "seo_title": "LifeStraw Persönlicher Wasserfilter — bis 4.000 L, ohne Chemikalien | Daily Deal Finder",
+  "meta_description": "LifeStraw Persönlicher Wasserfilter: filtert bis zu 4.000 Liter, entfernt 99,999999% der Bakterien und 99,999% der Protozoen, nur 57 g, ohne Chemikalien oder Batterien. Für Wandern, Camping und Notfall.",
+  "alt_text": "LifeStraw persönlicher Wasserfilter im Freien",
+  "pinterest_title": "LifeStraw Wasserfilter — sauberes Trinkwasser unterwegs, ultraleicht 🏕️",
+  "pinterest_description": "Persönlicher Wasserfilter, filtert bis zu 4.000 Liter und entfernt 99,999999% der Bakterien. Nur 57 g, ohne Chemikalien — ideal für Wandern, Camping und Notfall. Merke dir diesen Fund. #camping #outdoor #wandern",
   "hashtags": [
     "#camping",
     "#outdoor",
-    "#campingausrüstung"
+    "#wandern"
   ],
-  "source": "products_json_de_v1"
+  "source": "amazon_verified_identity_v1",
+  "source_language": "de",
+  "identity_hash": "f292f6a30bbe5233b14408cb44f5c3d5f67eb1eb18f6150bf3527addf3965fff",
+  "generated_at": "2026-09-10T19:32:24Z",
+  "content_engine": "amazon_identity_sync_v1"
 }
