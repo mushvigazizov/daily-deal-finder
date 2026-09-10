@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-09-10",
   "platform": "pinterest",
-  "total_pins": 24,
+  "total_pins": 25,
   "pins": [
     {
       "product_id": "camp-001",
@@ -242,9 +242,19 @@
       "target_url": "/product.html?id=camp-024",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-09-10"
+    },
+    {
+      "product_id": "camp-025",
+      "title": "INIU 240W USB-C Kabel — 2er-Pack, Nylon & PD Schnellladung 🔌",
+      "description": "2er-Pack USB-C Kabel mit 240W PD Schnellladung, je 2 m, nylon-geflochten. Robust für Laptop, Tablet und Handy — ideal für Schreibtisch und Reise. Merke dir diesen Fund. #technik #ladekabel #usbc",
+      "image": "assets/products/camp-025.webp",
+      "target_url": "/product.html?id=camp-025",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-09-10",
       "updated_at": "2026-09-10",
-      "identity_hash": "bfbbfb44434dbc270d55a8eeed9014aaa0f5c1bbaf463b70e69e05795723b96e"
+      "identity_hash": "1705850716bd0b94baf8a960354f3ba62d06a476e6d1a5fd52e41e4628011c11"
     }
   ]
 }
