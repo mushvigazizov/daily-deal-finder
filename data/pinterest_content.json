@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-09-23",
   "platform": "pinterest",
-  "total_pins": 27,
+  "total_pins": 23,
   "pins": [
     {
       "product_id": "camp-001",
@@ -45,31 +45,11 @@
       "created_at": "2026-09-23"
     },
     {
-      "product_id": "camp-005",
-      "title": "Ultraleichter Daunenschlafsack (680FP) — 3 Jahreszeiten, kompaktes Packmaß für Camping 🏕️",
-      "description": "Ultraleichter Daunenschlafsack (680FP) — 3 Jahreszeiten, kompaktes Packmaß von Generisch: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "image": "assets/products/camp-005.webp",
-      "target_url": "/product.html?id=camp-005",
-      "board": "Camping & Outdoor Gear",
-      "status": "ready",
-      "created_at": "2026-09-23"
-    },
-    {
       "product_id": "camp-006",
       "title": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, Grün für Camping 🏕️",
       "description": "PETZL TIKKA CORE Stirnlampe — 450 Lumen, Grün von PETZL: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-006.webp",
       "target_url": "/product.html?id=camp-006",
-      "board": "Camping & Outdoor Gear",
-      "status": "ready",
-      "created_at": "2026-09-23"
-    },
-    {
-      "product_id": "camp-007",
-      "title": "Glocusent Campinglampe — Aufladbar, 130 Std, 7 Leuchtmodi mit SOS für Camping 🏕️",
-      "description": "Glocusent Campinglampe — Aufladbar, 130 Std, 7 Leuchtmodi mit SOS von Glocusent: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "image": "assets/products/camp-007.webp",
-      "target_url": "/product.html?id=camp-007",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
       "created_at": "2026-09-23"
@@ -145,16 +125,6 @@
       "created_at": "2026-09-23"
     },
     {
-      "product_id": "camp-015",
-      "title": "Erste-Hilfe-Set 210-teilig — Für Outdoor, Auto, Camping & Zuhause für Camping 🏕️",
-      "description": "Erste-Hilfe-Set 210-teilig — Für Outdoor, Auto, Camping & Zuhause von Generisch: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "image": "assets/products/camp-015.webp",
-      "target_url": "/product.html?id=camp-015",
-      "board": "Camping & Outdoor Gear",
-      "status": "ready",
-      "created_at": "2026-09-23"
-    },
-    {
       "product_id": "camp-017",
       "title": "Columbia Pouring Adventure III — Wasserdichte Regenjacke für Herren für Camping 🏕️",
       "description": "Columbia Pouring Adventure III — Wasserdichte Regenjacke für Herren von Columbia: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
@@ -170,26 +140,6 @@
       "description": "Odlo Active Warm Thermoshirt Herren — Langarm Funktionsunterwäsche von Odlo: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-018.webp",
       "target_url": "/product.html?id=camp-018",
-      "board": "Camping & Outdoor Gear",
-      "status": "ready",
-      "created_at": "2026-09-23"
-    },
-    {
-      "product_id": "camp-019",
-      "title": "Victorinox Huntsman Taschenmesser — 15 Funktionen, 91 mm für Camping 🏕️",
-      "description": "Victorinox Huntsman Taschenmesser — 15 Funktionen, 91 mm von Victorinox: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "image": "assets/products/camp-019.webp",
-      "target_url": "/product.html?id=camp-019",
-      "board": "Camping & Outdoor Gear",
-      "status": "ready",
-      "created_at": "2026-09-23"
-    },
-    {
-      "product_id": "camp-020",
-      "title": "Abma Cord Paracord 550 — 4mm, 30m, bis 250kg belastbar für Camping 🏕️",
-      "description": "Abma Cord Paracord 550 — 4mm, 30m, bis 250kg belastbar von Abma Cord: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "image": "assets/products/camp-020.webp",
-      "target_url": "/product.html?id=camp-020",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
       "created_at": "2026-09-23"
@@ -272,9 +222,19 @@
       "target_url": "/product.html?id=camp-027",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-09-23"
+    },
+    {
+      "product_id": "camp-019",
+      "title": "Victorinox Huntsman Taschenmesser — 15 Funktionen, Swiss Made 🏕️",
+      "description": "Klassisches Schweizer Taschenmesser mit 15 Funktionen: Klinge, Schere, Holzsäge, Korkenzieher und mehr. Kompakt und robust — ideal für Camping, Wandern und Alltag. Merke dir diesen Fund. #camping #outdoor #victorinox",
+      "image": "assets/products/camp-019.webp",
+      "target_url": "/product.html?id=camp-019",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-09-23",
       "updated_at": "2026-09-23",
-      "identity_hash": "983bf3c5720901d2b38fb9f30f2916f84544e21e1b4f2bb5e3a718ed4cb5bd1e"
+      "identity_hash": "5dd695bd9c07446248e118dec8265b10182245c2628f24df967c9c89bede476d"
     }
   ]
 }

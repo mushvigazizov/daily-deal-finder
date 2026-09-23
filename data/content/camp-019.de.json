@@ -1,15 +1,31 @@
 {
   "id": "camp-019",
   "language": "de",
-  "seo_title": "Victorinox Outdoor Multitool - 15 Funktionen Test 2026 | Camping &",
-  "meta_description": "Victorinox Outdoor Multitool - 15 Funktionen von Victorinox im Überblick: 15 Funktionen, Holzsäge & Klinge, Dosen- & Flaschenöffner. Eine praktische Option für",
-  "alt_text": "Victorinox Outdoor Multitool — 15 Funktionen",
-  "pinterest_title": "Victorinox Outdoor Multitool - 15 Funktionen für Camping 🏕️",
-  "pinterest_description": "Victorinox Outdoor Multitool - 15 Funktionen von Victorinox: eine nützliche Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
+  "title": "Victorinox Huntsman Taschenmesser — 15 Funktionen, Swiss Made",
+  "short_description": "Klassisches Schweizer Taschenmesser mit 15 Funktionen: Klinge, Schere, Holzsäge, Korkenzieher und mehr. 91 mm, nur 97 g, rot — Swiss Made Qualität.",
+  "long_description": "Das Victorinox Huntsman ist ein legendäres Schweizer Taschenmesser mit 15 Funktionen. Es vereint die Funktionen des klassischen Offiziersmessers und ergänzt sie um Schere und Holzsäge. Mit dabei sind unter anderem große und kleine Klinge, Korkenzieher, Dosenöffner, Schraubendreher, Kapselheber, Ahle, Pinzette und Zahnstocher. Bei nur 91 mm Länge und 97 g Gewicht passt es in jede Tasche. Die Griffschalen bestehen aus robustem ABS/Cellidor, der Stahl ist rostfrei. Ideal für Camping, Wandern, Outdoor und den täglichen Gebrauch.",
+  "features": [
+    "15 Funktionen (Klinge, Schere, Holzsäge u. a.)",
+    "Länge 91 mm, Gewicht 97 g",
+    "Griffschalen ABS/Cellidor, rot",
+    "Rostfreier Edelstahl",
+    "Swiss Made Qualität"
+  ],
+  "button_text": "Auf Amazon ansehen",
+  "buying_angle": "Praktisch für Camper, Wanderer und den Alltag — ein legendäres Schweizer Multitool mit 15 Funktionen in kompakter Größe.",
+  "seo_title": "Victorinox Huntsman Taschenmesser — 15 Funktionen, Swiss Made | Daily Deal Finder",
+  "meta_description": "Victorinox Huntsman Schweizer Taschenmesser mit 15 Funktionen: Klinge, Schere, Holzsäge, Korkenzieher. 91 mm, 97 g, rot, rostfrei — Swiss Made. Für Camping, Wandern und Alltag.",
+  "alt_text": "Rotes Victorinox Huntsman Taschenmesser im Freien",
+  "pinterest_title": "Victorinox Huntsman Taschenmesser — 15 Funktionen, Swiss Made 🏕️",
+  "pinterest_description": "Klassisches Schweizer Taschenmesser mit 15 Funktionen: Klinge, Schere, Holzsäge, Korkenzieher und mehr. Kompakt und robust — ideal für Camping, Wandern und Alltag. Merke dir diesen Fund. #camping #outdoor #victorinox",
   "hashtags": [
     "#camping",
     "#outdoor",
-    "#campingausrüstung"
+    "#victorinox"
   ],
-  "source": "products_json_de_v1"
+  "source": "amazon_verified_identity_v1",
+  "source_language": "de",
+  "identity_hash": "5dd695bd9c07446248e118dec8265b10182245c2628f24df967c9c89bede476d",
+  "generated_at": "2026-09-23T18:35:45Z",
+  "content_engine": "amazon_identity_sync_v1"
 }

@@ -1,31 +1,32 @@
 {
   "id": "camp-019",
   "language": "en",
-  "title": "Victorinox Outdoor Multitool — 15 Functions",
-  "short_description": "Legendary Swiss multitool with 15 functions. Includes saw, blade, can opener, and corkscrew. Built to last.",
-  "long_description": "The Victorinox Multitool is an essential companion for any outdoor adventure. With 15 functions — including a sharp blade, wood saw, can opener, and corkscrew — you'll be prepared for any situation. The legendary Swiss quality ensures decades of durability. Compact and lightweight, it fits in any bag.",
+  "title": "Victorinox Huntsman Pocket Knife — 15 Functions, Swiss Made",
+  "short_description": "A classic Swiss pocket knife with 15 functions: blade, scissors, wood saw, corkscrew and more. 91 mm, only 97 g, red — Swiss Made quality.",
+  "long_description": "The Victorinox Huntsman is a legendary Swiss pocket knife with 15 functions. It combines the functions of the classic Officer's Knife and adds scissors and a wood saw. It includes a large and small blade, corkscrew, can opener, screwdriver, bottle opener, reamer, tweezers and toothpick, among others. At just 91 mm long and 97 g, it fits in any pocket. The handle scales are made of robust ABS/Cellidor and the steel is stainless. Ideal for camping, hiking, outdoors and daily use.",
   "features": [
-    "15 functions",
-    "Wood saw & blade",
-    "Can & bottle opener",
-    "Swiss quality",
-    "Lifetime warranty"
+    "15 functions (blade, scissors, wood saw and more)",
+    "91 mm long, 97 g weight",
+    "ABS/Cellidor handle scales, red",
+    "Stainless steel",
+    "Swiss Made quality"
   ],
   "button_text": "View on Amazon",
-  "buying_angle": "Especially appealing for campers who value practical features in their gear: 15 functions, wood saw & blade, can & bottle opener.",
-  "seo_title": "Victorinox Outdoor Multitool - 15 Functions Review 2026 | Camping &",
-  "meta_description": "Overview of the Victorinox Outdoor Multitool - 15 Functions: 15 functions, wood saw & blade, can & bottle opener. A practical option for outdoor enthusiasts.",
-  "alt_text": "Victorinox Outdoor Multitool — 15 Functions",
-  "pinterest_title": "Victorinox Outdoor Multitool - 15 Functions for Camping 🏕️",
-  "pinterest_description": "Victorinox Outdoor Multitool - 15 Functions: a useful idea for camping, outdoor activities, and weekend trips. Save this find for your next adventure. #camping #outdoor #campinggear",
+  "buying_angle": "Practical for campers, hikers and everyday use — a legendary Swiss multitool with 15 functions in a compact size.",
+  "seo_title": "Victorinox Huntsman Pocket Knife — 15 Functions, Swiss Made | Daily Deal Finder",
+  "meta_description": "Victorinox Huntsman Swiss pocket knife with 15 functions: blade, scissors, wood saw, corkscrew. 91 mm, 97 g, red, stainless — Swiss Made. For camping, hiking and daily use.",
+  "alt_text": "Red Victorinox Huntsman pocket knife outdoors",
+  "pinterest_title": "Victorinox Huntsman Pocket Knife — 15 Functions, Swiss Made",
+  "pinterest_description": "Classic Swiss pocket knife with 15 functions: blade, scissors, wood saw, corkscrew and more. Compact and robust — ideal for camping, hiking and daily use. Save this find. #camping #outdoor #victorinox",
   "hashtags": [
     "#camping",
     "#outdoor",
-    "#campinggear"
+    "#victorinox"
   ],
-  "source": "localized_from_de_v2",
+  "source": "localized_from_verified_de_v1",
   "source_language": "de",
-  "source_hash": "8e82adbfcb82b4a523010d30e23c7b638026e86076bd9b59aa634a130c797d73",
-  "generated_at": "2026-07-12T14:17:36Z",
-  "content_engine": "openai_localization_v2"
+  "source_hash": "9c86152444589a2779ef383a35ed990d7bc8dbe06b69d7c7dbdbbf0eab28b07c",
+  "identity_hash": "5dd695bd9c07446248e118dec8265b10182245c2628f24df967c9c89bede476d",
+  "generated_at": "2026-09-23T18:35:45Z",
+  "content_engine": "amazon_identity_sync_v1"
 }
