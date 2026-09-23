@@ -63,3 +63,11 @@
   opacity: 1;
   color: var(--gold);
 }
+
+/* mobil menyu düzəlişi */
+@media (max-width: 760px){
+  .nav{ flex-direction: column; gap: 12px; padding: 12px 16px; }
+  .menu{ flex-wrap: wrap; justify-content: center; gap: 10px 16px; font-size: 14px; }
+  .nav .brand span, .site-header .brand span{ font-size: 18px; }
+  .nav .brand img, .site-header .brand img{ width: 44px; height: 44px; }
+}
