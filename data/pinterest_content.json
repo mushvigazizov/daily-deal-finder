@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-09-27",
   "platform": "pinterest",
-  "total_pins": 29,
+  "total_pins": 30,
   "pins": [
     {
       "product_id": "camp-001",
@@ -292,9 +292,19 @@
       "target_url": "/product.html?id=camp-033",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-09-27"
+    },
+    {
+      "product_id": "camp-034",
+      "title": "Lefant Saugroboter mit Wischfunktion — 20000 Pa, Heißwasser-Mopp 🤖",
+      "description": "Saug- und Wischroboter mit 20000 Pa Saugkraft und 45°C Heißwasser-Mopp. Saugen und Wischen in einem Gerät — spart Zeit im Alltag. Merke dir diesen Fund für dein Zuhause. #haushalt #smarthome #saugroboter",
+      "image": "assets/products/camp-034.webp",
+      "target_url": "/product.html?id=camp-034",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-09-27",
       "updated_at": "2026-09-27",
-      "identity_hash": "f79d393548ddf379f353d9cb2fddc6a71c19a4aaa99074e9c16f5b0ef8a9174f"
+      "identity_hash": "85d09e8ae018fff39f7e15bc4d74af8092f3db2baf1f32e01376bfe2c7664141"
     }
   ]
 }
