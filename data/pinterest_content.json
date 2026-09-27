@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-09-27",
   "platform": "pinterest",
-  "total_pins": 30,
+  "total_pins": 31,
   "pins": [
     {
       "product_id": "camp-001",
@@ -302,9 +302,19 @@
       "target_url": "/product.html?id=camp-034",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-09-27"
+    },
+    {
+      "product_id": "camp-035",
+      "title": "DREAME L10s Ultra Gen 3 Saugroboter — 25.000 Pa, Wischfunktion, Dock 🤖",
+      "description": "Leistungsstarker Saug- und Wischroboter mit 25.000 Pa, ausfahrbarem Mopp und selbstreinigender All-in-One-Dockingstation. Spart Zeit im Alltag. Merke dir diesen Fund für dein Zuhause. #haushalt #smarthome #saugroboter",
+      "image": "assets/products/camp-035.webp",
+      "target_url": "/product.html?id=camp-035",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-09-27",
       "updated_at": "2026-09-27",
-      "identity_hash": "85d09e8ae018fff39f7e15bc4d74af8092f3db2baf1f32e01376bfe2c7664141"
+      "identity_hash": "04a647fb45d553b4ff5b2b6a126267e68bccc00100abf8ceb3df20389dd43b07"
     }
   ]
 }
