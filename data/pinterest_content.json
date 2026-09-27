@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-09-27",
   "platform": "pinterest",
-  "total_pins": 28,
+  "total_pins": 29,
   "pins": [
     {
       "product_id": "camp-001",
@@ -282,9 +282,19 @@
       "target_url": "/product.html?id=camp-032",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-09-27"
+    },
+    {
+      "product_id": "camp-033",
+      "title": "roborock Qrevo S Pro Saugroboter — 18.500 Pa, Wischfunktion, Dock 🤖",
+      "description": "Leistungsstarker Saug- und Wischroboter mit 18.500 Pa, 75°C Heißwasser-Moppreinigung und selbstreinigendem All-in-One-Dock. Spart Zeit im Alltag. Merke dir diesen Fund für dein Zuhause. #haushalt #smarthome #saugroboter",
+      "image": "assets/products/camp-033.webp",
+      "target_url": "/product.html?id=camp-033",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-09-27",
       "updated_at": "2026-09-27",
-      "identity_hash": "50e828138649afdaccea7ca9b8adadbd45e49b5dd535a2f79fb112dfad499128"
+      "identity_hash": "f79d393548ddf379f353d9cb2fddc6a71c19a4aaa99074e9c16f5b0ef8a9174f"
     }
   ]
 }
