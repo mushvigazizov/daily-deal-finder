@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-09-27",
   "platform": "pinterest",
-  "total_pins": 25,
+  "total_pins": 26,
   "pins": [
     {
       "product_id": "camp-001",
@@ -252,9 +252,19 @@
       "target_url": "/product.html?id=camp-029",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-09-27"
+    },
+    {
+      "product_id": "camp-030",
+      "title": "Ninja Dual Zone Heißluftfritteuse — 9,5 L, 2 Zonen, 6-in-1 🍟",
+      "description": "Ninja Heißluftfritteuse mit 9,5 Litern und 2 unabhängigen Garzonen. Zwei Gerichte gleichzeitig, 6 Funktionen, fettärmer kochen — spülmaschinenfeste Körbe. Merke dir diesen Fund für deine Küche. #küche #airfryer #ninja",
+      "image": "assets/products/camp-030.webp",
+      "target_url": "/product.html?id=camp-030",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-09-27",
       "updated_at": "2026-09-27",
-      "identity_hash": "9d96912a9a36f35058b012f0b45d2125b8f711f25e7d86e7099625d692372b15"
+      "identity_hash": "261c33d7b570849d17df3f0617a63ba7ca93727ecf11ec7595bd0fe555a1cc5e"
     }
   ]
 }
