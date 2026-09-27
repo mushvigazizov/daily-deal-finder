@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-09-27",
   "platform": "pinterest",
-  "total_pins": 24,
+  "total_pins": 25,
   "pins": [
     {
       "product_id": "camp-001",
@@ -242,9 +242,19 @@
       "target_url": "/product.html?id=camp-028",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-09-27"
+    },
+    {
+      "product_id": "camp-029",
+      "title": "ProfiCook Doppel-Heißluftfritteuse — 9 L, 2 Kammern, ohne Öl 🍟",
+      "description": "XXL Doppel-Heißluftfritteuse mit 9 Litern (2 x 4,5 L), 9 Programmen und Touchscreen. Zwei Gerichte gleichzeitig, fettärmer frittieren ohne zusätzliches Öl. Merke dir diesen Fund für deine Küche. #küche #airfryer #kochen",
+      "image": "assets/products/camp-029.webp",
+      "target_url": "/product.html?id=camp-029",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-09-27",
       "updated_at": "2026-09-27",
-      "identity_hash": "8566a3d936e1a8f55f3a8e1358e1168d2eb6af4dc09a0a145dab5976ff325680"
+      "identity_hash": "9d96912a9a36f35058b012f0b45d2125b8f711f25e7d86e7099625d692372b15"
     }
   ]
 }
