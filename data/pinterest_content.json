@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-10-01",
   "platform": "pinterest",
-  "total_pins": 33,
+  "total_pins": 34,
   "pins": [
     {
       "product_id": "camp-001",
@@ -332,9 +332,19 @@
       "target_url": "/product.html?id=camp-037",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-10-01"
+    },
+    {
+      "product_id": "camp-038",
+      "title": "Gepolsterter Campingstuhl mit hoher Lehne — bis 150 kg 🏕️",
+      "description": "Bequemer Camping-Klappstuhl mit Polsterung, hoher Rückenlehne, Armlehnen und Getränkehalter. Belastbar bis 150 kg, mit Tragetasche — ideal für Camping, Garten und Angeln. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingstuhl",
+      "image": "assets/products/camp-038.webp",
+      "target_url": "/product.html?id=camp-038",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-10-01",
       "updated_at": "2026-10-01",
-      "identity_hash": "c3934f717f6f8994cb4ba44c70e5e976ca025cfbab225790a3033be3e8ced651"
+      "identity_hash": "1349eac58d6dd21bfb6d853c3a2f7d7fe51e9e511f621d3ac322f8b8aadf5ce3"
     }
   ]
 }
