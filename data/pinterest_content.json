@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-10-01",
   "platform": "pinterest",
-  "total_pins": 31,
+  "total_pins": 32,
   "pins": [
     {
       "product_id": "camp-001",
@@ -312,9 +312,19 @@
       "target_url": "/product.html?id=camp-040",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-10-01"
+    },
+    {
+      "product_id": "camp-041",
+      "title": "Sturmhaube mit Fleece — Mütze, Maske & Halswärmer in einem ❄️",
+      "description": "Warme Sturmhaube mit Fleece-Futter: als Mütze, Skimaske oder Halswärmer tragbar, bedeckt Ohren, Hals und Wangen. Ideal für Wintercamping, Skifahren und Wandern. Merke dir diesen Fund für den nächsten kalten Tag. #wintercamping #sturmhaube #skifahren",
+      "image": "assets/products/camp-041.webp",
+      "target_url": "/product.html?id=camp-041",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-10-01",
       "updated_at": "2026-10-01",
-      "identity_hash": "50d885dec1cef9c7336a370d0e1e43117c683350f48399e781a814d51409896f"
+      "identity_hash": "cd9eb08afc9aac8a071d31c544160101116a22f0d12645ce9e49dd53059087d9"
     }
   ]
 }
