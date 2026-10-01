@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-10-01",
   "platform": "pinterest",
-  "total_pins": 33,
+  "total_pins": 34,
   "pins": [
     {
       "product_id": "camp-001",
@@ -332,9 +332,19 @@
       "target_url": "/product.html?id=camp-042",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-10-01"
+    },
+    {
+      "product_id": "camp-043",
+      "title": "Warme Herren-Winterjacke mit Fleece & Kapuze — wasserdicht ❄️",
+      "description": "Wetterfeste Herren-Winterjacke mit warmem Fleece-Futter und Kapuze — als Ski- und Regenjacke nutzbar. Ideal für Wintercamping, Wandern und kalte Tage. Merke dir diesen Fund für den Winter. #winterjacke #wintercamping #skijacke",
+      "image": "assets/products/camp-043.webp",
+      "target_url": "/product.html?id=camp-043",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-10-01",
       "updated_at": "2026-10-01",
-      "identity_hash": "42f041ee7215dce2a0401710a920bff28d67d0ff402297a35c62c0c3ece24bed"
+      "identity_hash": "31858a133749b2e9131a3d8150178e2e47d55d612845a7b7942d141dd43b2c7b"
     }
   ]
 }
