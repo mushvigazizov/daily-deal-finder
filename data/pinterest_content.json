@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-10-01",
   "platform": "pinterest",
-  "total_pins": 35,
+  "total_pins": 36,
   "pins": [
     {
       "product_id": "camp-001",
@@ -352,9 +352,19 @@
       "target_url": "/product.html?id=camp-044",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-10-01"
+    },
+    {
+      "product_id": "camp-045",
+      "title": "Außenkamera 2er-Set ohne Abo — 3K & Farb-Nachtsicht 🏡",
+      "description": "2 kabellose Überwachungskameras mit 3K-Video, Farb-Nachtsicht, Spotlight und Sirene – laut Hersteller ohne Abo. Behalte Haus und Garten bequem per App im Blick. Merke dir diesen Fund. #überwachungskamera #smarthome #sicherheit",
+      "image": "assets/products/camp-045.webp",
+      "target_url": "/product.html?id=camp-045",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-10-01",
       "updated_at": "2026-10-01",
-      "identity_hash": "e47f0d7ebdeb5fa9fc0f60e448c5abcbd8e6d2219fa07c992a936c50e20bda3c"
+      "identity_hash": "d4fceb629315d5dcd6b25cab95d05d4c359c8ffd10cb88aa204cd390d781b0fd"
     }
   ]
 }
