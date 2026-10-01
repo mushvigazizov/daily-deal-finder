@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-10-01",
   "platform": "pinterest",
-  "total_pins": 34,
+  "total_pins": 30,
   "pins": [
     {
       "product_id": "camp-001",
@@ -75,26 +75,6 @@
       "created_at": "2026-10-01"
     },
     {
-      "product_id": "camp-010",
-      "title": "tectake Campingstuhl — Faltbar mit Armlehnen & Getränkehalter für Camping 🏕️",
-      "description": "tectake Campingstuhl — Faltbar mit Armlehnen & Getränkehalter von tectake: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "image": "assets/products/camp-010.webp",
-      "target_url": "/product.html?id=camp-010",
-      "board": "Camping & Outdoor Gear",
-      "status": "ready",
-      "created_at": "2026-10-01"
-    },
-    {
-      "product_id": "camp-011",
-      "title": "Coleman Campingtisch — Kompakt, faltbar & leicht für Camping 🏕️",
-      "description": "Coleman Campingtisch — Kompakt, faltbar & leicht von Coleman: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "image": "assets/products/camp-011.webp",
-      "target_url": "/product.html?id=camp-011",
-      "board": "Camping & Outdoor Gear",
-      "status": "ready",
-      "created_at": "2026-10-01"
-    },
-    {
       "product_id": "camp-012",
       "title": "BRUNNER PowerKook 2-Flammen Campingkocher — 50 mbar, Edelstahl für Camping 🏕️",
       "description": "BRUNNER PowerKook 2-Flammen Campingkocher — 50 mbar, Edelstahl von BRUNNER: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
@@ -105,41 +85,11 @@
       "created_at": "2026-10-01"
     },
     {
-      "product_id": "camp-013",
-      "title": "Odoland Camping Kochgeschirr Set — Für Outdoor, Trekking & Picknick für Camping 🏕️",
-      "description": "Odoland Camping Kochgeschirr Set — Für Outdoor, Trekking & Picknick von Odoland: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "image": "assets/products/camp-013.webp",
-      "target_url": "/product.html?id=camp-013",
-      "board": "Camping & Outdoor Gear",
-      "status": "ready",
-      "created_at": "2026-10-01"
-    },
-    {
       "product_id": "camp-014",
       "title": "Mobicool ME24 Elektrische Kühlbox — 23L, 12V & 230V für Camping 🏕️",
       "description": "Mobicool ME24 Elektrische Kühlbox — 23L, 12V & 230V von Mobicool: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
       "image": "assets/products/camp-014.webp",
       "target_url": "/product.html?id=camp-014",
-      "board": "Camping & Outdoor Gear",
-      "status": "ready",
-      "created_at": "2026-10-01"
-    },
-    {
-      "product_id": "camp-017",
-      "title": "Columbia Pouring Adventure III — Wasserdichte Regenjacke für Herren für Camping 🏕️",
-      "description": "Columbia Pouring Adventure III — Wasserdichte Regenjacke für Herren von Columbia: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "image": "assets/products/camp-017.webp",
-      "target_url": "/product.html?id=camp-017",
-      "board": "Camping & Outdoor Gear",
-      "status": "ready",
-      "created_at": "2026-10-01"
-    },
-    {
-      "product_id": "camp-018",
-      "title": "Odlo Active Warm Thermoshirt Herren — Langarm Funktionsunterwäsche für Camping 🏕️",
-      "description": "Odlo Active Warm Thermoshirt Herren — Langarm Funktionsunterwäsche von Odlo: eine praktische Idee für Camping, Outdoor und Wochenendtrips. Merke dir diesen Fund für deine nächste Tour. #camping #outdoor #campingausrüstung",
-      "image": "assets/products/camp-018.webp",
-      "target_url": "/product.html?id=camp-018",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
       "created_at": "2026-10-01"
@@ -342,9 +292,19 @@
       "target_url": "/product.html?id=camp-038",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-10-01"
+    },
+    {
+      "product_id": "camp-039",
+      "title": "Notfall-Poncho 4er-Pack — wendbar mit Signalseite & Kapuze 🏕️",
+      "description": "4 Notfall-Ponchos mit Kapuze: wasser- und winddicht und helfen, die Körperwärme zu halten. Wendbar mit silberner Signalseite — gehört in jeden Wanderrucksack. Merke dir diesen Fund für deine nächste Tour. #camping #wandern #notfallausrüstung",
+      "image": "assets/products/camp-039.webp",
+      "target_url": "/product.html?id=camp-039",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-10-01",
       "updated_at": "2026-10-01",
-      "identity_hash": "1349eac58d6dd21bfb6d853c3a2f7d7fe51e9e511f621d3ac322f8b8aadf5ce3"
+      "identity_hash": "c1568cb300e5bf6a25a4d773d154c65f26117bb5ecd5106bb91a83868357b74d"
     }
   ]
 }
