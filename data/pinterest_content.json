@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-10-01",
   "platform": "pinterest",
-  "total_pins": 34,
+  "total_pins": 35,
   "pins": [
     {
       "product_id": "camp-001",
@@ -342,9 +342,19 @@
       "target_url": "/product.html?id=camp-043",
       "board": "Camping & Outdoor Gear",
       "status": "ready",
+      "created_at": "2026-10-01"
+    },
+    {
+      "product_id": "camp-044",
+      "title": "Hohes Luftbett für 2 Personen — 50 cm, bis 300 kg 🏕️",
+      "description": "Luftbett für 2 Personen mit 50 cm Höhe – fast wie ein richtiges Bett. Bis 300 kg belastbar, mit Tragetasche. Ideal für Autocamping, große Zelte und Gäste zu Hause. Merke dir diesen Fund. #camping #luftbett #gästebett",
+      "image": "assets/products/camp-044.webp",
+      "target_url": "/product.html?id=camp-044",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
       "created_at": "2026-10-01",
       "updated_at": "2026-10-01",
-      "identity_hash": "31858a133749b2e9131a3d8150178e2e47d55d612845a7b7942d141dd43b2c7b"
+      "identity_hash": "e47f0d7ebdeb5fa9fc0f60e448c5abcbd8e6d2219fa07c992a936c50e20bda3c"
     }
   ]
 }
