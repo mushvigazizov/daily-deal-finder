@@ -514,7 +514,7 @@
       "rating": null,
       "review_count": null,
       "featured": false,
-      "active": true,
+      "active": false,
       "created_at": "2026-07-06",
       "updated_at": "2026-07-22",
       "tags": [
@@ -564,7 +564,7 @@
       "rating": null,
       "review_count": null,
       "featured": false,
-      "active": true,
+      "active": false,
       "created_at": "2026-07-06",
       "updated_at": "2026-07-22",
       "tags": [
@@ -683,7 +683,7 @@
       "rating": null,
       "review_count": null,
       "featured": false,
-      "active": true,
+      "active": false,
       "created_at": "2026-07-06",
       "updated_at": "2026-07-22",
       "tags": [
@@ -803,7 +803,7 @@
       "rating": null,
       "review_count": null,
       "featured": false,
-      "active": true,
+      "active": false,
       "created_at": "2026-07-06",
       "updated_at": "2026-07-22",
       "tags": [
@@ -853,7 +853,7 @@
       "rating": null,
       "review_count": null,
       "featured": false,
-      "active": true,
+      "active": false,
       "created_at": "2026-07-06",
       "updated_at": "2026-07-22",
       "tags": [
