@@ -1,0 +1,32 @@
+{
+  "id": "camp-051",
+  "language": "en",
+  "title": "YLLZI 3-in-1 Wireless Charging Station — Qi, USB-C",
+  "short_description": "Wireless 3-in-1 charging station by YLLZI in black with a USB-C connection. According to Amazon, compatible with iPhone, Apple Watch and AirPods (with wireless charging case).",
+  "long_description": "The YLLZI 3-in-1 charging station is a wireless (Qi) charging station in black with a USB-C connection. According to the Amazon listing it has a power rating of 20 W and is compatible with many iPhone models, the Apple Watch and AirPods with a wireless charging case. The charging station, a user manual and a USB-C power adapter are included. Phone, watch and earbuds are not included. Please check on the Amazon product page whether your device is compatible before buying.",
+  "features": [
+    "3-in-1 wireless charging station (Qi)",
+    "USB-C connection, 20 W (according to Amazon)",
+    "USB-C power adapter included",
+    "Colour: black, weight 150 g",
+    "Please check compatibility on Amazon"
+  ],
+  "button_text": "View on Amazon",
+  "buying_angle": "Useful on a desk or bedside table when several compatible devices should be charged on one wireless charging station.",
+  "seo_title": "YLLZI 3-in-1 Wireless Charging Station – Qi, USB-C, Black | Daily Deal Finder",
+  "meta_description": "YLLZI wireless 3-in-1 charging station: Qi, USB-C power adapter included, compatible with iPhone, Apple Watch and AirPods according to Amazon.",
+  "alt_text": "Black YLLZI 3-in-1 wireless charging station with a power adapter on a desk",
+  "pinterest_title": "Tech Gadgets: YLLZI 3-in-1 Wireless Charging Station for Your Desk",
+  "pinterest_description": "Tech gadgets for your desk: YLLZI 3-in-1 wireless (Qi) charging station with a USB-C power adapter, compatible with iPhone, Apple Watch and AirPods according to Amazon. #techgadgets #chargingstation #wirelesscharging #desksetup #tech",
+  "hashtags": [
+    "#techgadgets",
+    "#chargingstation",
+    "#desksetup"
+  ],
+  "source": "localized_from_verified_de_v1",
+  "source_language": "de",
+  "source_hash": "725d240ac1adc798368e6fb9b2bee1486d8722b798d141bfff17d52fef811d22",
+  "identity_hash": "9e681705da786766e16cc2c07f067a7e4c1a2a525a00e5518ca0990b97e3dae9",
+  "generated_at": "2026-10-07T12:30:56Z",
+  "content_engine": "amazon_identity_sync_v1"
+}
