@@ -1,8 +1,8 @@
 {
   "_schema": "1.0",
-  "_generated_at": "2026-10-06",
+  "_generated_at": "2026-10-07",
   "platform": "pinterest",
-  "total_pins": 39,
+  "total_pins": 40,
   "pins": [
     {
       "product_id": "camp-001",
@@ -399,6 +399,18 @@
       "created_at": "2026-10-06",
       "updated_at": "2026-10-06",
       "identity_hash": "f3f001e01a3677779de6281f5ec89d1cafa31b7a72f8d6890d30454afc3ec8ca"
+    },
+    {
+      "product_id": "camp-049",
+      "title": "Camping Ausrüstung: Sportneer Klapptisch höhenverstellbar mit Netzablage",
+      "description": "Camping Ausrüstung für unterwegs: Sportneer Klapptisch aus Aluminium, 60 x 40 cm, 2 Höhenstufen, mit Netzablage und nur 2,72 kg. #camping #campingausrüstung #campingtisch #outdoor #campingessentials",
+      "image": "assets/products/camp-049.webp",
+      "target_url": "/product.html?id=camp-049",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-10-07",
+      "updated_at": "2026-10-07",
+      "identity_hash": "a57f3c4460e30d349e8b044c09f37e29c17d0d4dfb45ae0ed9ade3b7bd169578"
     }
   ]
 }
