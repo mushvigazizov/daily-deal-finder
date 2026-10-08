@@ -132,7 +132,6 @@ class BaseImageGenerator:
                         prompt=prompt,
                         size=f"{self.SIZE[0]}x{self.SIZE[1]}",
                         quality=self.QUALITY,
-                        input_fidelity="high",
                         output_format="webp",
                         n=1,
                     )
