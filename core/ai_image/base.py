@@ -5,7 +5,7 @@ import base64
 class BaseImageGenerator:
     """Abstrakt sekil generatoru."""
 
-    MODEL = "gpt-image-1"
+    MODEL = "gpt-image-2.5-flare"
     SIZE = (1024, 1024)
     QUALITY = "high"
 

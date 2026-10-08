@@ -6,7 +6,7 @@ SIZES = {
 }
 
 QUALITY = "high"
-DEFAULT_MODEL = "gpt-image-1"
+DEFAULT_MODEL = "gpt-image-2.5-flare"
 OUTPUT_FORMAT = "webp"
 
 # Platforma → qovluq

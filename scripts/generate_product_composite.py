@@ -126,7 +126,7 @@ def generate_background(
     client = OpenAI(api_key=api_key)
 
     response = client.images.generate(
-        model="gpt-image-1",
+        model="gpt-image-2.5-flare",
         prompt=build_background_prompt(product),
         size="1024x1536",
         quality="high",

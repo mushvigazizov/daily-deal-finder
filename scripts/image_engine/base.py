@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 class BaseImageGenerator:
-    MODEL = "gpt-image-1"
+    MODEL = "gpt-image-2.5-flare"
     SIZE = (1024, 1536)
     QUALITY = "high"
 
