@@ -22,7 +22,8 @@ for product in products:
             f"'{product['title']}'. "
             "Realistic outdoor lifestyle photography, natural lighting, "
             "professional composition, clean background, high click-through design, "
-            "space for title overlay, premium quality, no Amazon logo."
+            "space for title overlay, premium quality, no Amazon logo, "
+            "no brand name, no logo, no text or lettering anywhere on the product, blank control panel, keep the product clean and unbranded."
         ),
         "created_at": str(date.today())
     }
