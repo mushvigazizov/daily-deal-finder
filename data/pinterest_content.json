@@ -1,8 +1,8 @@
 {
   "_schema": "1.0",
-  "_generated_at": "2026-10-07",
+  "_generated_at": "2026-10-08",
   "platform": "pinterest",
-  "total_pins": 42,
+  "total_pins": 43,
   "pins": [
     {
       "product_id": "camp-001",
@@ -435,6 +435,18 @@
       "created_at": "2026-10-07",
       "updated_at": "2026-10-07",
       "identity_hash": "9e681705da786766e16cc2c07f067a7e4c1a2a525a00e5518ca0990b97e3dae9"
+    },
+    {
+      "product_id": "camp-052",
+      "title": "Camping Ausrüstung: KESSER XXL Bollerwagen mit Dach für Strand & Garten",
+      "description": "Camping Ausrüstung für Strand, Garten und Familienausflug: KESSER XXL Bollerwagen GT9000, faltbar, mit Dach und Bremsen vorn und hinten, laut Amazon bis 150 kg belastbar. #camping #bollerwagen #strand #familienausflug #outdoor",
+      "image": "assets/products/camp-052.webp",
+      "target_url": "/product.html?id=camp-052",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-10-08",
+      "updated_at": "2026-10-08",
+      "identity_hash": "da0477387b4b1c34318012e2a5e35dceb5fb926845dd8ca96ebf9451f0e5cbe9"
     }
   ]
 }
