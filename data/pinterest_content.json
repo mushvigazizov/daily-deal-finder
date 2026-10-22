@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-10-22",
   "platform": "pinterest",
-  "total_pins": 50,
+  "total_pins": 51,
   "pins": [
     {
       "product_id": "camp-001",
@@ -531,6 +531,18 @@
       "created_at": "2026-10-22",
       "updated_at": "2026-10-22",
       "identity_hash": "c63a3fafaefbd054b3e9661162f45bd51658c20a4d9ad846a2bbb2b69478872b"
+    },
+    {
+      "product_id": "camp-060",
+      "title": "Großer Koffer 77 cm erweiterbar auf 130 L — Hartschale, TSA-Schloss",
+      "description": "Hauptstadtkoffer Mitte Large mit 112 Litern, erweiterbar auf 130 Liter, mit ABS-Hartschale, TSA-Zahlenschloss und 4 Rollen. Platz für lange Reisen und den Familienurlaub. Merke dir diesen Fund. #koffer #reisen #urlaub",
+      "image": "assets/products/camp-060.webp",
+      "target_url": "/product.html?id=camp-060",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-10-22",
+      "updated_at": "2026-10-22",
+      "identity_hash": "a08e7025d8dde02b375265e9fc8ea9aafab1e79283a78f51e7fa6c30403fb8fc"
     }
   ]
 }
