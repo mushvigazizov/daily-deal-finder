@@ -1,8 +1,8 @@
 {
   "_schema": "1.0",
-  "_generated_at": "2026-10-22",
+  "_generated_at": "2026-10-25",
   "platform": "pinterest",
-  "total_pins": 52,
+  "total_pins": 53,
   "pins": [
     {
       "product_id": "camp-001",
@@ -555,6 +555,18 @@
       "created_at": "2026-10-22",
       "updated_at": "2026-10-22",
       "identity_hash": "071bbab30babc648cc410502e2a844375cce2d4b76733bcdf7d55910662864eb"
+    },
+    {
+      "product_id": "camp-062",
+      "title": "Auto-Luftmatratze Doppel mit 2 Kissen — für Kofferraum & Rückbank",
+      "description": "KMZ aufblasbares Autobett in Doppelgröße, 195 x 126 x 14 cm, mit beidseitig beflocktem PVC. Inklusive Luftpumpe, 2 Kissen und Tragetasche. Praktisch für Camping im Auto und Roadtrips. Merke dir diesen Fund. #camping #autocamping #luftmatratze",
+      "image": "assets/products/camp-062.webp",
+      "target_url": "/product.html?id=camp-062",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-10-25",
+      "updated_at": "2026-10-25",
+      "identity_hash": "8791d2bbd298e2040fb8ae515814fba54a6b71ad87240384777631cb66a601e9"
     }
   ]
 }
