@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-10-25",
   "platform": "pinterest",
-  "total_pins": 53,
+  "total_pins": 54,
   "pins": [
     {
       "product_id": "camp-001",
@@ -567,6 +567,18 @@
       "created_at": "2026-10-25",
       "updated_at": "2026-10-25",
       "identity_hash": "8791d2bbd298e2040fb8ae515814fba54a6b71ad87240384777631cb66a601e9"
+    },
+    {
+      "product_id": "camp-063",
+      "title": "Wanderrucksack 50L mit Regenschutz – 7 Fächer, gepolsterte Schultergurte",
+      "description": "Loowoko Wanderrucksack mit 50 Litern Fassungsvermögen, integriertem Regenschutz und 7 Fächern. Gepolsterte Mesh-Schultergurte, Farbe Blau. Details und Link findest du auf daily-deal-finder.com. #wanderrucksack #trekking #camping #outdoor",
+      "image": "assets/products/camp-063.webp",
+      "target_url": "/product.html?id=camp-063",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-10-25",
+      "updated_at": "2026-10-25",
+      "identity_hash": "90462580ad980826c97e562d3a209c4ba7dead8de73f0a94a954d13a669ec92c"
     }
   ]
 }
