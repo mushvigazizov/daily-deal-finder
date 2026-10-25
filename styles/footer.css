@@ -45,3 +45,8 @@ footer .brand img {
   color: #b9c7dc;
   font-size: 13px;
 }
+
+/* Amazon-Pflichthinweis + Footer-Links (2026-10-25) */
+.footgrid nav{grid-column:2 / 4;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px;align-content:start}
+.amazon-disclosure{width:min(1180px,92%);margin:26px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);color:#ffffff;font-size:15px;font-weight:600;line-height:1.5}
+@media(max-width:760px){.footgrid nav{grid-column:auto}}
