@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-11-04",
   "platform": "pinterest",
-  "total_pins": 59,
+  "total_pins": 60,
   "pins": [
     {
       "product_id": "camp-001",
@@ -639,6 +639,18 @@
       "created_at": "2026-11-04",
       "updated_at": "2026-11-04",
       "identity_hash": "5c9946657969a3aa1bf1a07cb7548ba48cac51ce804f905b395882332717f53f"
+    },
+    {
+      "product_id": "camp-069",
+      "title": "Camping Ausrüstung: Outdoor-Wasserfilter mit Ultrafiltration, nur 100 g",
+      "description": "Camping Ausrüstung für unterwegs: Membrane Solutions Outdoor-Wasserfilter mit Ultrafiltration, bis 5000 Liter laut Amazon, nur 100 g leicht, mit Trageband. Praktisch für Wandern und Camping. #camping #wasserfilter #outdoor #wandern #trekking",
+      "image": "assets/products/camp-069.webp",
+      "target_url": "/product.html?id=camp-069",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-11-04",
+      "updated_at": "2026-11-04",
+      "identity_hash": "a34b87ae6e3561bd14b66836895b99386c6ca969f765b9abd1a6c1fa71e30fec"
     }
   ]
 }
