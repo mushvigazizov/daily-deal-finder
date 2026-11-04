@@ -1,8 +1,8 @@
 {
   "_schema": "1.0",
-  "_generated_at": "2026-10-25",
+  "_generated_at": "2026-11-04",
   "platform": "pinterest",
-  "total_pins": 54,
+  "total_pins": 55,
   "pins": [
     {
       "product_id": "camp-001",
@@ -579,6 +579,18 @@
       "created_at": "2026-10-25",
       "updated_at": "2026-10-25",
       "identity_hash": "90462580ad980826c97e562d3a209c4ba7dead8de73f0a94a954d13a669ec92c"
+    },
+    {
+      "product_id": "camp-064",
+      "title": "Camping Ausrüstung: Solar-Powerbank 26800 mAh mit LED-Lampe",
+      "description": "Camping Ausrüstung für unterwegs: elzle Solar-Powerbank mit 26800 mAh, 4 faltbaren Solarpanels, USB-A und USB-C sowie LED-Taschenlampe. Praktisch fürs Zelt, zum Wandern und für Outdoor. #camping #powerbank #solarpowerbank #outdoor #wandern",
+      "image": "assets/products/camp-064.webp",
+      "target_url": "/product.html?id=camp-064",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-11-04",
+      "updated_at": "2026-11-04",
+      "identity_hash": "3c2920456820b5f7c8981efc852504a765d083205c9048eaa00867e13dc3ac39"
     }
   ]
 }
