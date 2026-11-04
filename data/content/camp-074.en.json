@@ -1,0 +1,32 @@
+{
+  "id": "camp-074",
+  "language": "en",
+  "title": "ROCAM CR1030DAB DAB+/FM Radio — Crank, Solar, 12000 mAh, Bluetooth",
+  "brand": "ROCAM",
+  "short_description": "ROCAM CR1030DAB: DAB+/FM radio with 80 presets, a 12000 mAh battery, hand crank, solar panel and Bluetooth — for home and on the go.",
+  "long_description": "According to Amazon, the ROCAM CR1030DAB is a DAB+/FM digital radio with 80 presets (40 DAB+ and 40 FM) and 57 mm speakers. It has a 12000 mAh battery and can be charged via a solar panel (8500 mm²), a hand crank (650 mA) and USB-C according to Amazon. It also offers Bluetooth and a USB-C port. According to the item description it also includes a flashlight, an SOS function and IPX6 protection. The radio measures 12 x 17.2 x 7.3 cm, weighs 700 g and comes in green. According to Amazon the box contains an owner's manual, a portable belt, the radio and a USB-C cable. Before buying, please check the manufacturer's exact details on the Amazon product page, especially on charging times and runtime.",
+  "features": [
+    "DAB+/FM with 80 presets (40 DAB+, 40 FM)",
+    "12000 mAh battery, charging via solar, crank and USB-C (according to Amazon)",
+    "Bluetooth and USB-C port",
+    "According to the item description with flashlight, SOS function and IPX6"
+  ],
+  "button_text": "View on Amazon",
+  "buying_angle": "Handy for anyone looking for a radio that can also run without a power outlet via battery, solar panel or crank, for example at home, in the garden or on the go.",
+  "seo_title": "ROCAM CR1030DAB DAB+/FM Radio with Crank, Solar and Battery | Daily Deal Finder",
+  "meta_description": "ROCAM CR1030DAB DAB+/FM radio with 80 presets, 12000 mAh battery, hand crank, solar panel and Bluetooth. According to Amazon.",
+  "alt_text": "Green DAB+/FM radio with solar panel and hand crank",
+  "pinterest_title": "Tech Ideas: DAB+/FM Radio with Crank, Solar & 12000 mAh Battery",
+  "pinterest_description": "Tech ideas: ROCAM CR1030DAB DAB+/FM radio with 80 presets, 12000 mAh battery, hand crank, solar panel and Bluetooth. According to Amazon with flashlight and SOS function. Handy for home and on the go. #radio #dab #solarradio #crankradio #tech",
+  "hashtags": [
+    "#radio",
+    "#dabplus",
+    "#crankradio"
+  ],
+  "source": "localized_from_verified_de_v1",
+  "source_language": "de",
+  "source_hash": "83d74726855b1b4cd92123503ec3ed034dc05c8e2f7aef695357298d8bf1bb2e",
+  "identity_hash": "d3aca65047d3d8b9dac41a850221c3865ead5891f0557377249fd628008b4367",
+  "generated_at": "2026-11-04T14:25:56Z",
+  "content_engine": "amazon_identity_sync_v1"
+}
