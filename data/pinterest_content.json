@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-11-04",
   "platform": "pinterest",
-  "total_pins": 60,
+  "total_pins": 61,
   "pins": [
     {
       "product_id": "camp-001",
@@ -651,6 +651,18 @@
       "created_at": "2026-11-04",
       "updated_at": "2026-11-04",
       "identity_hash": "a34b87ae6e3561bd14b66836895b99386c6ca969f765b9abd1a6c1fa71e30fec"
+    },
+    {
+      "product_id": "camp-070",
+      "title": "Camping Ausrüstung: 4er-Set PMR446-Funkgeräte mit 16 Kanälen",
+      "description": "Camping Ausrüstung für Gruppen: JUCJET EP31 PMR446-Funkgeräte im 4er-Set mit 16 Kanälen und IP54. Praktisch für Zeltplatz, Wandern und Familienausflug. Lieferumfang vor dem Kauf prüfen. #camping #funkgeräte #pmr446 #walkietalkie #outdoor",
+      "image": "assets/products/camp-070.webp",
+      "target_url": "/product.html?id=camp-070",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-11-04",
+      "updated_at": "2026-11-04",
+      "identity_hash": "6990f4a5aa93879f5d1b30683bd30012d0f140de770de1f27962e7dceb41a78f"
     }
   ]
 }
