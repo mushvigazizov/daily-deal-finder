@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-11-04",
   "platform": "pinterest",
-  "total_pins": 65,
+  "total_pins": 66,
   "pins": [
     {
       "product_id": "camp-001",
@@ -711,6 +711,18 @@
       "created_at": "2026-11-04",
       "updated_at": "2026-11-04",
       "identity_hash": "d3aca65047d3d8b9dac41a850221c3865ead5891f0557377249fd628008b4367"
+    },
+    {
+      "product_id": "camp-075",
+      "title": "Technik Ideen: Powerbank 16000 mAh mit kabellosem Laden & 3 Kabeln",
+      "description": "Technik Ideen: A ADDTOP Powerbank mit 16000 mAh, kabellosem Laden, Schnellladen und 3 Kabeln. Praktisch für Reisen, Alltag und Camping. Laut Amazon-Angaben. #powerbank #technik #kabellosladen #reisen #camping",
+      "image": "assets/products/camp-075.webp",
+      "target_url": "/product.html?id=camp-075",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-11-04",
+      "updated_at": "2026-11-04",
+      "identity_hash": "bffcea52f04b136245fc9394b61102bd26460b818b8fc260686189405d453324"
     }
   ]
 }
