@@ -1,0 +1,32 @@
+{
+  "id": "camp-076",
+  "language": "en",
+  "title": "FlexSolar E40 Foldable Solar Panel 40 W — ETFE, USB, Camping",
+  "brand": "FlexSolar",
+  "short_description": "FlexSolar E40: foldable 40 W solar panel with an ETFE surface, several USB ports and 2 carabiners — for camping and outdoors.",
+  "long_description": "According to Amazon, the FlexSolar E40 is a foldable solar charger with a maximum power of 40 W. According to the product title it is a monocrystalline ETFE solar panel. The maximum voltage is stated as 20 V and the output voltage as 19 V DC. According to the item description it has 3 USB ports (with PD 18 W, QC 3.0 and Type-C) and an IP67 rating. It weighs 1.03 kg according to Amazon. According to Amazon the box contains the solar charger, 2 carabiners and a user manual (English language not guaranteed). The actual charging power depends heavily on sunlight and weather. Before buying, please check the manufacturer's exact details on the Amazon product page and the compatibility with your devices.",
+  "features": [
+    "Foldable solar panel with 40 W maximum power (according to Amazon)",
+    "According to the item description 3 USB ports with PD 18 W, QC 3.0 and Type-C",
+    "According to the item description IP67",
+    "With 2 carabiners, 1.03 kg"
+  ],
+  "button_text": "View on Amazon",
+  "buying_angle": "Handy for campers and hikers who want to charge a smartphone, tablet or power bank with sunlight and are looking for a foldable panel.",
+  "seo_title": "FlexSolar E40 Foldable Solar Panel 40 W for Camping | Daily Deal Finder",
+  "meta_description": "FlexSolar E40 foldable solar panel with 40 W, several USB ports and 2 carabiners. For camping and outdoors. According to Amazon.",
+  "alt_text": "Foldable solar panel with USB ports for camping and outdoors",
+  "pinterest_title": "Camping Gear: Foldable 40 W Solar Panel with USB Ports",
+  "pinterest_description": "Camping gear: FlexSolar E40 foldable solar panel with 40 W maximum power, several USB ports and 2 carabiners. Handy for the campsite, hiking and outdoors. According to Amazon. #camping #solarpanel #outdoor #solarcharger #hiking",
+  "hashtags": [
+    "#camping",
+    "#solarpanel",
+    "#outdoor"
+  ],
+  "source": "localized_from_verified_de_v1",
+  "source_language": "de",
+  "source_hash": "cda2495dda94504e0bb5e1f64c22298ebbc1e823a89af7e55532f8f221be7f83",
+  "identity_hash": "3094dca163af46c8fe1a719a25ea1b37d8b48090c35f3fa7544b1fb3895bf3e4",
+  "generated_at": "2026-11-04T14:36:43Z",
+  "content_engine": "amazon_identity_sync_v1"
+}

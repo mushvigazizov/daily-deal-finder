@@ -1,0 +1,30 @@
+{
+  "id": "camp-076",
+  "language": "de",
+  "title": "FlexSolar E40 Faltbares Solarpanel 40 W — ETFE, USB, Camping",
+  "short_description": "FlexSolar E40: faltbares 40-W-Solarpanel mit ETFE-Oberfläche, mehreren USB-Anschlüssen und 2 Karabinern — für Camping und Outdoor.",
+  "long_description": "Das FlexSolar E40 ist laut Amazon ein faltbares Solarladegerät mit einer maximalen Leistung von 40 W. Laut Produkttitel handelt es sich um ein monokristallines ETFE-Solarpanel. Die maximale Spannung wird mit 20 V angegeben, die Ausgangsspannung mit 19 V DC. Laut Artikelbeschreibung hat es 3 USB-Anschlüsse (mit PD 18 W, QC 3.0 und Type-C) und die Schutzklasse IP67. Es wiegt laut Amazon 1,03 kg. Im Lieferumfang sind laut Amazon das Solarladegerät, 2 Karabiner und eine Bedienungsanleitung enthalten (englische Sprache nicht garantiert). Die tatsächliche Ladeleistung hängt stark von Sonneneinstrahlung und Wetter ab. Bitte prüfe vor dem Kauf auf der Amazon-Produktseite die genauen Angaben des Herstellers und die Kompatibilität mit deinen Geräten.",
+  "features": [
+    "Faltbares Solarpanel mit 40 W maximaler Leistung (laut Amazon)",
+    "Laut Artikelbeschreibung 3 USB-Anschlüsse mit PD 18 W, QC 3.0 und Type-C",
+    "Laut Artikelbeschreibung IP67",
+    "Mit 2 Karabinern, 1,03 kg"
+  ],
+  "button_text": "Auf Amazon ansehen",
+  "buying_angle": "Praktisch für Camper und Wanderer, die unterwegs Smartphone, Tablet oder Powerbank per Sonnenlicht laden möchten und ein faltbares Panel suchen.",
+  "seo_title": "FlexSolar E40 Faltbares Solarpanel 40 W für Camping | Daily Deal Finder",
+  "meta_description": "FlexSolar E40 faltbares Solarpanel mit 40 W, mehreren USB-Anschlüssen und 2 Karabinern. Für Camping und Outdoor. Laut Amazon-Angaben.",
+  "alt_text": "Faltbares Solarpanel mit USB-Anschlüssen für Camping und Outdoor",
+  "pinterest_title": "Camping Ausrüstung: Faltbares 40-W-Solarpanel mit USB-Anschlüssen",
+  "pinterest_description": "Camping Ausrüstung: FlexSolar E40 faltbares Solarpanel mit 40 W maximaler Leistung, mehreren USB-Anschlüssen und 2 Karabinern. Praktisch für Zeltplatz, Wandern und Outdoor. Laut Amazon-Angaben. #camping #solarpanel #outdoor #solarladegerät #wandern",
+  "hashtags": [
+    "#camping",
+    "#solarpanel",
+    "#outdoor"
+  ],
+  "source": "amazon_verified_identity_v1",
+  "source_language": "de",
+  "identity_hash": "3094dca163af46c8fe1a719a25ea1b37d8b48090c35f3fa7544b1fb3895bf3e4",
+  "generated_at": "2026-11-04T14:36:43Z",
+  "content_engine": "amazon_identity_sync_v1"
+}
