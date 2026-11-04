@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-11-04",
   "platform": "pinterest",
-  "total_pins": 61,
+  "total_pins": 62,
   "pins": [
     {
       "product_id": "camp-001",
@@ -663,6 +663,18 @@
       "created_at": "2026-11-04",
       "updated_at": "2026-11-04",
       "identity_hash": "6990f4a5aa93879f5d1b30683bd30012d0f140de770de1f27962e7dceb41a78f"
+    },
+    {
+      "product_id": "camp-071",
+      "title": "Camping Ausrüstung: Motorola T82 Extreme Funkgeräte im 2er-Set",
+      "description": "Camping Ausrüstung: Motorola Talkabout T82 Extreme PMR446-Funkgeräte im 2er-Set mit 16 Kanälen und IPX4. Praktisch für Zeltplatz und Wandern. Lieferumfang vor dem Kauf prüfen. #camping #funkgeräte #pmr446 #motorola #outdoor",
+      "image": "assets/products/camp-071.webp",
+      "target_url": "/product.html?id=camp-071",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-11-04",
+      "updated_at": "2026-11-04",
+      "identity_hash": "2a810e1a1a43be8ac445431a2b6c188d7451d04df530d8bce1e92ccfb33eb071"
     }
   ]
 }
