@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-11-04",
   "platform": "pinterest",
-  "total_pins": 55,
+  "total_pins": 56,
   "pins": [
     {
       "product_id": "camp-001",
@@ -591,6 +591,18 @@
       "created_at": "2026-11-04",
       "updated_at": "2026-11-04",
       "identity_hash": "3c2920456820b5f7c8981efc852504a765d083205c9048eaa00867e13dc3ac39"
+    },
+    {
+      "product_id": "camp-065",
+      "title": "Camping Ausrüstung: Faltbares 28W Solar-Ladegerät mit USB-C & USB-A",
+      "description": "Camping Ausrüstung für unterwegs: BigBlue faltbares 28W Solar-Ladegerät mit USB-C- und USB-A-Anschluss, digitaler Stromanzeige und IP44. Praktisch fürs Zelt, zum Wandern und für Outdoor. #camping #solarladegerät #solarpanel #outdoor #wandern",
+      "image": "assets/products/camp-065.webp",
+      "target_url": "/product.html?id=camp-065",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-11-04",
+      "updated_at": "2026-11-04",
+      "identity_hash": "f33fa6f739eec5414a591bfb2d21913a022a7222efe1de85ef107813502af06a"
     }
   ]
 }
