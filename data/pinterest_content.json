@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-11-04",
   "platform": "pinterest",
-  "total_pins": 58,
+  "total_pins": 59,
   "pins": [
     {
       "product_id": "camp-001",
@@ -627,6 +627,18 @@
       "created_at": "2026-11-04",
       "updated_at": "2026-11-04",
       "identity_hash": "c23d32f96cdf82b07869b3444e4c1add82f32e7766cc80b2f022220473c9a974"
+    },
+    {
+      "product_id": "camp-068",
+      "title": "Camping Ausrüstung: Outdoor-Wasserfilter bis 4000 Liter, nur 97 g",
+      "description": "Camping Ausrüstung für unterwegs: Alpenwert Outdoor-Wasserfilter mit Aktivkohle, bis 4000 Liter laut Amazon, nur 97 g leicht, mit Karabiner und Trageband. Praktisch für Wandern und Camping. #camping #wasserfilter #outdoor #wandern #trekking",
+      "image": "assets/products/camp-068.webp",
+      "target_url": "/product.html?id=camp-068",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-11-04",
+      "updated_at": "2026-11-04",
+      "identity_hash": "5c9946657969a3aa1bf1a07cb7548ba48cac51ce804f905b395882332717f53f"
     }
   ]
 }
