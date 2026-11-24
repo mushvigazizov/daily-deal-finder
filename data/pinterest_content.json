@@ -1,8 +1,8 @@
 {
   "_schema": "1.0",
-  "_generated_at": "2026-11-04",
+  "_generated_at": "2026-11-24",
   "platform": "pinterest",
-  "total_pins": 68,
+  "total_pins": 69,
   "pins": [
     {
       "product_id": "camp-001",
@@ -747,6 +747,18 @@
       "created_at": "2026-11-04",
       "updated_at": "2026-11-04",
       "identity_hash": "f94eb44d65367757bf2697548c960eaf51b834075782bb2b4dcbffec8f139602"
+    },
+    {
+      "product_id": "camp-078",
+      "title": "Camping Ausrüstung: Herren Regenjacke mit abnehmbarer Kapuze",
+      "description": "Outdoor Kleidung für Camping und Wandern: donhobo Herren Regenjacke als Softshell aus 100 % Polyester, mit abnehmbarer Kapuze und mehreren Reißverschlusstaschen. Praktisch für Wandern, Camping und Reisen. #camping #regenjacke #outdoorjacke #wandern #herrenjacke",
+      "image": "assets/products/camp-078.webp",
+      "target_url": "/product.html?id=camp-078",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-11-24",
+      "updated_at": "2026-11-24",
+      "identity_hash": "c66c31f7b692d9aba0901e6ad9ce77bff3c363b82698e69ed5ca63cd3c5e599a"
     }
   ]
 }
