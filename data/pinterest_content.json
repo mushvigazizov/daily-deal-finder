@@ -2,7 +2,7 @@
   "_schema": "1.0",
   "_generated_at": "2026-11-25",
   "platform": "pinterest",
-  "total_pins": 78,
+  "total_pins": 79,
   "pins": [
     {
       "product_id": "camp-001",
@@ -867,6 +867,18 @@
       "created_at": "2026-11-25",
       "updated_at": "2026-11-25",
       "identity_hash": "7adb8d8cf59c16d81aa939a806a12426763584d9f3a04ae399279c381f62bdf8"
+    },
+    {
+      "product_id": "camp-088",
+      "title": "Damen Lifestyle: Crop Sportjacke für Yoga und Fitness",
+      "description": "Leichte Sportjacke für Yoga, Fitness und Laufen: IECCP Damen Crop Top in Ivory Grey mit Reißverschluss und Daumenlöchern, Slim Fit laut Amazon. #damenmode #yoga #fitnessoutfit #sportjacke #lifestyle",
+      "image": "assets/products/camp-088.webp",
+      "target_url": "/product.html?id=camp-088",
+      "board": "Camping & Outdoor Gear",
+      "status": "ready",
+      "created_at": "2026-11-25",
+      "updated_at": "2026-11-25",
+      "identity_hash": "f7121d4c6541a315c5f5874df4366fa93f2ce4b55afaad2d2af1241ce54dae28"
     }
   ]
 }
